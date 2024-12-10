@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { NextUIProvider } from "@nextui-org/react";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({
+	subsets: ["latin"],
+	fallback: ["Arial", "sans-serif"],
+});
 
 export const metadata: Metadata = {
 	title: "ARS | Advanced Robotics Systems",
@@ -17,7 +20,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
+			<body className={montserrat.className}>
 				<NextUIProvider>{children}</NextUIProvider>
 			</body>
 		</html>
