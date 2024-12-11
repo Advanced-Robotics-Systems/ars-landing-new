@@ -1,3 +1,6 @@
 import Footer from "./footer/footer";
 
-export { Footer };
+// Home sections
+import Hero from "./home/hero";
+
+export { Footer, Hero };

@@ -6,8 +6,8 @@ import { footerLinks, footerSocials } from "@/data";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-black text-primary padding-responsive md:px-36 text-white">
-      <div className="w-[100%] flex max-lg:flex-col gap-16 items-center justify-between mb-16 lg:mb-40">
+    <footer className="w-full bg-black text-primary padding-responsive text-white">
+      <div className="w-[100%] flex max-lg:flex-col gap-16 items-center justify-between pb-10 lg:pb-24 border-b border-gray-900">
         <div className="flex flex-col items-center justify-between lg:items-start lg:justify-start gap-4 w-[80%] lg:w-80">
           <div className="flex items-center justify-center">
             <Image
@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex items-start justify-between gap-48">
+        <div className="flex items-start justify-between gap-10 md:gap-24 lg:gap-28 xl:gap-48">
           {/* Navigation */}
           <div className="max-w-sm">
             <div className="text-accent  mb-8 lg:mb-12 tracking-widest text-medium md:text-lg">
@@ -80,7 +80,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright and socials */}
-      <div className="flex max-md:flex-col-reverse max-md:gap-8 items-center justify-between w-[100%]">
+      <div className="flex flex-col-reverse lg:flex-row gap-5 md:gap-8 items-center justify-between w-full pt-5 lg:pt-10">
         <div className="flex items-center justify-between gap-5 w-36 max-md:m-auto">
           {footerSocials.map((item, index) => (
             <Link
@@ -94,10 +94,10 @@ const Footer = () => {
           ))}
         </div>
         <div className="text-xs">&copy;2024 ARS. All rights reserved.</div>
-        <div className="list-none flex gap-8">
+        <div className="list-none flex gap-4 md:gap-8">
           {footerLinks.policyLinks.map((item, index) => (
             <li key={index}>
-              <Link href={item.link} className="text-sm md:text-medium">
+              <Link href={item.link} className="text-xs md:text-sm ">
                 {item.name}
               </Link>
             </li>
