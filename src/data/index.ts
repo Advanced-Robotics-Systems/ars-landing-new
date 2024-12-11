@@ -42,7 +42,7 @@ export const footerLinks = {
       link: "/contact",
     },
   ],
-  "helpful-links": [
+  helpfulLinks: [
     {
       name: "FAQ",
       link: "/faq",
@@ -60,6 +60,20 @@ export const footerLinks = {
     {
       name: "Blogs",
       link: "/blogs",
+    },
+  ],
+  policyLinks: [
+    {
+      name: "Privacy Policy",
+      link: "/privacy-policy",
+    },
+    {
+      name: "Terms of Use",
+      link: "/terms-of-use",
+    },
+    {
+      name: "Ethics Statement",
+      link: "/ethics-statement",
     },
   ],
 };
