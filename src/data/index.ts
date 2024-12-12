@@ -93,3 +93,31 @@ export const footerSocials = [
     link: "https://www.linkedin.com/company/advanced-robotics-systems/",
   },
 ];
+
+// solutions data
+export const solutionsData = [
+  {
+    icon: ICONS.home,
+    title: "Dependability",
+    description:
+      "We provide comprehensive maintenance for your robotic systems, ensuring consistent uptime",
+  },
+  {
+    icon: ICONS.user,
+    title: "Expertise",
+    description:
+      "Our skilled technical team specializes in optimizing automation workflows with advanced support solutions",
+  },
+  {
+    icon: ICONS.square,
+    title: "Responsiveness",
+    description:
+      "With streamlined digital processes, we ensure swift responses and minimize downtime for uninterrupted operations.",
+  },
+  {
+    icon: ICONS.meditaion,
+    title: "Adaptability",
+    description:
+      "Our flexible service framework addresses challenges efficiently, offering quick resolutions and tailored support",
+  },
+];
