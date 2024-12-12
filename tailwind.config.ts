@@ -47,6 +47,7 @@ export default {
         "cyan-blue": "#22A9E1",
         "ars-primary": "#EDF3F5",
         "ars-cyan": "#0590C8",
+        "ars-cyan-60": "#0590C899",
         "ars-gray": "#505B66",
         "ice-blue": "#D7EFF9",
         "deep-blue": "#0B1E59",

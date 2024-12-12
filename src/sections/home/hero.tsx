@@ -16,9 +16,9 @@ const Hero = () => {
     >
       <div className="bg-gradient-to-tl from-[#FFFFFF00] to-[#000000B3] h-full padding-responsive flex flex-col justify-center gap-2 md:gap-3 text-ars-primary">
         <p className="text-xs lg:text-sm">An ARS Robot Development</p>
-        <p className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-medium">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-medium">
           Revolutionising Automation <br /> Driving Innovation
-        </p>
+        </h2>
         <Button
           size="sm"
           radius="full"

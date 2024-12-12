@@ -1,15 +1,6 @@
 "use client";
 import Link from "next/link";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarMenuToggle,
-  NavbarMenuItem,
-  NavbarMenu,
-  NavbarContent,
-  NavbarItem,
-  Button,
-} from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 import { useEffect, useState } from "react";
 import { navLinks } from "@/data";
 
