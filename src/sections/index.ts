@@ -5,5 +5,6 @@ import Header from "./header/header";
 import Hero from "./home/hero";
 import OurMission from "./home/mission";
 import Solutions from "./home/solutions";
+import OS from "./home/os";
 
-export { Footer, Hero, Header, OurMission, Solutions };
+export { Footer, Hero, Header, OurMission, Solutions, OS };
