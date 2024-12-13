@@ -51,6 +51,7 @@ export default {
         "ars-gray": "#505B66",
         "ice-blue": "#D7EFF9",
         "deep-blue": "#0B1E59",
+        "deep-blue-70": "#0B1E59B3",
       },
     },
   },

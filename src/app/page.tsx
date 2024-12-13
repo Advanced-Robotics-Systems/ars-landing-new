@@ -1,4 +1,4 @@
-import { Hero, OS, OurMission, Solutions } from "@/sections";
+import { ARSIndustry, Hero, OS, OurMission, Solutions } from "@/sections";
 
 export default function Home() {
   return (
@@ -7,6 +7,7 @@ export default function Home() {
       <OurMission />
       <Solutions />
       <OS />
+      <ARSIndustry />
     </main>
   );
 }
