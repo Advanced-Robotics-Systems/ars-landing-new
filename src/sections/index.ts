@@ -7,5 +7,15 @@ import OurMission from "./home/mission";
 import Solutions from "./home/solutions";
 import OS from "./home/os";
 import ARSIndustry from "./home/ars-industry";
+import Clients from "./home/clients";
 
-export { Footer, Hero, Header, OurMission, Solutions, OS, ARSIndustry };
+export {
+  Footer,
+  Hero,
+  Header,
+  OurMission,
+  Solutions,
+  OS,
+  ARSIndustry,
+  Clients,
+};

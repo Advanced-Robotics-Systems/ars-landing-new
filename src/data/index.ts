@@ -121,3 +121,55 @@ export const solutionsData = [
       "Our flexible service framework addresses challenges efficiently, offering quick resolutions and tailored support",
   },
 ];
+
+// client
+export const clientData = [
+  {
+    logo: "/clients/ford.png",
+  },
+  {
+    logo: "/clients/adyawinsa.png",
+  },
+  {
+    logo: "/clients/ashok-leyland.png",
+  },
+  {
+    logo: "/clients/bollore.png",
+  },
+  {
+    logo: "/clients/caterpillar.png",
+  },
+  {
+    logo: "/clients/coca-cola.png",
+  },
+  {
+    logo: "/clients/godrej.png",
+  },
+  {
+    logo: "/clients/kemin.png",
+  },
+  {
+    logo: "/clients/kimberly-clark.png",
+  },
+  {
+    logo: "/clients/mahindra.png",
+  },
+  {
+    logo: "/clients/nanyang.png",
+  },
+  {
+    logo: "/clients/norgren.png",
+  },
+  {
+    logo: "/clients/pub.png",
+  },
+  {
+    logo: "/clients/schlumberger.png",
+  },
+  {
+    logo: "/clients/sp.png",
+  },
+  {
+    logo: "/clients/wong-fong.png",
+  },
+];
