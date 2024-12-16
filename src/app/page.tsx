@@ -3,6 +3,7 @@ import {
   Awards,
   Clients,
   Hero,
+  MobileRobot,
   OS,
   OurMission,
   Solutions,
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <OurMission />
       <Solutions />
+      <MobileRobot />
       <OS />
       <ARSIndustry />
       <Clients />

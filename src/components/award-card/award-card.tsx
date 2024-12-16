@@ -22,7 +22,7 @@ const AwardCard = ({ title, img }: { title: string; img: string }) => {
 
       <CardFooter>
         <div className="flex gap-4 items-center">
-          <p className="font-medium">Reade More</p>
+          <p className="font-medium">Read More</p>
           <Button
             isIconOnly
             radius="full"

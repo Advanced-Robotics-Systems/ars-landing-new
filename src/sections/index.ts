@@ -9,6 +9,7 @@ import OS from "./home/os";
 import ARSIndustry from "./home/ars-industry";
 import Clients from "./home/clients";
 import Awards from "./home/awards";
+import MobileRobot from "./home/mobile-robot";
 
 export {
   Footer,
@@ -20,4 +21,5 @@ export {
   ARSIndustry,
   Clients,
   Awards,
+  MobileRobot,
 };
