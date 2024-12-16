@@ -173,3 +173,22 @@ export const clientData = [
     logo: "/clients/wong-fong.png",
   },
 ];
+
+// awards data
+export const awardsData = [
+  {
+    img: "award.png",
+    title:
+      "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
+  },
+  {
+    img: "award.png",
+    title:
+      "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
+  },
+  {
+    img: "award.png",
+    title:
+      "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
+  },
+];

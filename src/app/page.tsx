@@ -1,5 +1,6 @@
 import {
   ARSIndustry,
+  Awards,
   Clients,
   Hero,
   OS,
@@ -16,6 +17,7 @@ export default function Home() {
       <OS />
       <ARSIndustry />
       <Clients />
+      <Awards />
     </main>
   );
 }

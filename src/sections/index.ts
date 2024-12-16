@@ -8,6 +8,7 @@ import Solutions from "./home/solutions";
 import OS from "./home/os";
 import ARSIndustry from "./home/ars-industry";
 import Clients from "./home/clients";
+import Awards from "./home/awards";
 
 export {
   Footer,
@@ -18,4 +19,5 @@ export {
   OS,
   ARSIndustry,
   Clients,
+  Awards,
 };
