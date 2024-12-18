@@ -6,7 +6,7 @@ import React from "react";
 
 const MobileRobot = () => {
   return (
-    <section className="px-5 md:px-10 lg:px-16 xl:px-24 2xl:px-36 3xl:px-44 pt-10 lg:pt-14 xl:pt-20 flex flex-col items-center gap-12 md:gap-16 lg:gap-20">
+    <section className="bg-ice-blue px-5 md:px-10 lg:px-16 xl:px-24 2xl:px-36 3xl:px-44 pt-10 lg:pt-14 xl:pt-20 flex flex-col items-center gap-12 md:gap-16 lg:gap-20">
       <h2 className="text-center text-2xl md:text-4xl lg:text-5xl xl:text-6xl">
         Autonomous Mobile Robot <br /> Intralogistics
       </h2>

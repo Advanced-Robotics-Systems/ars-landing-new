@@ -20,9 +20,9 @@ const Hero = () => {
           Revolutionising Automation <br /> Driving Innovation
         </h2>
         <Button
-          size="sm"
+          size="md"
           radius="full"
-          className="bg-cyan-blue w-32 md:w-40 text-xs md:text-sm text-black font-medium mt-2"
+          className="bg-cyan-blue w-32 md:w-40 text-base md:text-lg text-black font-medium mt-2"
         >
           Our Company
         </Button>
