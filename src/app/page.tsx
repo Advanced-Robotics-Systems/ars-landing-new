@@ -1,8 +1,25 @@
+import {
+  ARSIndustry,
+  Awards,
+  Clients,
+  Hero,
+  MobileRobot,
+  OS,
+  OurMission,
+  Solutions,
+} from "@/sections";
 
 export default function Home() {
   return (
-    <div>
-      
-    </div>
+    <main>
+      <Hero />
+      <OurMission />
+      <Solutions />
+      <MobileRobot />
+      <OS />
+      <ARSIndustry />
+      <Clients />
+      <Awards />
+    </main>
   );
 }
