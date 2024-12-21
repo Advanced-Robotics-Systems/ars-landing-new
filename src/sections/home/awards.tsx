@@ -1,3 +1,4 @@
+"use client";
 import { AwardCard } from "@/components";
 import { awardsData } from "@/data";
 import React from "react";

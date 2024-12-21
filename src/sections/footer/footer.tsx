@@ -10,13 +10,7 @@ const Footer = () => {
       <div className="w-[100%] flex max-lg:flex-col gap-16 items-center justify-between pb-10 lg:pb-24 border-b border-gray-900">
         <div className="flex flex-col items-center justify-between lg:items-start lg:justify-start gap-4 w-[80%] lg:w-80">
           <div className="flex items-center justify-center">
-            <Image
-              src={Logo}
-              width={0}
-              height={0}
-              alt="White Code"
-              className="w-60"
-            />
+            <Image src={Logo} width={0} height={0} alt="ARS" className="w-60" />
           </div>
         </div>
 
