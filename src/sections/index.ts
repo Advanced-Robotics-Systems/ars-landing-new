@@ -11,6 +11,9 @@ import Clients from "./home/clients";
 import Awards from "./home/awards";
 import MobileRobot from "./home/mobile-robot";
 
+// About sections
+import AboutHero from "./about/about-hero";
+
 export {
   Footer,
   Hero,
@@ -22,4 +25,5 @@ export {
   Clients,
   Awards,
   MobileRobot,
+  AboutHero,
 };
