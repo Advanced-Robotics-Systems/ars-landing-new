@@ -11,7 +11,7 @@ const AboutHero = () => {
         backgroundPosition: "center",
       }}
     >
-      <h1 className="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-medium">
+      <h1 className="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl text-white font-medium">
         About <span className="text-cyan-blue">ARS</span>
       </h1>
     </section>
