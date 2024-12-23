@@ -30,7 +30,7 @@ export const footerLinks = {
       link: "/products",
     },
     {
-      name: "Aboute",
+      name: "About",
       link: "/about",
     },
     {
