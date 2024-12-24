@@ -45,6 +45,8 @@ export default {
     extend: {
       colors: {
         "cyan-blue": "#22A9E1",
+        "cyan-blue-30": "#22A9E14D",
+        "cyan-blue-50": "#22A9E180",
         "ars-primary": "#EDF3F5",
         "ars-cyan": "#0590C8",
         "ars-cyan-60": "#0590C899",
@@ -52,6 +54,8 @@ export default {
         "ice-blue": "#D7EFF9",
         "deep-blue": "#0B1E59",
         "deep-blue-70": "#0B1E59B3",
+        "deep-blue-20": "#0B1E5933",
+        "deep-blue-5": "#0B1E590D",
       },
     },
   },

@@ -1,3 +1,4 @@
+"use client";
 import heroImage from "@/../../public/home-hero.jpeg";
 import { ICONS } from "@/utils/icons";
 import { Button } from "@nextui-org/react";

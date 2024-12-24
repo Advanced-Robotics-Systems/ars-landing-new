@@ -1,3 +1,4 @@
+"use client";
 import { clientData } from "@/data";
 import { Image } from "@nextui-org/react";
 
