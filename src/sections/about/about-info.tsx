@@ -22,7 +22,7 @@ const AboutInfo = () => {
             <p className="text-justify text-xs sm:text-sm lg:text-base 2xl:text-lg 4xl:text-xl">
               Advanced Robotics System was established by a team of passionate
               robot enthusiasts dedicated to leveraging cutting-edge
-              technologies to create machines and robots that meet clients'
+              technologies to create machines and robots that meet clients&apos;
               needs in various industrial sectors. The startup was founded in
               2020, focusing on industrial robot development and production.
             </p>
