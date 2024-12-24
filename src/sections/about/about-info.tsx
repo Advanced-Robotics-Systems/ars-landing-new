@@ -5,15 +5,11 @@ const AboutInfo = () => {
   return (
     <section className="bg-ice-blue w-full padding md:px-24 2xl:px-[12%] 3xl:px-[20%] 4xl:px-[25%]">
       <div className="flex flex-col lg:flex-row max-lg:gap-y-6 items-center lg:justify-between">
-        <div className="relative lg:basis-1/2 h-60 lg:h-96 max-xs:w-full xs:max-lg:w-96">
-          <Image
-            className="rounded-lg"
-            src={aboutInfoImage}
-            alt="Robot Image"
-            fill
-            objectFit="cover"
-          />
-        </div>
+        <Image
+          className="lg:basis-1/2 h-60 lg:h-96 max-xs:w-full xs:max-lg:w-96 rounded-lg"
+          src={aboutInfoImage}
+          alt="Robot Image"
+        />
         <div className="lg:basis-[45%] flex flex-col gap-y-2">
           <div>
             <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-ars-cyan font-extrabold">
