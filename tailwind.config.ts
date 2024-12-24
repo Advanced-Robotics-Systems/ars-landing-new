@@ -56,6 +56,7 @@ export default {
         "deep-blue-70": "#0B1E59B3",
         "deep-blue-20": "#0B1E5933",
         "deep-blue-5": "#0B1E590D",
+        "midnight-blue": "#030D2D",
       },
     },
   },

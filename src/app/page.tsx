@@ -1,9 +1,9 @@
 "use client";
 import {
   ARSIndustry,
-  Awards,
   Clients,
   Hero,
+  LatestResources,
   MobileRobot,
   OS,
   OurMission,
@@ -20,7 +20,7 @@ export default function Home() {
       <OS />
       <ARSIndustry />
       <Clients />
-      <Awards />
+      <LatestResources />
     </main>
   );
 }
