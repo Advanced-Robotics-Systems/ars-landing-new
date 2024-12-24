@@ -1,4 +1,10 @@
-import { AboutHero, AboutInfo, AboutValues } from "@/sections";
+import {
+  AboutBacking,
+  AboutHero,
+  AboutInfo,
+  AboutValues,
+  JoinOurTeam,
+} from "@/sections";
 
 export default function About() {
   return (
@@ -6,6 +12,8 @@ export default function About() {
       <AboutHero />
       <AboutInfo />
       <AboutValues />
+      <AboutBacking />
+      <JoinOurTeam showButton />
     </main>
   );
 }

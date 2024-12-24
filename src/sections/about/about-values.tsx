@@ -17,13 +17,13 @@ const AboutValues = () => {
         <h1 className="text-2xl sm:text-3xl lg:text-4xl text-ice-blue font-semibold">
           Our Values
         </h1>
-        <p className="text-ice-blue text-xs sm:text-sm lg:text-base 2xl:text-lg 4xl:text-xl text-justify">
+        <p className="text-ice-blue text-xs sm:text-sm lg:text-base 2xl:text-lg 4xl:text-xl text-justify max-w-[850px]">
           At ARS, we are dedicated to ensuring your industrial automation
           systems operate seamlessly, delivering optimal performance and
           reliability.
         </p>
       </div>
-      <div className="flex flex-wrap flex-col md:flex-row justify-between gap-y-10 md:gap-y-20 mt-10 lg:padding-x">
+      <div className="flex flex-wrap flex-col md:flex-row justify-between gap-y-5 xs:gap-y-10 md:gap-y-20 mt-10 lg:padding-x">
         {solutionsData.map((item, index) => (
           <AboutValue
             title={item.title}

@@ -1,6 +1,9 @@
 import Footer from "./footer/footer";
 import Header from "./header/header";
 
+// Shared
+import JoinOurTeam from "./shared/join-our-team";
+
 // Home sections
 import Hero from "./home/hero";
 import OurMission from "./home/mission";
@@ -15,6 +18,7 @@ import MobileRobot from "./home/mobile-robot";
 import AboutHero from "./about/about-hero";
 import AboutInfo from "./about/about-info";
 import AboutValues from "./about/about-values";
+import AboutBacking from "./about/about-backing";
 
 export {
   Footer,
@@ -30,4 +34,6 @@ export {
   AboutHero,
   AboutInfo,
   AboutValues,
+  AboutBacking,
+  JoinOurTeam,
 };
