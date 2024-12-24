@@ -14,6 +14,7 @@ import MobileRobot from "./home/mobile-robot";
 // About sections
 import AboutHero from "./about/about-hero";
 import AboutInfo from "./about/about-info";
+import AboutValues from "./about/about-values";
 
 export {
   Footer,
@@ -28,4 +29,5 @@ export {
   MobileRobot,
   AboutHero,
   AboutInfo,
+  AboutValues,
 };
