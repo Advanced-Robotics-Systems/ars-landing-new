@@ -12,7 +12,7 @@ import LatestResources from "./home/resources";
 import MobileRobot from "./home/mobile-robot";
 
 // contact sections
-import ContactForm from "./contact/contact-form";
+import Contacts from "./contact/contacts";
 import Careers from "./contact/careers";
 
 // Shared sections
@@ -29,7 +29,7 @@ export {
   Clients,
   LatestResources,
   MobileRobot,
-  ContactForm,
+  Contacts,
   Careers,
   Resources,
 };

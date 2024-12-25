@@ -5,11 +5,11 @@ import React from "react";
 const Careers = () => {
   return (
     <section className="bg-ice-blue padding-responsive ">
-      <div className="text-center space-y-7 border-b border-cyan-blue-50 pb-8 lg:pb-12">
+      <div className="text-center space-y-5 md:space-y-6 lg:space-y-7 border-b border-cyan-blue-50 pb-8 lg:pb-12">
         <h2 className="text-ars-cyan font-medium text-2xl md:text-4xl lg:text-5xl xl:text-6xl">
           Careers
         </h2>
-        <p>
+        <p className="text-sm md:text-base">
           If you&apos;re ready to challenge the conventions of post- <br />
           production, we want to hear from you.
         </p>

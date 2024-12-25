@@ -1,9 +1,9 @@
-import { Careers, ContactForm, Resources } from "@/sections";
+import { Careers, Contacts, Resources } from "@/sections";
 
 const Contact = () => {
   return (
     <main>
-      <ContactForm />
+      <Contacts />
       <Careers />
       <Resources />
     </main>
