@@ -1,11 +1,11 @@
-import { Careers, Contacts, Resources } from "@/sections";
+import { Careers, Contacts, LatestResources } from "@/sections";
 
 const Contact = () => {
   return (
     <main>
       <Contacts />
       <Careers />
-      <Resources />
+      <LatestResources />
     </main>
   );
 };

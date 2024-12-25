@@ -8,7 +8,6 @@ import Solutions from "./home/solutions";
 import OS from "./home/os";
 import ARSIndustry from "./home/ars-industry";
 import Clients from "./home/clients";
-import LatestResources from "./home/resources";
 import MobileRobot from "./home/mobile-robot";
 
 // contact sections
@@ -16,7 +15,7 @@ import Contacts from "./contact/contacts";
 import Careers from "./contact/careers";
 
 // Shared sections
-import Resources from "./shared/resources";
+import LatestResources from "./shared/resources";
 
 export {
   Footer,
@@ -31,5 +30,4 @@ export {
   MobileRobot,
   Contacts,
   Careers,
-  Resources,
 };
