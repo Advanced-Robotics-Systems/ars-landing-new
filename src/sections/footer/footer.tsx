@@ -17,15 +17,15 @@ const Footer = () => {
         <div className="flex items-start justify-between gap-10 md:gap-24 lg:gap-28 xl:gap-48">
           {/* Navigation */}
           <div className="max-w-sm">
-            <div className="text-accent  mb-8 lg:mb-12 tracking-widest text-medium md:text-lg">
-              Menu
+            <div className="text-accent  mb-6 lg:mb-8 font-medium text-base md:text-lg uppercase">
+              Navigation
             </div>
             <ul id="menu" className="list-none flex flex-col gap-4">
               {footerLinks.navigation.map((item, index) => (
                 <li key={index}>
                   <Link
                     href={item.link}
-                    className="text-accent  font-[300] text-sm md:text-medium"
+                    className="text-accent text-sm md:text-medium"
                   >
                     {item.name}
                   </Link>
@@ -36,15 +36,15 @@ const Footer = () => {
 
           {/* Helpful Links */}
           <div className="max-w-sm">
-            <div className="text-accent mb-8 lg:mb-12 tracking-widest text-medium md:text-lg">
-              Contact
+            <div className="text-accent  mb-6 lg:mb-8 font-medium text-base md:text-lg uppercase">
+              Helpful links
             </div>
             <ul id="contact" className="list-none flex flex-col gap-4">
               {footerLinks.helpfulLinks.map((item, index) => (
                 <li key={index}>
                   <Link
                     href={item.link}
-                    className="text-accent font-[300] text-sm md:text-medium"
+                    className="text-accent text-sm md:text-medium"
                   >
                     {item.name}
                   </Link>
@@ -54,15 +54,15 @@ const Footer = () => {
           </div>
           {/*Resources  */}
           <div className="max-w-sm">
-            <div className="text-accent mb-8 lg:mb-12 tracking-widest text-medium md:text-lg">
-              Contact
+            <div className="text-accent  mb-6 lg:mb-8 font-medium text-base md:text-lg uppercase">
+              Resources
             </div>
             <ul id="contact" className="list-none flex flex-col gap-4">
               {footerLinks.resources.map((item, index) => (
                 <li key={index}>
                   <Link
                     href={item.link}
-                    className="text-accent font-[300] text-sm md:text-medium"
+                    className="text-accent text-sm md:text-medium"
                   >
                     {item.name}
                   </Link>

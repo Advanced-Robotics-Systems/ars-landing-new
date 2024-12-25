@@ -30,7 +30,7 @@ export const footerLinks = {
       link: "/products",
     },
     {
-      name: "Aboute",
+      name: "About",
       link: "/about",
     },
     {
@@ -38,7 +38,7 @@ export const footerLinks = {
       link: "/careers",
     },
     {
-      name: "Contact",
+      name: "Contact Sales",
       link: "/contact",
     },
   ],
@@ -50,6 +50,10 @@ export const footerLinks = {
     {
       name: "Support",
       link: "/support",
+    },
+    {
+      name: "Partners",
+      link: "/partners",
     },
   ],
   resources: [
