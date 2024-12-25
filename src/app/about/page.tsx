@@ -3,6 +3,7 @@ import {
   AboutHero,
   AboutInfo,
   AboutValues,
+  GetInTouch,
   JoinOurTeam,
 } from "@/sections";
 
@@ -14,6 +15,7 @@ export default function About() {
       <AboutValues />
       <AboutBacking />
       <JoinOurTeam showButton />
+      <GetInTouch />
     </main>
   );
 }

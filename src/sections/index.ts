@@ -3,6 +3,7 @@ import Header from "./header/header";
 
 // Shared
 import JoinOurTeam from "./shared/join-our-team";
+import GetInTouch from "./shared/get-in-touch";
 
 // Home sections
 import Hero from "./home/hero";
@@ -36,4 +37,5 @@ export {
   AboutValues,
   AboutBacking,
   JoinOurTeam,
+  GetInTouch,
 };
