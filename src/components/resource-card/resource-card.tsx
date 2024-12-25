@@ -9,7 +9,7 @@ import {
 } from "@nextui-org/react";
 import React from "react";
 
-const AwardCard = ({
+const ResourceCard = ({
   title,
   img,
   category,
@@ -71,4 +71,4 @@ const AwardCard = ({
   );
 };
 
-export default AwardCard;
+export default ResourceCard;

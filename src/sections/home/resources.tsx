@@ -1,5 +1,5 @@
 "use client";
-import { AwardCard } from "@/components";
+import { ResourceCard } from "@/components";
 import { resourcesData, resourcesCategories } from "@/data";
 import { ICONS } from "@/utils/icons";
 import { Button, ButtonGroup } from "@nextui-org/react";
@@ -77,7 +77,7 @@ const LatestResources = () => {
         </Button>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-8 xl:gap-12 2xl:gap-14 3xl:gap-16">
           {resources.map((resource, idx) => (
-            <AwardCard
+            <ResourceCard
               key={idx}
               title={resource.title}
               img={resource.img}

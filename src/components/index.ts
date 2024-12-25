@@ -1,3 +1,3 @@
-import AwardCard from "./award-card/award-card";
+import ResourceCard from "./resource-card/resource-card";
 
-export { AwardCard };
+export { ResourceCard };
