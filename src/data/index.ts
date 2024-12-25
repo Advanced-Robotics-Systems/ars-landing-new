@@ -178,84 +178,84 @@ export const clientData = [
 export const resourcesData = [
   {
     img: "award.png",
-    category: "news",
+    category: "News",
     time: "2 min read",
     title:
       "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
   },
   {
     img: "award.png",
-    category: "blogs",
+    category: "Blogs",
     time: "2 min read",
     title:
       "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
   },
   {
     img: "award.png",
-    category: "case-study",
+    category: "Case Study",
     time: "3 min read",
     title:
       "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
   },
   {
     img: "award.png",
-    category: "news",
+    category: "News",
     time: "1 min read",
     title:
       "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
   },
   {
     img: "award.png",
-    category: "blogs",
+    category: "Blogs",
     time: "2 min read",
     title:
       "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
   },
   {
     img: "award.png",
-    category: "case-study",
+    category: "Case Study",
     time: "3 min read",
     title:
       "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
   },
   {
     img: "award.png",
-    category: "news",
+    category: "News",
     time: "1 min read",
     title:
       "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
   },
   {
     img: "award.png",
-    category: "blogs",
+    category: "Blogs",
     time: "2 min read",
     title:
       "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
   },
   {
     img: "award.png",
-    category: "case-study",
+    category: "Case Study",
     time: "3 min read",
     title:
       "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
   },
   {
     img: "award.png",
-    category: "news",
+    category: "News",
     time: "1 min read",
     title:
       "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
   },
   {
     img: "award.png",
-    category: "blogs",
+    category: "Blogs",
     time: "2 min read",
     title:
       "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
   },
   {
     img: "award.png",
-    category: "case-study",
+    category: "Case Study",
     time: "3 min read",
     title:
       "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
@@ -263,4 +263,4 @@ export const resourcesData = [
 ];
 
 // resources categories
-export const resourcesCategories = ["all", "news", "blogs", "case-study"];
+export const resourcesCategories = ["All", "News", "Blogs", "Case Study"];

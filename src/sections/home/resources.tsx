@@ -10,13 +10,18 @@ const LatestResources = () => {
   const [activeTab, setActiveTab] = useState(resourcesCategories[0]);
 
   const filterResources = (category: string) => {
-    if (category === "all") {
+    if (category === "All") {
       setResources(resourcesData.slice(0, 4));
     } else {
       setResources(
         resourcesData.filter((resource) => resource.category === category)
       );
     }
+  };
+
+  const handleCategoryClick = (category: string) => {
+    setActiveTab(category);
+    filterResources(category);
   };
 
   const handleRightButton = () => {
@@ -44,38 +49,28 @@ const LatestResources = () => {
         <ButtonGroup
           radius="full"
           variant="bordered"
+          size="sm"
           className="rounded-full border border-deep-blue-20"
         >
-          <Button className={`${activeTab === "all" && "bg-cyan-blue-30"}`}>
-            All
-          </Button>
-          <Button
-            className={`border-l border-deep-blue-20 ${
-              activeTab === "news" && "bg-cyan-blue-30"
-            }`}
-          >
-            News
-          </Button>
-          <Button
-            className={`border-x border-deep-blue-20 ${
-              activeTab === "blogs" && "bg-cyan-blue-30"
-            }`}
-          >
-            Blogs
-          </Button>
-          <Button
-            className={`${activeTab === "case-study" && "bg-cyan-blue-30"}`}
-          >
-            Case Study
-          </Button>
+          {resourcesCategories.map((category) => (
+            <Button
+              key={category}
+              className={`${
+                activeTab === category && "bg-cyan-blue-30"
+              } border-l border-deep-blue-20`}
+              onPress={() => handleCategoryClick(category)}
+            >
+              {category}
+            </Button>
+          ))}
         </ButtonGroup>
       </div>
       <div className="flex items-center gap-10 justify-center">
         <Button
-          isDisabled={activeTab === "all"}
+          isDisabled={activeTab === "All"}
           disabled
           isIconOnly
-          className="bg-deep-blue-5 text-xs md:text-sm text-cyan-blue-50 font-medium rounded-l-lg border-r-2 border-cyan-blue-30 hover:bg-deep-blue-20 duration-300"
+          className="hidden md:block bg-deep-blue-5 text-xs md:text-sm text-cyan-blue-50 font-medium rounded-l-lg border-r-2 border-cyan-blue-30 hover:bg-deep-blue-20 duration-300"
           onPress={handleLeftButton}
         >
           {ICONS.arrow_left}
@@ -92,9 +87,9 @@ const LatestResources = () => {
           ))}
         </div>
         <Button
-          isDisabled={activeTab === "case-study"}
+          isDisabled={activeTab === "Case Study"}
           isIconOnly
-          className="bg-deep-blue-5 text-xs md:text-sm text-cyan-blue-50 font-medium rounded-r-lg border-l-2 border-cyan-blue-30 hover:bg-deep-blue-20 duration-300"
+          className="hidden md:block bg-deep-blue-5 text-xs md:text-sm text-cyan-blue-50 font-medium rounded-r-lg border-l-2 border-cyan-blue-30 hover:bg-deep-blue-20 duration-300"
           onPress={handleRightButton}
         >
           {ICONS.arrow_right}
