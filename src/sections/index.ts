@@ -1,6 +1,10 @@
 import Footer from "./footer/footer";
 import Header from "./header/header";
 
+// Shared
+import JoinOurTeam from "./shared/join-our-team";
+import GetInTouch from "./shared/get-in-touch";
+
 // Home sections
 import Hero from "./home/hero";
 import OurMission from "./home/mission";
@@ -17,6 +21,12 @@ import Careers from "./contact/careers";
 // Shared sections
 import LatestResources from "./shared/resources";
 
+// About sections
+import AboutHero from "./about/about-hero";
+import AboutInfo from "./about/about-info";
+import AboutValues from "./about/about-values";
+import AboutBacking from "./about/about-backing";
+
 export {
   Footer,
   Hero,
@@ -30,4 +40,10 @@ export {
   MobileRobot,
   Contacts,
   Careers,
+  AboutHero,
+  AboutInfo,
+  AboutValues,
+  AboutBacking,
+  JoinOurTeam,
+  GetInTouch,
 };
