@@ -30,7 +30,7 @@ const JoinOurTeam = ({
       {showButton && (
         <Button
           as={Link}
-          href="/career"
+          href="/careers"
           radius="full"
           size="lg"
           endContent={ICONS.arrow_right}
