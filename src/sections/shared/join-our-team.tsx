@@ -49,7 +49,7 @@ const JoinOurTeam = ({
         }}
       >
         <div className="relative flex justify-center">
-          <div className="absolute inset-0 bg-gradient-to-t from-ice-blue to-transparent to-25% z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ice-blue to-transparent to-15% z-10" />
           <Image src={joinTeamImage} alt="Team Picture" className="w-10/12" />
         </div>
       </div>
