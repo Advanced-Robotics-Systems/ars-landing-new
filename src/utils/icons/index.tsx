@@ -1,3 +1,4 @@
+import { AiOutlineFilePdf } from "react-icons/ai";
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 import { FaInstagram, FaLinkedin, FaSquareFacebook } from "react-icons/fa6";
 import { GiMeditation } from "react-icons/gi";
@@ -15,4 +16,5 @@ export const ICONS = {
   user: <LuUsers />,
   square: <HiOutlineSquare2Stack />,
   meditaion: <GiMeditation />,
+  pdf: <AiOutlineFilePdf />,
 };

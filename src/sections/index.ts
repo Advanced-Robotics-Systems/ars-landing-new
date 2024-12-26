@@ -32,6 +32,7 @@ import Careers from "./contact/careers";
 // products sections
 import Series from "./products/series";
 import KeyFeatures from "./products/key-features";
+import Product from "./products/products";
 
 export {
   Footer,
@@ -56,4 +57,5 @@ export {
   Careers,
   Series,
   KeyFeatures,
+  Product,
 };

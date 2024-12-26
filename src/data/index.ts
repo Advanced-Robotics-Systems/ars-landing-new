@@ -1,3 +1,4 @@
+import { title } from "process";
 import { ICONS } from "../utils/icons";
 
 // Navbar Links
@@ -372,5 +373,48 @@ export const featuresData = [
   {
     img: "/features/checked.svg",
     title: "User-Friendly Easy To Use",
+  },
+];
+
+// products data
+export const productsData = [
+  {
+    img: "/products/a-series.png",
+    title: "ARS A300",
+    dimension: "1495 x 985 x 525 mm",
+    maxLiftingWeight: "1000 kg",
+    maxTowingWeight: "1500 kg",
+    driveType: "Differential",
+    maxSpeed: "1.0 m/s",
+    turningRadius: "0 Degree",
+    runtime: "6-8 hours",
+    fulChargeTime: "2-3 hours",
+    driversAndApi: "ROS",
+  },
+  {
+    img: "/products/b-series.png",
+    title: "ARS B300",
+    dimension: "1495 x 985 x 525 mm",
+    maxLiftingWeight: "1000 kg",
+    maxTowingWeight: "1500 kg",
+    driveType: "Differential",
+    maxSpeed: "1.0 m/s",
+    turningRadius: "0 Degree",
+    runtime: "6-8 hours",
+    fulChargeTime: "2-3 hours",
+    driversAndApi: "ROS",
+  },
+  {
+    img: "/products/f-series.png",
+    title: "ARS F300",
+    dimension: "1495 x 985 x 525 mm",
+    maxLiftingWeight: "1000 kg",
+    maxTowingWeight: "1500 kg",
+    driveType: "Differential",
+    maxSpeed: "1.0 m/s",
+    turningRadius: "0 Degree",
+    runtime: "6-8 hours",
+    fulChargeTime: "2-3 hours",
+    driversAndApi: "ROS",
   },
 ];
