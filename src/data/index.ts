@@ -10,12 +10,10 @@ export const navLinks = [
     name: "Company",
     link: "/company",
   },
-
   {
     name: "Careers",
     link: "/careers",
   },
-
   {
     name: "Get in Touch",
     link: "/get-in-touch",
@@ -268,3 +266,37 @@ export const resourcesData = [
 
 // resources categories
 export const resourcesCategories = ["All", "News", "Blogs", "Case Study"];
+
+// Career data
+export const careersJobList = [
+  {
+    title: "Engineering Manager",
+    jobType: "Fulltime Permanent",
+    linkTo: "/",
+  },
+  {
+    title: "Engineering Manager",
+    jobType: "Fulltime Permanent",
+    linkTo: "/",
+  },
+  {
+    title: "Engineering Manager",
+    jobType: "Fulltime Permanent",
+    linkTo: "/",
+  },
+  {
+    title: "Engineering Manager",
+    jobType: "Fulltime Permanent",
+    linkTo: "/",
+  },
+  {
+    title: "Engineering Manager",
+    jobType: "Fulltime Permanent",
+    linkTo: "/",
+  },
+  {
+    title: "Engineering Manager",
+    jobType: "Fulltime Permanent",
+    linkTo: "/",
+  },
+];
