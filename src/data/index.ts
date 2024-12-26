@@ -192,3 +192,36 @@ export const awardsData = [
       "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
   },
 ];
+
+export const careersJobList = [
+  {
+    title: "Engineering Manager",
+    jobType: "Fulltime Permanent",
+    linkTo: "/",
+  },
+  {
+    title: "Engineering Manager",
+    jobType: "Fulltime Permanent",
+    linkTo: "/",
+  },
+  {
+    title: "Engineering Manager",
+    jobType: "Fulltime Permanent",
+    linkTo: "/",
+  },
+  {
+    title: "Engineering Manager",
+    jobType: "Fulltime Permanent",
+    linkTo: "/",
+  },
+  {
+    title: "Engineering Manager",
+    jobType: "Fulltime Permanent",
+    linkTo: "/",
+  },
+  {
+    title: "Engineering Manager",
+    jobType: "Fulltime Permanent",
+    linkTo: "/",
+  },
+];
