@@ -13,7 +13,7 @@ const JoinOurTeam = ({
   showButton?: boolean;
 }) => {
   return (
-    <section className="flex flex-col items-center gap-y-4 bg-ice-blue padding-x md:px-24 2xl:px-[12%] 3xl:px-[20%] 4xl:px-[25%]">
+    <section className="flex flex-col items-center gap-y-4 bg-ice-blue padding-x pb-2 sm:pb-4 md:px-24 2xl:px-[12%] 3xl:px-[20%] 4xl:px-[25%]">
       <h1
         className={`${
           largeTitle
@@ -40,7 +40,7 @@ const JoinOurTeam = ({
         </Button>
       )}
       <div
-        className="flex justify-center pt-[8.5%] mt-10"
+        className="pt-[8.5%] mt-10"
         style={{
           backgroundImage: `url(${arsBgImage.src})`,
           backgroundSize: "contain",
@@ -48,7 +48,10 @@ const JoinOurTeam = ({
           backgroundPosition: "top",
         }}
       >
-        <Image src={joinTeamImage} alt="Team Picture" className="w-10/12" />
+        <div className="relative flex justify-center">
+          <div className="absolute inset-0 bg-gradient-to-t from-ice-blue to-transparent to-25% z-10" />
+          <Image src={joinTeamImage} alt="Team Picture" className="w-10/12" />
+        </div>
       </div>
     </section>
   );
