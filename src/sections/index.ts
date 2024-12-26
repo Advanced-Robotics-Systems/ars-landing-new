@@ -12,8 +12,14 @@ import Solutions from "./home/solutions";
 import OS from "./home/os";
 import ARSIndustry from "./home/ars-industry";
 import Clients from "./home/clients";
-import Awards from "./home/awards";
 import MobileRobot from "./home/mobile-robot";
+
+// contact sections
+import Contacts from "./contact/contacts";
+import Careers from "./contact/careers";
+
+// Shared sections
+import LatestResources from "./shared/resources";
 
 // About sections
 import AboutHero from "./about/about-hero";
@@ -34,8 +40,10 @@ export {
   OS,
   ARSIndustry,
   Clients,
-  Awards,
+  LatestResources,
   MobileRobot,
+  Contacts,
+  Careers,
   AboutHero,
   AboutInfo,
   AboutValues,

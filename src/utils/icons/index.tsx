@@ -1,4 +1,4 @@
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 import { FaInstagram, FaLinkedin, FaSquareFacebook } from "react-icons/fa6";
 import { GiMeditation } from "react-icons/gi";
 import { HiOutlineSquare2Stack } from "react-icons/hi2";
@@ -10,6 +10,7 @@ export const ICONS = {
   linkedin: <FaLinkedin />,
   facebook: <FaSquareFacebook />,
   arrow_right: <FaLongArrowAltRight />,
+  arrow_left: <FaLongArrowAltLeft />,
   home: <TfiHome />,
   user: <LuUsers />,
   square: <HiOutlineSquare2Stack />,
