@@ -4,6 +4,7 @@ import Header from "./header/header";
 // Shared
 import JoinOurTeam from "./shared/join-our-team";
 import GetInTouch from "./shared/get-in-touch";
+import LatestResources from "./shared/resources";
 
 // Home sections
 import Hero from "./home/hero";
@@ -12,7 +13,6 @@ import Solutions from "./home/solutions";
 import OS from "./home/os";
 import ARSIndustry from "./home/ars-industry";
 import Clients from "./home/clients";
-import Awards from "./home/awards";
 import MobileRobot from "./home/mobile-robot";
 
 // About sections
@@ -34,7 +34,7 @@ export {
   OS,
   ARSIndustry,
   Clients,
-  Awards,
+  LatestResources,
   MobileRobot,
   AboutHero,
   AboutInfo,
