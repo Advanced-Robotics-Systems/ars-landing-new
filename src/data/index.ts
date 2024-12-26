@@ -301,3 +301,76 @@ export const careersJobList = [
     linkTo: "/",
   },
 ];
+
+// products slider data
+export const productsSliderData = [
+  {
+    img1: "/products/f-series.png",
+    title1: "F Series",
+    img2: "/products/b-series.png",
+    title2: "B Series",
+    img3: "/products/a-series.png",
+    title3: "A Series",
+    chartData: [
+      ["Series", ""],
+
+      ["F Series", 3],
+      ["B Series", 3],
+      ["A Series", 3],
+    ],
+    colors: ["#6BBFE2", "#0590C8", "#33A8D8"],
+  },
+  {
+    img1: "/products/a-series.png",
+    title1: "A Series",
+    img2: "/products/f-series.png",
+    title2: "F Series",
+    img3: "/products/b-series.png",
+    title3: "B Series",
+    chartData: [
+      ["Series", ""],
+
+      ["A Series", 3],
+      ["F Series", 3],
+      ["B Series", 3],
+    ],
+    colors: ["#33A8D8", "#6BBFE2", "#0590C8"],
+  },
+  {
+    img1: "/products/b-series.png",
+    title1: "B Series",
+    img2: "/products/a-series.png",
+    title2: "A Series",
+    img3: "/products/f-series.png",
+    title3: "F Series",
+
+    chartData: [
+      ["Series", ""],
+
+      ["B Series", 3],
+      ["A Series", 3],
+      ["F Series", 3],
+    ],
+    colors: ["#0590C8", "#33A8D8", "#6BBFE2"],
+  },
+];
+
+// features data
+export const featuresData = [
+  {
+    img: "/features/Lidar.svg",
+    title: "Safe 360 LIDAR",
+  },
+  {
+    img: "/features/boxes.svg",
+    title: "Modular Swappable Application Module",
+  },
+  {
+    img: "/features/gear.svg",
+    title: "Robust Harsh Environment suitable",
+  },
+  {
+    img: "/features/checked.svg",
+    title: "User-Friendly Easy To Use",
+  },
+];

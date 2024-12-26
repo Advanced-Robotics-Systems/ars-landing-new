@@ -29,6 +29,10 @@ import CareerJobs from "./careers/career-jobs";
 import Contacts from "./contact/contacts";
 import Careers from "./contact/careers";
 
+// products sections
+import Series from "./products/series";
+import KeyFeatures from "./products/key-features";
+
 export {
   Footer,
   Hero,
@@ -50,4 +54,6 @@ export {
   CareerJobs,
   Contacts,
   Careers,
+  Series,
+  KeyFeatures,
 };
