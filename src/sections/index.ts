@@ -27,6 +27,10 @@ import AboutInfo from "./about/about-info";
 import AboutValues from "./about/about-values";
 import AboutBacking from "./about/about-backing";
 
+// Career sections
+import CareerHero from "./careers/career-hero";
+import CareerJobs from "./careers/career-jobs";
+
 export {
   Footer,
   Hero,
@@ -46,4 +50,6 @@ export {
   AboutBacking,
   JoinOurTeam,
   GetInTouch,
+  CareerHero,
+  CareerJobs,
 };
