@@ -22,7 +22,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (globalThis.scrollY > 20) {
+      if (window.scrollY > 20) {
         setIsScrolled(true);
         setIsExpanded(false);
       } else {
@@ -30,10 +30,10 @@ const Header = () => {
       }
     };
 
-    globalThis.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      globalThis.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
