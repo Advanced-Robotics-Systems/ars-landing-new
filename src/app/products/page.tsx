@@ -1,4 +1,4 @@
-import { KeyFeatures, Product, Series } from "@/sections";
+import { KeyFeatures, Product, Series, SwappableModules } from "@/sections";
 
 const Products = () => {
   return (
@@ -6,6 +6,7 @@ const Products = () => {
       <Series />
       <KeyFeatures />
       <Product />
+      <SwappableModules />
     </main>
   );
 };

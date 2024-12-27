@@ -33,6 +33,7 @@ import Careers from "./contact/careers";
 import Series from "./products/series";
 import KeyFeatures from "./products/key-features";
 import Product from "./products/products";
+import SwappableModules from "./products/swappable-modules";
 
 export {
   Footer,
@@ -58,4 +59,5 @@ export {
   Series,
   KeyFeatures,
   Product,
+  SwappableModules,
 };

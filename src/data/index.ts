@@ -1,4 +1,3 @@
-import { title } from "process";
 import { ICONS } from "../utils/icons";
 
 // Navbar Links
@@ -416,5 +415,49 @@ export const productsData = [
     runtime: "6-8 hours",
     fulChargeTime: "2-3 hours",
     driversAndApi: "ROS",
+  },
+];
+
+// swappable modules data
+export const swappableModulesData = [
+  {
+    title: "Pallet Lifter",
+    img: "/products/pallet-lifter.png",
+    maxPayload: "1000 kg",
+    useCases: [
+      "Inbound pallet movement from staging toracking",
+      "Outbound pallet movement",
+      "Finished Goods movement from end of production line to storage",
+    ],
+  },
+  {
+    title: "Trolley Tugger",
+    img: "/products/pallet-lifter.png",
+    maxPayload: "1000 kg",
+    useCases: [
+      "Inbound pallet movement from staging toracking",
+      "Outbound pallet movement",
+      "Finished Goods movement from end of production line to storage",
+    ],
+  },
+  {
+    title: "Trolley Lifter",
+    img: "/products/pallet-lifter.png",
+    maxPayload: "1000 kg",
+    useCases: [
+      "Inbound pallet movement from staging toracking",
+      "Outbound pallet movement",
+      "Finished Goods movement from end of production line to storage",
+    ],
+  },
+  {
+    title: "Conveyor",
+    img: "/products/pallet-lifter.png",
+    maxPayload: "1000 kg",
+    useCases: [
+      "Inbound pallet movement from staging toracking",
+      "Outbound pallet movement",
+      "Finished Goods movement from end of production line to storage",
+    ],
   },
 ];
