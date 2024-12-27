@@ -34,6 +34,7 @@ import Series from "./products/series";
 import KeyFeatures from "./products/key-features";
 import Product from "./products/products";
 import SwappableModules from "./products/swappable-modules";
+import RequestDemo from "./products/request-demo";
 
 export {
   Footer,
@@ -60,4 +61,5 @@ export {
   KeyFeatures,
   Product,
   SwappableModules,
+  RequestDemo,
 };
