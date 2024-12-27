@@ -35,21 +35,21 @@ const Series = () => {
         >
           {productsSliderData.map((product, index) => (
             <SwiperSlide key={index}>
-              <div className="flex items-center justify-center gap-0 -mt-14  ">
+              <div className="flex items-center justify-center gap-0 md:mt-5 lg:mt-0 xl:-mt-14  ">
                 <div className="">
-                  <h3 className="text-2xl text-midnight-blue text-end">
+                  <h3 className="text-base md:text-lg lg:text-xl xl:text-2xl text-midnight-blue text-end">
                     {product.title1}
                   </h3>
 
                   <Image
                     src={product.img1}
                     alt={product.title1}
-                    className="w-44 "
+                    className="w-32 md:w-36 lg:w-44 "
                   />
                 </div>
                 <div className="relative max-w-md flex items-center justify-center ">
                   <div className="absolute flex items-center justify-center w-full h-full">
-                    <h2 className="text-2xl font-medium text-midnight-blue text-center">
+                    <h2 className=" text-[10px] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-medium text-midnight-blue text-center">
                       Industrial AMR <br /> Series
                     </h2>
                   </div>
@@ -58,21 +58,21 @@ const Series = () => {
                     chartType="PieChart"
                     data={product.chartData}
                     options={chartOptions}
-                    className="w-[500px] h-[500px] "
+                    className="w-[200px] md:w-[300px] lg:w-[400px] xl:w-[500px] h-[200px] md:h-[300px] lg:h-[400px] xl:h-[500px] "
                   />
                 </div>
                 <div className="">
-                  <h3 className="text-2xl text-midnight-blue">
+                  <h3 className="text-base md:text-lg lg:text-xl xl:text-2xl text-midnight-blue">
                     {product.title2}
                   </h3>
                   <Image
                     src={product.img2}
                     alt={product.title2}
-                    className="w-44"
+                    className="w-32 md:w-36 lg:w-44 "
                   />
                 </div>
               </div>
-              <h1 className="text-5xl font-semibold text-midnight-blue text-center -mt-14">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-midnight-blue text-center lg:-mt-10 xl:-mt-14">
                 {product.title3}
               </h1>
               <div className="flex justify-center ">
