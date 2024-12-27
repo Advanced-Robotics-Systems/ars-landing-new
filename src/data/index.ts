@@ -38,7 +38,7 @@ export const footerLinks = {
       link: "/careers",
     },
     {
-      name: "Contact",
+      name: "Contact Sales",
       link: "/contact",
     },
   ],
@@ -50,6 +50,10 @@ export const footerLinks = {
     {
       name: "Support",
       link: "/support",
+    },
+    {
+      name: "Partners",
+      link: "/partners",
     },
   ],
   resources: [
@@ -174,24 +178,96 @@ export const clientData = [
   },
 ];
 
-// awards data
-export const awardsData = [
+// resources data
+export const resourcesData = [
   {
     img: "award.png",
+    category: "News",
+    time: "2 min read",
     title:
       "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
   },
   {
     img: "award.png",
+    category: "Blogs",
+    time: "2 min read",
     title:
       "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
   },
   {
     img: "award.png",
+    category: "Case Study",
+    time: "3 min read",
+    title:
+      "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
+  },
+  {
+    img: "award.png",
+    category: "News",
+    time: "1 min read",
+    title:
+      "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
+  },
+  {
+    img: "award.png",
+    category: "Blogs",
+    time: "2 min read",
+    title:
+      "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
+  },
+  {
+    img: "award.png",
+    category: "Case Study",
+    time: "3 min read",
+    title:
+      "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
+  },
+  {
+    img: "award.png",
+    category: "News",
+    time: "1 min read",
+    title:
+      "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
+  },
+  {
+    img: "award.png",
+    category: "Blogs",
+    time: "2 min read",
+    title:
+      "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
+  },
+  {
+    img: "award.png",
+    category: "Case Study",
+    time: "3 min read",
+    title:
+      "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
+  },
+  {
+    img: "award.png",
+    category: "News",
+    time: "1 min read",
+    title:
+      "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
+  },
+  {
+    img: "award.png",
+    category: "Blogs",
+    time: "2 min read",
+    title:
+      "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
+  },
+  {
+    img: "award.png",
+    category: "Case Study",
+    time: "3 min read",
     title:
       "ARS Awarded Program of Record Contract to Modernize Space Surveillance Network",
   },
 ];
+
+// resources categories
+export const resourcesCategories = ["All", "News", "Blogs", "Case Study"];
 
 export const careersJobList = [
   {
@@ -223,5 +299,165 @@ export const careersJobList = [
     title: "Engineering Manager",
     jobType: "Fulltime Permanent",
     linkTo: "/",
+  },
+];
+
+// products slider data
+export const productsSliderData = [
+  {
+    img1: "/products/f-series.png",
+    title1: "F Series",
+    img2: "/products/b-series.png",
+    title2: "B Series",
+    img3: "/products/a-series.png",
+    title3: "A Series",
+    chartData: [
+      ["Series", ""],
+
+      ["F Series", 3],
+      ["B Series", 3],
+      ["A Series", 3],
+    ],
+    colors: ["#6BBFE2", "#0590C8", "#33A8D8"],
+  },
+  {
+    img1: "/products/a-series.png",
+    title1: "A Series",
+    img2: "/products/f-series.png",
+    title2: "F Series",
+    img3: "/products/b-series.png",
+    title3: "B Series",
+    chartData: [
+      ["Series", ""],
+
+      ["A Series", 3],
+      ["F Series", 3],
+      ["B Series", 3],
+    ],
+    colors: ["#33A8D8", "#6BBFE2", "#0590C8"],
+  },
+  {
+    img1: "/products/b-series.png",
+    title1: "B Series",
+    img2: "/products/a-series.png",
+    title2: "A Series",
+    img3: "/products/f-series.png",
+    title3: "F Series",
+
+    chartData: [
+      ["Series", ""],
+
+      ["B Series", 3],
+      ["A Series", 3],
+      ["F Series", 3],
+    ],
+    colors: ["#0590C8", "#33A8D8", "#6BBFE2"],
+  },
+];
+
+// features data
+export const featuresData = [
+  {
+    img: "/features/Lidar.svg",
+    title: "Safe 360 LIDAR",
+  },
+  {
+    img: "/features/boxes.svg",
+    title: "Modular Swappable Application Module",
+  },
+  {
+    img: "/features/gear.svg",
+    title: "Robust Harsh Environment suitable",
+  },
+  {
+    img: "/features/checked.svg",
+    title: "User-Friendly Easy To Use",
+  },
+];
+
+// products data
+export const productsData = [
+  {
+    img: "/products/a-series.png",
+    title: "ARS A300",
+    dimension: "1495 x 985 x 525 mm",
+    maxLiftingWeight: "1000 kg",
+    maxTowingWeight: "1500 kg",
+    driveType: "Differential",
+    maxSpeed: "1.0 m/s",
+    turningRadius: "0 Degree",
+    runtime: "6-8 hours",
+    fulChargeTime: "2-3 hours",
+    driversAndApi: "ROS",
+  },
+  {
+    img: "/products/b-series.png",
+    title: "ARS B300",
+    dimension: "1495 x 985 x 525 mm",
+    maxLiftingWeight: "1000 kg",
+    maxTowingWeight: "1500 kg",
+    driveType: "Differential",
+    maxSpeed: "1.0 m/s",
+    turningRadius: "0 Degree",
+    runtime: "6-8 hours",
+    fulChargeTime: "2-3 hours",
+    driversAndApi: "ROS",
+  },
+  {
+    img: "/products/f-series.png",
+    title: "ARS F300",
+    dimension: "1495 x 985 x 525 mm",
+    maxLiftingWeight: "1000 kg",
+    maxTowingWeight: "1500 kg",
+    driveType: "Differential",
+    maxSpeed: "1.0 m/s",
+    turningRadius: "0 Degree",
+    runtime: "6-8 hours",
+    fulChargeTime: "2-3 hours",
+    driversAndApi: "ROS",
+  },
+];
+
+// swappable modules data
+export const swappableModulesData = [
+  {
+    title: "Pallet Lifter",
+    img: "/products/pallet-lifter.png",
+    maxPayload: "1000 kg",
+    useCases: [
+      "Inbound pallet movement from staging toracking",
+      "Outbound pallet movement",
+      "Finished Goods movement from end of production line to storage",
+    ],
+  },
+  {
+    title: "Trolley Tugger",
+    img: "/products/pallet-lifter.png",
+    maxPayload: "1000 kg",
+    useCases: [
+      "Inbound pallet movement from staging toracking",
+      "Outbound pallet movement",
+      "Finished Goods movement from end of production line to storage",
+    ],
+  },
+  {
+    title: "Trolley Lifter",
+    img: "/products/pallet-lifter.png",
+    maxPayload: "1000 kg",
+    useCases: [
+      "Inbound pallet movement from staging toracking",
+      "Outbound pallet movement",
+      "Finished Goods movement from end of production line to storage",
+    ],
+  },
+  {
+    title: "Conveyor",
+    img: "/products/pallet-lifter.png",
+    maxPayload: "1000 kg",
+    useCases: [
+      "Inbound pallet movement from staging toracking",
+      "Outbound pallet movement",
+      "Finished Goods movement from end of production line to storage",
+    ],
   },
 ];

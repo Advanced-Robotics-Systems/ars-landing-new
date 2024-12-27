@@ -10,28 +10,22 @@ const Footer = () => {
       <div className="w-[100%] flex max-lg:flex-col gap-16 items-center justify-between pb-10 lg:pb-24 border-b border-gray-900">
         <div className="flex flex-col items-center justify-between lg:items-start lg:justify-start gap-4 w-[80%] lg:w-80">
           <div className="flex items-center justify-center">
-            <Image
-              src={Logo}
-              width={0}
-              height={0}
-              alt="White Code"
-              className="w-60"
-            />
+            <Image src={Logo} width={0} height={0} alt="ARS" className="w-60" />
           </div>
         </div>
 
-        <div className="flex items-start justify-between gap-10 md:gap-24 lg:gap-28 xl:gap-48">
+        <div className="flex items-start justify-between gap-7 md:gap-24 lg:gap-28 xl:gap-48">
           {/* Navigation */}
           <div className="max-w-sm">
-            <div className="text-accent  mb-8 lg:mb-12 tracking-widest text-medium md:text-lg">
-              Menu
+            <div className="text-accent  mb-6 lg:mb-8 font-medium text-base md:text-lg uppercase">
+              Navigation
             </div>
             <ul id="menu" className="list-none flex flex-col gap-4">
               {footerLinks.navigation.map((item, index) => (
                 <li key={index}>
                   <Link
                     href={item.link}
-                    className="text-accent  font-[300] text-sm md:text-medium"
+                    className="text-accent text-sm md:text-medium"
                   >
                     {item.name}
                   </Link>
@@ -42,15 +36,15 @@ const Footer = () => {
 
           {/* Helpful Links */}
           <div className="max-w-sm">
-            <div className="text-accent mb-8 lg:mb-12 tracking-widest text-medium md:text-lg">
-              Contact
+            <div className="text-accent  mb-6 lg:mb-8 font-medium text-base md:text-lg uppercase">
+              Helpful links
             </div>
             <ul id="contact" className="list-none flex flex-col gap-4">
               {footerLinks.helpfulLinks.map((item, index) => (
                 <li key={index}>
                   <Link
                     href={item.link}
-                    className="text-accent font-[300] text-sm md:text-medium"
+                    className="text-accent text-sm md:text-medium"
                   >
                     {item.name}
                   </Link>
@@ -60,15 +54,15 @@ const Footer = () => {
           </div>
           {/*Resources  */}
           <div className="max-w-sm">
-            <div className="text-accent mb-8 lg:mb-12 tracking-widest text-medium md:text-lg">
-              Contact
+            <div className="text-accent  mb-6 lg:mb-8 font-medium text-base md:text-lg uppercase">
+              Resources
             </div>
             <ul id="contact" className="list-none flex flex-col gap-4">
               {footerLinks.resources.map((item, index) => (
                 <li key={index}>
                   <Link
                     href={item.link}
-                    className="text-accent font-[300] text-sm md:text-medium"
+                    className="text-accent text-sm md:text-medium"
                   >
                     {item.name}
                   </Link>

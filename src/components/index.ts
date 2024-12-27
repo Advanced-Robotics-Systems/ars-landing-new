@@ -1,5 +1,6 @@
-import AwardCard from "./award-card/award-card";
+import ResourceCard from "./resource-card/resource-card";
 import AboutValue from "./about-value/about-value";
 import CareerJob from "./career-job/career-job";
+import ContactForm from "./contact-form/contact-form";
 
-export { AwardCard, AboutValue, CareerJob };
+export { ResourceCard, ContactForm, AboutValue, CareerJob };

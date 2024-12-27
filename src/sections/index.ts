@@ -4,6 +4,7 @@ import Header from "./header/header";
 // Shared
 import JoinOurTeam from "./shared/join-our-team";
 import GetInTouch from "./shared/get-in-touch";
+import LatestResources from "./shared/resources";
 
 // Home sections
 import Hero from "./home/hero";
@@ -12,7 +13,6 @@ import Solutions from "./home/solutions";
 import OS from "./home/os";
 import ARSIndustry from "./home/ars-industry";
 import Clients from "./home/clients";
-import Awards from "./home/awards";
 import MobileRobot from "./home/mobile-robot";
 
 // About sections
@@ -25,6 +25,17 @@ import AboutBacking from "./about/about-backing";
 import CareerHero from "./careers/career-hero";
 import CareerJobs from "./careers/career-jobs";
 
+// contact sections
+import Contacts from "./contact/contacts";
+import Careers from "./contact/careers";
+
+// products sections
+import Series from "./products/series";
+import KeyFeatures from "./products/key-features";
+import Product from "./products/products";
+import SwappableModules from "./products/swappable-modules";
+import RequestDemo from "./products/request-demo";
+
 export {
   Footer,
   Hero,
@@ -34,7 +45,7 @@ export {
   OS,
   ARSIndustry,
   Clients,
-  Awards,
+  LatestResources,
   MobileRobot,
   AboutHero,
   AboutInfo,
@@ -44,4 +55,11 @@ export {
   GetInTouch,
   CareerHero,
   CareerJobs,
+  Contacts,
+  Careers,
+  Series,
+  KeyFeatures,
+  Product,
+  SwappableModules,
+  RequestDemo,
 };
