@@ -15,6 +15,7 @@ const SwappableModules = () => {
       setModuleData(selectedModule);
     } else {
       console.warn("Module not found, reverting to default.");
+      setModuleData(swappableModulesData[0]); 
     }
   };
 
