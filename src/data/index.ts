@@ -7,6 +7,10 @@ export const navLinks = [
     link: "/products",
   },
   {
+    name: "Automation",
+    link: "/automation",
+  },
+  {
     name: "Company",
     link: "/company",
   },
