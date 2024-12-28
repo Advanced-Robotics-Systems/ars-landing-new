@@ -15,8 +15,10 @@ const OurMission = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="bg-gradient-to-t from-ice-blue via-[#0590C866] to-ars-cyan-60 h-full text-white">
-        <div className="h-full bg-gradient-to-t from-[#FFFFFF00] to-[#000000CC] padding-responsive flex flex-col gap-1 md:gap-3 lg:gap-4">
+      <div className="bg-gradient-to-t from-[#FFFFFF00] to-ars-cyan-60 h-full text-white">
+        {/* <div className="bg-gradient-to-t from-ice-blue via-[#0590C866] to-ars-cyan-60 h-full text-white">
+      </div> */}
+        <div className="h-full bg-gradient-to-tl from-[#FFFFFF00] to-[#000000CC] padding-responsive flex flex-col gap-1 md:gap-3 lg:gap-4">
           <h5 className="text-sm md:text-xl lg:text-2xl">Our Mission</h5>
           <h2 className="text-lg md:text-3xl lg:text-4xl xl:text-5xl font-medium">
             Revolutionizing Industries with <br /> Cutting-Edge Robotics for an
