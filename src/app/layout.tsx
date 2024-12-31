@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import { NextUIProvider } from "@nextui-org/react";
 import "./globals.css";
-import { Footer, Header } from "@/sections";
+import { Footer } from "@/sections";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
