@@ -119,14 +119,13 @@ const Header = () => {
         <NavbarContent justify="start">
           <NavbarBrand>
             <Link href="/">
-              <Image src={Logo} alt="White Code" className="w-24" />
+              <Image src={Logo} alt="White Code" className="w-16" />
             </Link>
           </NavbarBrand>
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="lg:hidden bg-red-500 w-20 h-9 text-white"
           />
         </NavbarContent>
 
