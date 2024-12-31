@@ -1,11 +1,14 @@
-import { CareerHero, CareerJobs, JoinOurTeam } from "@/sections";
+import { CareerHero, CareerJobs, Header, JoinOurTeam } from "@/sections";
 
 export default function Career() {
-  return (
-    <main>
-      <CareerHero />
-      <CareerJobs />
-      <JoinOurTeam largeTitle />
-    </main>
-  );
+	return (
+		<>
+			<Header />
+			<main>
+				<CareerHero />
+				<CareerJobs />
+				<JoinOurTeam largeTitle />
+			</main>
+		</>
+	);
 }
