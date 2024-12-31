@@ -59,7 +59,7 @@ const Header = () => {
             <div
               className={`relative ${
                 isExpanded
-                  ? "bg-red-500 lg:w-[710px] h-12  duration-1000"
+                  ? "bg-red-500 lg:w-[880px] h-12  duration-1000"
                   : `${
                       isScrolled
                         ? "bg-red-500 w-20 h-12  duration-1000 "
