@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const GetInTouch = () => {
   return (
-    <section className="flex flex-col sm:flex-row items-center xs:justify-between max-sm:gap-y-4 bg-[#030D2D] padding md:px-24 2xl:px-[12%] 3xl:px-[20%] 4xl:px-[25%]">
+    <section className="flex flex-col sm:flex-row items-center xs:justify-between max-sm:gap-y-4 bg-[#030D2D] padding-x md:px-24 2xl:px-[12%] 3xl:px-[20%] 4xl:px-[25%] py-6 sm:py-12">
       <div className="flex flex-col sm:gap-y-2">
         <h1 className="text-4xl xxs:text-5xl sm:text-6xl lg:text-7xl text-cyan-blue max-sm:text-center">
           Get In Touch

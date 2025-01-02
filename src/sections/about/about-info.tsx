@@ -12,10 +12,10 @@ const AboutInfo = () => {
         />
         <div className="lg:basis-[45%] flex flex-col gap-y-2">
           <div>
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-ars-cyan font-extrabold">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-ars-cyan font-medium">
               About Us
             </h1>
-            <p className="text-justify text-xs sm:text-sm lg:text-base 2xl:text-lg 4xl:text-xl">
+            <p className="text-justify text-xs leading-normal sm:text-sm sm:leading-normal lg:text-base lg:leading-normal 2xl:text-lg 2xl:leading-normal 4xl:text-xl 4xl:leading-normal">
               Advanced Robotics System was established by a team of passionate
               robot enthusiasts dedicated to leveraging cutting-edge
               technologies to create machines and robots that meet clients&apos;
@@ -24,10 +24,10 @@ const AboutInfo = () => {
             </p>
           </div>
           <div>
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-ars-cyan font-extrabold">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-ars-cyan font-medium">
               Vision
             </h1>
-            <p className="text-justify text-xs sm:text-sm lg:text-base 2xl:text-lg 4xl:text-xl">
+            <p className="text-justify text-xs leading-normal sm:text-sm sm:leading-normal lg:text-base lg:leading-normal 2xl:text-lg 2xl:leading-normal 4xl:text-xl 4xl:leading-normal">
               Advanced Robotics System is an Industrial Automation & Robotic
               company focused on the R&D and deployment aspects of Industrial
               Automation. Using our in-house robotics and automation system, we
@@ -36,7 +36,7 @@ const AboutInfo = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row max-lg:gap-y-6 items-center lg:justify-between mt-12 lg:mt-24">
+      <div className="flex flex-col lg:flex-row max-lg:gap-y-6 items-center lg:justify-between mt-20 lg:mt-24">
         <div className="lg:basis-[46%]">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-ars-cyan">
             Our Mission
@@ -44,7 +44,7 @@ const AboutInfo = () => {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-[#67829E] font-semibold tracking-tighter">
             Revolutionising Automation with ARS
           </h1>
-          <p className="text-justify text-xs sm:text-sm lg:text-base 2xl:text-lg 4xl:text-xl mt-2">
+          <p className="text-justify text-xs leading-normal sm:text-sm sm:leading-normal lg:text-base lg:leading-normal 2xl:text-lg 2xl:leading-normal 4xl:text-xl 4xl:leading-normal mt-2">
             At ARS, our mission is to deliver cutting-edge Full House Automation
             solutions designed to transform the way factories operate. By
             seamlessly integrating three powerful systems, we empower businesses
