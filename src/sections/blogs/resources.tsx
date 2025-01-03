@@ -23,8 +23,8 @@ const Resources = () => {
     filterResources(category);
   };
   return (
-    <section className="bg-ice-blue padding-responsive">
-      <div className="bg-[#FFFFFFD9] px-3 py-7 md:px-7 md:py-10 lg:px-8 lg:py-12 xl:px-10 xl:py-14 rounded-3xl ">
+    <section className="px-5 md:px-10 lg:px-16 xl:px-24 2xl:px-36 3xl:px-44 pt-10 lg:pt-14 xl:pt-20">
+      <div className="bg-[#FFFFFFD9] px-3 py-7 md:px-7 md:py-10 lg:px-8 lg:py-12 xl:px-10 xl:py-14 rounded-t-3xl ">
         <ButtonGroup
           radius="full"
           variant="bordered"

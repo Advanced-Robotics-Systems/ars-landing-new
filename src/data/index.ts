@@ -470,7 +470,7 @@ export const swappableModulesData = [
 export const blogsResourcesData = [
   {
     title: "Testing UX: Best Practices and Strategies",
-    img: "/blogs/blog-img.jpeg",
+    img: "/blogs/home-hero.jpeg",
     description:
       "This article explores the vital role of UX testing in delivering exceptional user experiences in software products. By identifying usability issues and optimizing user interactions, effective UX testing is key to success in today's digital world. We'll cover best practices and strategies used by QA testers, offering real-world examples and actionable insights to help readers improve their UX testing skills and enhance their project's success.",
     category: "Blogs",
@@ -494,7 +494,7 @@ export const blogsResourcesData = [
   },
   {
     title: "Testing UX: Best Practices and Strategies",
-    img: "/blogs/blog-img.jpeg",
+    img: "/blogs/home-hero.jpeg",
     description:
       "This article explores the vital role of UX testing in delivering exceptional user experiences in software products. By identifying usability issues and optimizing user interactions, effective UX testing is key to success in today's digital world. We'll cover best practices and strategies used by QA testers, offering real-world examples and actionable insights to help readers improve their UX testing skills and enhance their project's success.",
     category: "News",
@@ -510,7 +510,7 @@ export const blogsResourcesData = [
   },
   {
     title: "Testing UX: Best Practices and Strategies",
-    img: "/blogs/blog-img.jpeg",
+    img: "/blogs/home-hero.jpeg",
     description:
       "This article explores the vital role of UX testing in delivering exceptional user experiences in software products. By identifying usability issues and optimizing user interactions, effective UX testing is key to success in today's digital world. We'll cover best practices and strategies used by QA testers, offering real-world examples and actionable insights to help readers improve their UX testing skills and enhance their project's success.",
     category: "Case Study",
