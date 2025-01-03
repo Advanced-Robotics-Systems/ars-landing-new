@@ -36,7 +36,7 @@ const Resources = () => {
               key={category}
               className={`${
                 activeTab === category && "bg-cyan-blue-30"
-              } border-l border-deep-blue-20 text-sm  md:px-8`}
+              } border-l border-deep-blue-20 text-sm  md:px-8 md:py-5`}
               onPress={() => handleCategoryClick(category)}
             >
               {category}
