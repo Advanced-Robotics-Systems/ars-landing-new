@@ -1,4 +1,4 @@
-import aboutInfoImage from "@/../../public/about/about-info.png";
+import aboutInfoImage3 from "@/../../public/about/about pic 3.jpeg";
 import Image from "next/image";
 
 const AboutInfo = () => {
@@ -6,8 +6,8 @@ const AboutInfo = () => {
     <section className="bg-ice-blue w-full padding md:px-24 2xl:px-[12%] 3xl:px-[20%] 4xl:px-[25%]">
       <div className="flex flex-col lg:flex-row max-lg:gap-y-6 items-center lg:justify-between">
         <Image
-          className="lg:basis-1/2 h-60 lg:h-96 max-xs:w-full xs:max-lg:w-96 rounded-lg"
-          src={aboutInfoImage}
+          className="lg:basis-1/2 h-60 lg:h-96 max-xs:w-full xs:max-lg:w-96 rounded-lg object-cover object-top"
+          src={aboutInfoImage3}
           alt="Robot Image"
         />
         <div className="lg:basis-[45%] flex flex-col gap-y-2">
@@ -55,7 +55,7 @@ const AboutInfo = () => {
           </p>
         </div>
         <div className="lg:basis-[47%] flex flex-col gap-y-3 xxs:gap-y-5 lg:gap-y-10">
-          <div className="text-sm xxs:text-base xs:text-lg sm:text-xl lg:text-2xl xl:text-4xl text-white font-semibold w-fit px-3 py-1.5 xs:px-6 xs:py-3 lg:px-12 lg:py-6 rounded-full bg-cyan-blue/50">
+          <div className="text-sm xxs:text-base xs:text-lg sm:text-xl lg:text-2xl xl:text-4xl text-white font-semibold w-fit px-3 py-1.5 xs:px-6 xs:py-3 lg:px-12 lg:py-6 rounded-full bg-cyan-blue/90">
             Intralogistics,
             <br />
             Transportation Systems
@@ -63,7 +63,7 @@ const AboutInfo = () => {
           <div className="translate-x-10 xxs:translate-x-12 xs:translate-x-20 text-sm xxs:text-base xs:text-lg sm:text-xl lg:text-2xl xl:text-4xl text-white font-semibold w-fit px-3 py-1.5 xs:px-6 xs:py-3 lg:px-12 lg:py-6 rounded-full bg-cyan-blue/70">
             Automation System
           </div>
-          <div className="text-sm xxs:text-base xs:text-lg sm:text-xl lg:text-2xl xl:text-4xl text-white font-semibold w-fit px-3 py-1.5 xs:px-6 xs:py-3 lg:px-12 lg:py-6 rounded-full bg-cyan-blue/90">
+          <div className="text-sm xxs:text-base xs:text-lg sm:text-xl lg:text-2xl xl:text-4xl text-white font-semibold w-fit px-3 py-1.5 xs:px-6 xs:py-3 lg:px-12 lg:py-6 rounded-full bg-cyan-blue/50">
             Monitoring Software,
             <br />
             eg. MES
