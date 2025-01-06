@@ -3,7 +3,7 @@ import { careersJobList } from "@/data";
 
 const CareerJobs = () => {
   return (
-    <section className="bg-ice-blue flex flex-col gap-y-5 padding-x md:px-24 2xl:px-[12%] 3xl:px-[20%] 4xl:px-[25%] pb-12 sm:pb-24">
+    <section className="bg-ice-blue flex flex-col gap-y-5 padding-responsive 2xl:px-[12%] 3xl:px-[20%] 4xl:px-[25%] pb-12 sm:pb-24">
       {careersJobList.map((item, index) => (
         <CareerJob
           title={item.title}

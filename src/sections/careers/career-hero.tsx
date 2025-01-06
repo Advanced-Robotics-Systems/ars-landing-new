@@ -9,7 +9,7 @@ import careerHeroImage6 from "@/../../public/careers/career-hero-6.jpg";
 const CareerHero = () => {
   return (
     <section
-      className="padding md:px-24 2xl:px-[12%] 3xl:px-[20%] 4xl:px-[25%]"
+      className="padding-responsive 2xl:px-[12%] 3xl:px-[20%] 4xl:px-[25%]"
       style={{
         background:
           "linear-gradient(to bottom, rgba(34, 169, 225, 0.5), rgba(215, 239, 249, 1)), linear-gradient(to right top, rgba(5, 144, 200, 0.02), rgba(13, 36, 38, 1))",

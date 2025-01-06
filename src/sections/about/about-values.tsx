@@ -5,7 +5,7 @@ import { solutionsData } from "@/data";
 const AboutValues = () => {
   return (
     <section
-      className="flex items-center md:h-screen padding md:px-24 2xl:px-[12%] 3xl:px-[20%] 4xl:px-[25%]"
+      className="flex items-center md:h-screen padding-responsive 2xl:px-[12%] 3xl:px-[20%] 4xl:px-[25%]"
       style={{
         backgroundImage: `linear-gradient(to right, rgba(39, 169, 225, 0), rgba(39, 169, 225, 0.2)),linear-gradient(0deg, rgba(3, 13, 45, 0.75), rgba(3, 13, 45, 0.75)), url(${aboutValuesImage.src})`,
         backgroundSize: "cover",
