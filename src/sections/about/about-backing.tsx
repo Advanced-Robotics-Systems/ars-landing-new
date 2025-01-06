@@ -4,7 +4,7 @@ import inLogo from "@/../../public/about/in-logo.svg";
 
 const AboutBacking = () => {
   return (
-    <section className="bg-ice-blue padding">
+    <section className="bg-ice-blue padding-x py-8 sm:py-16">
       <div className="flex flex-col items-center gap-y-10">
         <h1 className="text-3xl xxs:text-4xl sm:text-5xl lg:text-6xl text-ars-cyan text-center font-medium">
           BACKED UP BY

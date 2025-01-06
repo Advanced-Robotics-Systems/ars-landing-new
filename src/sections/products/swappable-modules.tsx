@@ -11,7 +11,12 @@ const SwappableModules = () => {
     const selectedModule = swappableModulesData.find(
       (module) => module.title === title
     );
-    setModuleData(selectedModule);
+    if (selectedModule) {
+      setModuleData(selectedModule);
+    } else {
+      console.warn("Module not found, reverting to default.");
+      setModuleData(swappableModulesData[0]); 
+    }
   };
 
   const handleButtonClick = (title: string) => {

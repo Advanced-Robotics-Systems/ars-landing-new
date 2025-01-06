@@ -34,7 +34,7 @@ const JoinOurTeam = ({
           radius="full"
           size="lg"
           endContent={ICONS.arrow_right}
-          className="bg-white text-sm text-ars-cyan font-bold w-fit"
+          className="bg-white text-sm text-ars-cyan font-semibold w-fit px-8"
         >
           View Careers
         </Button>

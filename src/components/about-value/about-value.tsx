@@ -18,7 +18,7 @@ const AboutValue = ({
         <h4 className="text-ice-blue text-xs sm:text-sm lg:text-base 2xl:text-lg 4xl:text-xl font-bold">
           {title}
         </h4>
-        <p className="text-ice-blue text-xs sm:text-sm lg:text-base 2xl:text-lg 4xl:text-xl mt-2">
+        <p className="text-ice-blue text-xs leading-normal sm:text-sm sm:leading-normal lg:text-base lg:leading-normal 2xl:text-lg 2xl:leading-normal 4xl:text-xl 4xl:leading-normal mt-2">
           {description}
         </p>
       </div>

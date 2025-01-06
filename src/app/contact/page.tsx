@@ -1,13 +1,16 @@
-import { Careers, Contacts, LatestResources } from "@/sections";
+import { Careers, Contacts, Header, LatestResources } from "@/sections";
 
 const Contact = () => {
-  return (
-    <main>
-      <Contacts />
-      <Careers />
-      <LatestResources />
-    </main>
-  );
+	return (
+		<>
+			<Header />
+			<main>
+				<Contacts />
+				<Careers />
+				<LatestResources />
+			</main>
+		</>
+	);
 };
 
 export default Contact;

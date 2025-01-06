@@ -15,10 +15,10 @@ const CareerHero = () => {
           "linear-gradient(to bottom, rgba(34, 169, 225, 0.5), rgba(215, 239, 249, 1)), linear-gradient(to right top, rgba(5, 144, 200, 0.02), rgba(13, 36, 38, 1))",
       }}
     >
-      <h1 className="text-4xl xxs:text-5xl sm:text-6xl lg:text-7xl text-white text-center font-medium max-sm:mt-8">
+      <h1 className="text-4xl xxs:text-5xl sm:text-6xl lg:text-7xl text-white max-sm:text-center font-medium max-sm:mt-8">
         Work With Us
       </h1>
-      <div className="flex flex-col max-sm:gap-y-3 sm:flex-row items-center sm:justify-between sm:items-end mt-5">
+      <div className="flex flex-col max-sm:gap-y-3 sm:flex-row max-sm:items-center sm:justify-between mt-5">
         <p className="max-sm:text-center sm:basis-1/2 lg:basis-2/5 text-lg sm:text-xl lg:text-2xl text-[#0D2426]">
           Ready to join an exciting, fast-growing fintech scaleup? We&apos;ve
           been waiting for you.
