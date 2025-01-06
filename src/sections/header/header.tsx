@@ -59,7 +59,7 @@ const Header = () => {
             <div
               className={`relative ${
                 isExpanded
-                  ? "bg-red-500 lg:w-[710px] h-12  duration-1000"
+                  ? "bg-red-500 lg:w-[880px] h-12  duration-1000"
                   : `${
                       isScrolled
                         ? "bg-red-500 w-20 h-12  duration-1000 "
@@ -119,14 +119,13 @@ const Header = () => {
         <NavbarContent justify="start">
           <NavbarBrand>
             <Link href="/">
-              <Image src={Logo} alt="White Code" className="w-24" />
+              <Image src={Logo} alt="White Code" className="w-16" />
             </Link>
           </NavbarBrand>
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="lg:hidden bg-red-500 w-20 h-9 text-white"
           />
         </NavbarContent>
 

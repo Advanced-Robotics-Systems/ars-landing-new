@@ -36,6 +36,10 @@ import Product from "./products/products";
 import SwappableModules from "./products/swappable-modules";
 import RequestDemo from "./products/request-demo";
 
+// Blogs sections
+import BlogsHero from "./blogs/blogs-hero";
+import Resources from "./blogs/resources";
+
 export {
   Footer,
   Hero,
@@ -62,4 +66,6 @@ export {
   Product,
   SwappableModules,
   RequestDemo,
+  BlogsHero,
+  Resources,
 };
