@@ -1,4 +1,4 @@
-import aboutValuesImage from "@/../../public/about/about-values.jpeg";
+import aboutValuesImage from "@/../../public/about/about-values.jpg";
 import { AboutValue } from "@/components";
 import { solutionsData } from "@/data";
 
