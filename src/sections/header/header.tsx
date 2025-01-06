@@ -49,9 +49,15 @@ const Header = () => {
   return (
     <>
       <div className=" hidden lg:block">
-        <div className="fixed flex top-3 items-center h-16 text-white font-medium z-50 w-full px-5 md:px-10 lg:px-16 xl:px-24 2xl:px-36 3xl:px-16  ">
+        <div className="fixed flex top-3 items-center h-16 text-white font-medium z-50 w-full lg:px-16 xl:px-24 2xl:px-36 3xl:px-44">
           <div className="flex justify-between w-full items-center ">
-            <div>
+            <div
+              className={`${
+                isScrolled
+                  ? "opacity-0 duration-1000"
+                  : "opacity-100 duration-1000"
+              }`}
+            >
               <Link href="/">
                 <Image src={Logo} alt="ARS" className="w-28" />
               </Link>
@@ -59,7 +65,7 @@ const Header = () => {
             <div
               className={`relative ${
                 isExpanded
-                  ? "bg-red-500 lg:w-[880px] h-12  duration-1000"
+                  ? "bg-red-500 lg:w-[760px] xl:w-[835px] h-12  duration-1000"
                   : `${
                       isScrolled
                         ? "bg-red-500 w-20 h-12  duration-1000 "
@@ -67,9 +73,9 @@ const Header = () => {
                     }`
               } `}
             >
-              <div className="flex gap-4 absolute right-0 top-1/2 transform -translate-y-1/2">
+              <div className="flex lg:gap-2 xl:gap-4 absolute right-0 top-1/2 transform -translate-y-1/2">
                 <ul
-                  className={`flex gap-10 ${
+                  className={`flex lg:gap-8 xl:gap-10 ${
                     isExpanded
                       ? "opacity-100 duration-1000"
                       : `${
@@ -84,12 +90,12 @@ const Header = () => {
                       {item.name === "Get in Touch" ? (
                         <Button
                           radius="full"
-                          className="bg-cyan-blue-30 border border-ars-cyan font-medium px-6 lg:text-xl hover:text-gray-300 duration-200 "
+                          className="bg-cyan-blue-30 border border-ars-cyan font-medium lg:px-5 xl:px-6 lg:text-lg hover:text-gray-300 duration-200 "
                         >
                           <Link href={item.link}>{item.name}</Link>
                         </Button>
                       ) : (
-                        <Button className="bg-transparent px-2 lg:text-xl hover:text-gray-300 duration-200 ">
+                        <Button className="bg-transparent lg:px-1 xl:px-2 lg:text-lg font-medium hover:text-gray-300 duration-200 ">
                           <Link href={item.link}>{item.name}</Link>
                         </Button>
                       )}
@@ -100,7 +106,7 @@ const Header = () => {
                 <Button
                   onClick={toggleMenu}
                   size="sm"
-                  className="bg-transparent my-auto pr-7 lg:text-xl hover:text-gray-300 duration-200  "
+                  className="bg-transparent my-auto lg:pr-5 xl:pr-7 lg:text-xl hover:text-gray-300 duration-200  "
                 >
                   {isExpanded ? ICONS.close : ICONS.menu}
                 </Button>

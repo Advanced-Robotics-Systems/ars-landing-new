@@ -6,8 +6,8 @@ import { footerLinks, footerSocials } from "@/data";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-black text-primary padding-responsive text-white">
-      <div className="w-[100%] flex max-lg:flex-col gap-16 items-center justify-between pb-10 lg:pb-24 border-b border-gray-900">
+    <footer className="w-full bg-black text-primary px-5 md:px-10 lg:px-16 xl:px-24 2xl:px-36 3xl:px-44 pt-10 lg:pt-14 xl:pt-20 text-white">
+      <div className="w-[100%] flex max-lg:flex-col gap-16 items-center justify-between pb-7 md:pb-10 lg:pb-14 border-b border-gray-900">
         <div className="flex flex-col items-center justify-between lg:items-start lg:justify-start gap-4 w-[80%] lg:w-80">
           <div className="flex items-center justify-center">
             <Image src={Logo} width={0} height={0} alt="ARS" className="w-60" />
@@ -74,7 +74,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright and socials */}
-      <div className="flex flex-col-reverse lg:flex-row gap-5 md:gap-8 items-center justify-between w-full pt-5 lg:pt-10">
+      <div className="flex flex-col-reverse lg:flex-row gap-5 md:gap-8 items-center justify-between w-full py-5 lg:py-10">
         <div className="flex items-center justify-between gap-5 w-36 max-md:m-auto">
           {footerSocials.map((item, index) => (
             <Link

@@ -525,3 +525,26 @@ export const blogsResourcesData = [
     time: "3 min read",
   },
 ];
+
+// mobile robot data
+export const mobileRobotData = [
+  {
+    title: "Counter UAS",
+    img: "/mobile-robot/uas.jpeg",
+    description:
+      "No threat goes unseen. Anduril's open Counter UAS system is built to detect, track and intercept unmanned aircraft and autonomous drone systems.",
+  },
+  {
+    title: "Counter Intrusion",
+    img: "/mobile-robot/intrusion.jpeg",
+
+    description:
+      "No threat goes unseen. Anduril's open Counter UAS system is built to detect, track and intercept unmanned aircraft and autonomous drone systems.",
+  },
+  {
+    title: "Maritime Counter Intrusion",
+    img: "/mobile-robot/maritime.jpeg",
+    description:
+      "No threat goes unseen. Anduril's open Counter UAS system is built to detect, track and intercept unmanned aircraft and autonomous drone systems.",
+  },
+];
