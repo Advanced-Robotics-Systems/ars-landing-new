@@ -1,5 +1,4 @@
-import { BlogsHero, GetInTouch, Resources } from "@/sections";
-import React from "react";
+import { Header, BlogsHero, GetInTouch, Resources } from "@/sections";
 
 const Blogs = () => {
   return (
