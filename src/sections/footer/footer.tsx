@@ -6,13 +6,13 @@ import { footerLinks, footerSocials } from "@/data";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-black text-primary text-white padding-responsive py-5 lg:py-8 xl:py-10">
-      <div className="w-[100%] flex max-lg:flex-col gap-16 items-center lg:items-start justify-between pb-6 lg:pb-16 border-b border-gray-900">
-        <div className="flex flex-col items-center justify-between lg:items-start lg:justify-start gap-6 w-[80%] lg:w-80">
+    <footer className="w-full bg-black text-primary px-5 md:px-10 lg:px-16 xl:px-24 2xl:px-36 3xl:px-44 pt-10 lg:pt-14 xl:pt-20 text-white">
+      <div className="w-[100%] flex max-lg:flex-col gap-16 items-center justify-between pb-7 md:pb-10 lg:pb-14 border-b border-gray-900">
+        <div className="flex flex-col items-center justify-between lg:items-start lg:justify-start gap-4 w-[80%] lg:w-80">
           <div className="flex items-center justify-center">
             <Image src={Logo} width={0} height={0} alt="ARS" className="w-40" />
           </div>
-          <div className="flex items-center justify-between w-28 max-md:m-auto">
+          {/* <div className="flex items-center justify-between w-28 max-md:m-auto">
             {footerSocials.map((item, index) => (
               <Button
                 as={Link}
@@ -27,7 +27,7 @@ const Footer = () => {
                 {item.icon}
               </Button>
             ))}
-          </div>
+          </div> */}
         </div>
 
         <div className="flex items-start justify-between gap-7 md:gap-24 lg:gap-28 xl:gap-48">
@@ -90,8 +90,8 @@ const Footer = () => {
       </div>
 
       {/* Copyright and socials */}
-      <div className="flex flex-col-reverse lg:flex-row gap-5 md:gap-8 items-center justify-between w-full pt-3 lg:pt-6">
-        {/* <div className="flex items-center justify-between gap-5 w-36 max-md:m-auto">
+      <div className="flex flex-col-reverse lg:flex-row gap-5 md:gap-8 items-center justify-between w-full py-5 lg:py-10">
+        <div className="flex items-center justify-between gap-5 w-36 max-md:m-auto">
           {footerSocials.map((item, index) => (
             <Link
               key={index}
@@ -102,7 +102,7 @@ const Footer = () => {
               {item.icon}
             </Link>
           ))}
-        </div> */}
+        </div>
         <div className="text-xs md:text-sm">
           &copy;2024 ARS. All rights reserved.
         </div>

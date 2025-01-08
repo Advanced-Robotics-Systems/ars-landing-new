@@ -1,24 +1,27 @@
 "use client";
 
-import missionImage from "@/../../public/home-mission.gif";
 import { ICONS } from "@/utils/icons";
 import { Button } from "@nextui-org/react";
 
 const OurMission = () => {
   return (
-    <section
-      className="h-[300px] md:h-[450px] lg:h-[calc(100vh-200px)]  "
-      style={{
-        background: `url(${missionImage.src})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}
-    >
-      <div className="bg-gradient-to-t from-[#FFFFFF00] to-ars-cyan-60 h-full text-white">
-        {/* <div className="bg-gradient-to-t from-ice-blue via-[#0590C866] to-ars-cyan-60 h-full text-white">
-      </div> */}
-        <div className="h-full bg-gradient-to-tl from-[#FFFFFF00] to-[#000000CC] padding-responsive flex flex-col gap-1 md:gap-3 lg:gap-4">
+    <section className="relative w-full flex flex-col justify-center items-center h-[300px] md:h-[500px] lg:h-screen ">
+      <video
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        src="/videos/home-mission.mp4"
+        height={"100%"}
+        width={"100%"}
+        autoPlay
+        loop
+        muted
+      />
+      <div
+        className="absolute top-0 left-0 w-full h-full z-10 text-white"
+        style={{
+          background: `linear-gradient(9deg, rgba(0, 0, 0, 0.00) 10.28%, rgba(0, 0, 0, 0.53) 85.02%, rgba(0, 0, 0, 0.67) 125.34%, #000 172.89%), linear-gradient(280deg, rgba(0, 0, 0, 0.00) 14.76%, rgba(0, 0, 0, 0.25) 75.1%, rgba(0, 0, 0, 0.67) 107.65%, #000 146.04%), linear-gradient(180deg, #0590C899 5%, rgba(130, 130, 126, 0.00) 100%)`,
+        }}
+      >
+        <div className="h-full bg-gradient-to-tl from-[#FFFFFF00] to-[#000000CC] padding-responsive flex flex-col justify-center gap-1 md:gap-3 lg:gap-7">
           <h5 className="text-sm md:text-xl lg:text-2xl">Our Mission</h5>
           <h2 className="text-lg md:text-3xl lg:text-4xl xl:text-5xl font-medium">
             Revolutionizing Industries with <br /> Cutting-Edge Robotics for an
@@ -43,6 +46,8 @@ const OurMission = () => {
           </div>
         </div>
       </div>
+      {/* <div className="bg-gradient-to-t from-ice-blue via-[#0590C866] to-ars-cyan-60 h-full text-white">
+      </div> */}
     </section>
   );
 };

@@ -1,12 +1,5 @@
 import { ICONS } from "@/utils/icons";
-import {
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  Chip,
-  Image,
-} from "@nextui-org/react";
+import { Button, Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 import React from "react";
 
 const ResourceCard = ({
@@ -30,27 +23,22 @@ const ResourceCard = ({
         radius="lg"
         width="100%"
         alt={title}
-        className="object-cover object-top h-[10rem] rounded-t-xl "
+        className="object-cover object-top h-[10rem] rounded-t-3xl "
         src={`${img}`}
       />
-      <CardBody className="mt-2">
-        <div className="flex gap-3 mb-2">
-          <Chip
-            color="warning"
-            size="sm"
-            variant="dot"
-            className="bg-white text-[#67829E] uppercase text-sm"
-          >
+      <CardBody className="mt-3 p-0">
+        <div
+          className="flex flex-row lg:flex-col xl:flex-row gap-3 mb-3
+        "
+        >
+          <div className=" bg-white text-[#67829E] uppercase text-xs font-medium rounded-full pl-2 pr-4 py-1 w-fit flex items-center gap-1">
+            {ICONS.dot}
             {category}
-          </Chip>
-          <Chip
-            color="warning"
-            variant="dot"
-            size="sm"
-            className="text-cyan-blue-50 uppercase text-sm"
-          >
+          </div>
+          <div className="text-cyan-blue-50 uppercase text-xs font-medium flex items-center gap-1">
+            {ICONS.dot}
             {time}
-          </Chip>
+          </div>
         </div>
         <h2 className="text-lg text-indigo font-medium">{title}</h2>
       </CardBody>

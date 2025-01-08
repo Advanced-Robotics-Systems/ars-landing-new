@@ -19,13 +19,15 @@ const Hero = () => {
         <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-medium">
           Revolutionising Automation <br /> Driving Innovation
         </h2>
-        <Button
-          size="md"
-          radius="full"
-          className="bg-cyan-blue w-32 md:w-40 text-base md:text-lg text-black font-medium mt-2"
-        >
-          Our Company
-        </Button>
+        <div>
+          <Button
+            size="md"
+            radius="full"
+            className="bg-cyan-blue px-9 md:px-12 py-5 md:py-6 font-medium text-black mt-2"
+          >
+            Our Company
+          </Button>
+        </div>
       </div>
     </section>
   );

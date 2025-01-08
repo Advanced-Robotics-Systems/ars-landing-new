@@ -19,6 +19,7 @@ const Series = () => {
     pieSliceText: "none",
     backgroundColor: "transparent",
     legend: "none",
+    tooltip: { trigger: "none" },
     colors: productsSliderData[activeIndex].colors,
   };
   return (

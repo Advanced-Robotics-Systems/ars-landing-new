@@ -65,19 +65,19 @@ const LatestResources = () => {
           ))}
         </ButtonGroup>
       </div>
-      <div className="flex items-center gap-10 justify-center">
+      <div className="flex items-center md:gap-10 lg:gap-5 xl:gap-10 justify-center">
         <div className="hidden md:block">
           <Button
             isDisabled={activeTab === "All"}
             isIconOnly={true}
-            className=" bg-white text-cyan-blue-50 font-medium rounded-l-lg border-r-4 border-cyan-blue-30 hover:bg-deep-blue-20 duration-300"
+            className=" disabled:bg-deep-blue-5 bg-white text-cyan-blue-50 hover:text-white font-medium rounded-l-lg border-r-2 border-cyan-blue hover:bg-cyan-blue-30 duration-300"
             onPress={handleLeftButton}
           >
             {ICONS.arrow_left}
           </Button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-8 xl:gap-12 2xl:gap-14 3xl:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-5 xl:gap-8 2xl:gap-10 3xl:gap-12 4xl:gap-16">
           {resources.map((resource, idx) => (
             <ResourceCard
               key={idx}
@@ -92,7 +92,7 @@ const LatestResources = () => {
           <Button
             isDisabled={activeTab === "Case Study"}
             isIconOnly
-            className=" bg-white text-xs md:text-sm text-cyan-blue-50 font-medium rounded-r-lg border-l-4 border-cyan-blue-30 hover:bg-deep-blue-20 duration-300"
+            className=" disabled:bg-deep-blue-5 bg-white text-cyan-blue-50 hover:text-white font-medium rounded-r-lg border-l-2 border-cyan-blue hover:bg-cyan-blue-30 duration-300"
             onPress={handleRightButton}
           >
             {ICONS.arrow_right}
