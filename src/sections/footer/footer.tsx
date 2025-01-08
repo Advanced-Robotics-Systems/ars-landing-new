@@ -1,16 +1,32 @@
 import React from "react";
 import Logo from "@/assets/images/ARS_2_cropped.png";
 import Image from "next/image";
-import { Link } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 import { footerLinks, footerSocials } from "@/data";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-black text-primary padding-responsive text-white">
-      <div className="w-[100%] flex max-lg:flex-col gap-16 items-center justify-between pb-10 lg:pb-24 border-b border-gray-900">
-        <div className="flex flex-col items-center justify-between lg:items-start lg:justify-start gap-4 w-[80%] lg:w-80">
+    <footer className="w-full bg-black text-primary text-white padding-responsive py-5 lg:py-8 xl:py-10">
+      <div className="w-[100%] flex max-lg:flex-col gap-16 items-center lg:items-start justify-between pb-6 lg:pb-16 border-b border-gray-900">
+        <div className="flex flex-col items-center justify-between lg:items-start lg:justify-start gap-6 w-[80%] lg:w-80">
           <div className="flex items-center justify-center">
-            <Image src={Logo} width={0} height={0} alt="ARS" className="w-60" />
+            <Image src={Logo} width={0} height={0} alt="ARS" className="w-40" />
+          </div>
+          <div className="flex items-center justify-between w-28 max-md:m-auto">
+            {footerSocials.map((item, index) => (
+              <Button
+                as={Link}
+                href={item.link}
+                isExternal
+                className="bg-ars-cyan text-black rounded-xl"
+                isIconOnly
+                // radius="full"
+                size="sm"
+                key={index}
+              >
+                {item.icon}
+              </Button>
+            ))}
           </div>
         </div>
 
@@ -74,8 +90,8 @@ const Footer = () => {
       </div>
 
       {/* Copyright and socials */}
-      <div className="flex flex-col-reverse lg:flex-row gap-5 md:gap-8 items-center justify-between w-full pt-5 lg:pt-10">
-        <div className="flex items-center justify-between gap-5 w-36 max-md:m-auto">
+      <div className="flex flex-col-reverse lg:flex-row gap-5 md:gap-8 items-center justify-between w-full pt-3 lg:pt-6">
+        {/* <div className="flex items-center justify-between gap-5 w-36 max-md:m-auto">
           {footerSocials.map((item, index) => (
             <Link
               key={index}
@@ -86,8 +102,10 @@ const Footer = () => {
               {item.icon}
             </Link>
           ))}
+        </div> */}
+        <div className="text-xs md:text-sm">
+          &copy;2024 ARS. All rights reserved.
         </div>
-        <div className="text-xs">&copy;2024 ARS. All rights reserved.</div>
         <div className="list-none flex gap-4 md:gap-8">
           {footerLinks.policyLinks.map((item, index) => (
             <li key={index}>
