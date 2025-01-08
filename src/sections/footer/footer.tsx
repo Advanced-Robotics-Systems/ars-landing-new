@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "@/assets/images/ARS_2_cropped.png";
 import Image from "next/image";
-import { Button, Link } from "@nextui-org/react";
+import { Link } from "@nextui-org/react";
 import { footerLinks, footerSocials } from "@/data";
 
 const Footer = () => {
