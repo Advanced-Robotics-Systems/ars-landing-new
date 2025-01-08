@@ -11,22 +11,28 @@ const Contacts = () => {
           <div className="text-white space-y-6 md:space-y-8 lg:space-y-10 w-full lg:w-1/2">
             <h3 className="text-xl md:text-2xl xl:text-3xl w-full md:w-3/4 lg:w-full ">
               If you&apos;d like to know more then please call, message or
-              follow Azimuth
+              follow ARS
             </h3>
 
             <div className="flex gap-24 md:gap-40 xl:gap-52 text-sm md:text-base">
               <h5 className="text-cyan-blue font-medium">Address</h5>
               <p>
-                Eagle Street <br /> London <br /> WC1R 4TH <br /> United Kingdom
+                7012 Al Farazdaq St
+                <br />
+                Ad Dhubbat
+                <br />
+                Riyadh 12627
+                <br />
+                Saudi Arabia
               </p>
             </div>
             <div className="flex gap-[104px] md:gap-[168px] xl:gap-[216px] text-sm md:text-base">
               <h5 className="text-cyan-blue font-medium">Phone</h5>
-              <p>+60 12 345 6789</p>
+              <p>+966 50 312 4449</p>
             </div>
             <div className="flex gap-6 md:gap-20 xl:gap-32 text-sm md:text-base">
               <h5 className="text-cyan-blue font-medium">General enquiries</h5>
-              <p>+60 12 345 6789</p>
+              <p>+966 50 312 4449</p>
             </div>
           </div>
           <div className="w-[1px] bg-cyan-blue-50 hidden lg:block"></div>

@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "@/assets/images/ARS_2_cropped.png";
 import Image from "next/image";
-import { Link } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 import { footerLinks, footerSocials } from "@/data";
 
 const Footer = () => {
@@ -10,8 +10,24 @@ const Footer = () => {
       <div className="w-[100%] flex max-lg:flex-col gap-16 items-center justify-between pb-7 md:pb-10 lg:pb-14 border-b border-gray-900">
         <div className="flex flex-col items-center justify-between lg:items-start lg:justify-start gap-4 w-[80%] lg:w-80">
           <div className="flex items-center justify-center">
-            <Image src={Logo} width={0} height={0} alt="ARS" className="w-60" />
+            <Image src={Logo} width={0} height={0} alt="ARS" className="w-40" />
           </div>
+          {/* <div className="flex items-center justify-between w-28 max-md:m-auto">
+            {footerSocials.map((item, index) => (
+              <Button
+                as={Link}
+                href={item.link}
+                isExternal
+                className="bg-ars-cyan text-black rounded-xl"
+                isIconOnly
+                // radius="full"
+                size="sm"
+                key={index}
+              >
+                {item.icon}
+              </Button>
+            ))}
+          </div> */}
         </div>
 
         <div className="flex items-start justify-between gap-7 md:gap-24 lg:gap-28 xl:gap-48">
@@ -87,7 +103,9 @@ const Footer = () => {
             </Link>
           ))}
         </div>
-        <div className="text-xs">&copy;2024 ARS. All rights reserved.</div>
+        <div className="text-xs md:text-sm">
+          &copy;2024 ARS. All rights reserved.
+        </div>
         <div className="list-none flex gap-4 md:gap-8">
           {footerLinks.policyLinks.map((item, index) => (
             <li key={index}>

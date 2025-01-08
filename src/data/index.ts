@@ -41,10 +41,6 @@ export const footerLinks = {
       name: "Careers",
       link: "/careers",
     },
-    {
-      name: "Contact Sales",
-      link: "/contact",
-    },
   ],
   helpfulLinks: [
     {
@@ -52,13 +48,17 @@ export const footerLinks = {
       link: "/faq",
     },
     {
-      name: "Support",
-      link: "/support",
+      name: "Contact Sales",
+      link: "/contact",
     },
-    {
-      name: "Partners",
-      link: "/partners",
-    },
+    //// {
+    ////   name: "Support",
+    ////   link: "/support",
+    //// },
+    //// {
+    ////   name: "Partners",
+    ////   link: "/partners",
+    //// },
   ],
   resources: [
     {
@@ -69,6 +69,10 @@ export const footerLinks = {
       name: "Blogs",
       link: "/blogs",
     },
+    {
+      name: "News",
+      link: "/news",
+    },
   ],
   policyLinks: [
     {
@@ -76,13 +80,17 @@ export const footerLinks = {
       link: "/privacy-policy",
     },
     {
-      name: "Terms of Use",
-      link: "/terms-of-use",
+      name: "Terms and Conditions",
+      link: "/terms-and-conditions",
     },
-    {
-      name: "Ethics Statement",
-      link: "/ethics-statement",
-    },
+    //// {
+    ////   name: "Terms of Use",
+    ////   link: "/terms-of-use",
+    //// },
+    //// {
+    ////   name: "Ethics Statement",
+    ////   link: "/ethics-statement",
+    //// },
   ],
 };
 
@@ -93,11 +101,11 @@ export const footerSocials = [
     link: "https://www.instagram.com/arsystemsofficial/",
   },
   {
-    icon: ICONS.facebook,
+    icon: ICONS.facebook_test,
     link: "https://www.facebook.com/profile.php?id=61562469073840",
   },
   {
-    icon: ICONS.linkedin,
+    icon: ICONS.linkedin_test,
     link: "https://www.linkedin.com/company/advanced-robotics-systems/",
   },
 ];
