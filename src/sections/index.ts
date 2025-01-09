@@ -40,6 +40,9 @@ import RequestDemo from "./products/request-demo";
 import BlogsHero from "./blogs/blogs-hero";
 import Resources from "./blogs/resources";
 
+// prikvacy policy sections
+import PrivacyPolicy from "./about/policy/privacy-policy";
+
 export {
   Footer,
   Hero,
@@ -68,4 +71,5 @@ export {
   RequestDemo,
   BlogsHero,
   Resources,
+  PrivacyPolicy,
 };
