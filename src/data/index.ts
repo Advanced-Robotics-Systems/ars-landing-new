@@ -103,7 +103,7 @@ export const footerSocials = [
   },
 ];
 
-// solutions data
+// Home page solutions data
 export const solutionsData = [
   {
     icon: ICONS.home,
@@ -131,7 +131,30 @@ export const solutionsData = [
   },
 ];
 
-// client
+// Home page mobile robot data
+export const mobileRobotData = [
+  {
+    title: "Counter UAS",
+    img: "/mobile-robot/uas.jpeg",
+    description:
+      "No threat goes unseen. Anduril's open Counter UAS system is built to detect, track and intercept unmanned aircraft and autonomous drone systems.",
+  },
+  {
+    title: "Counter Intrusion",
+    img: "/mobile-robot/intrusion.jpeg",
+
+    description:
+      "No threat goes unseen. Anduril's open Counter UAS system is built to detect, track and intercept unmanned aircraft and autonomous drone systems.",
+  },
+  {
+    title: "Maritime Counter Intrusion",
+    img: "/mobile-robot/maritime.jpeg",
+    description:
+      "No threat goes unseen. Anduril's open Counter UAS system is built to detect, track and intercept unmanned aircraft and autonomous drone systems.",
+  },
+];
+
+// home page client data
 export const clientData = [
   {
     logo: "/clients/ford.png",
@@ -183,7 +206,7 @@ export const clientData = [
   },
 ];
 
-// resources data
+//Shared resources section data
 export const resourcesData = [
   {
     img: "award.png",
@@ -271,9 +294,10 @@ export const resourcesData = [
   },
 ];
 
-// resources categories
+//Shared resources section categories
 export const resourcesCategories = ["All", "News", "Blogs", "Case Study"];
 
+// Career page career joblist data
 export const careersJobList = [
   {
     title: "Engineering Manager",
@@ -307,7 +331,7 @@ export const careersJobList = [
   },
 ];
 
-// products slider data
+// products page products slider data
 export const productsSliderData = [
   {
     img1: "/products/f-series.png",
@@ -360,7 +384,7 @@ export const productsSliderData = [
   },
 ];
 
-// features data
+// products page features data
 export const featuresData = [
   {
     img: "/features/Lidar.svg",
@@ -380,7 +404,7 @@ export const featuresData = [
   },
 ];
 
-// products data
+// products page products data
 export const productsData = [
   {
     img: "/products/a-series.png",
@@ -423,7 +447,7 @@ export const productsData = [
   },
 ];
 
-// swappable modules data
+// products page swappable modules data
 export const swappableModulesData = [
   {
     title: "Pallet Lifter",
@@ -467,7 +491,7 @@ export const swappableModulesData = [
   },
 ];
 
-// blogs resources data
+// Blog page blogs resources data
 export const blogsResourcesData = [
   {
     title: "Testing UX: Best Practices and Strategies",
@@ -524,29 +548,6 @@ export const blogsResourcesData = [
       "This article explores the vital role of UX testing in delivering exceptional user experiences in software products. By identifying usability issues and optimizing user interactions, effective UX testing is key to success in today's digital world. We'll cover best practices and strategies used by QA testers, offering real-world examples and actionable insights to help readers improve their UX testing skills and enhance their project's success.",
     category: "News",
     time: "3 min read",
-  },
-];
-
-// mobile robot data
-export const mobileRobotData = [
-  {
-    title: "Counter UAS",
-    img: "/mobile-robot/uas.jpeg",
-    description:
-      "No threat goes unseen. Anduril's open Counter UAS system is built to detect, track and intercept unmanned aircraft and autonomous drone systems.",
-  },
-  {
-    title: "Counter Intrusion",
-    img: "/mobile-robot/intrusion.jpeg",
-
-    description:
-      "No threat goes unseen. Anduril's open Counter UAS system is built to detect, track and intercept unmanned aircraft and autonomous drone systems.",
-  },
-  {
-    title: "Maritime Counter Intrusion",
-    img: "/mobile-robot/maritime.jpeg",
-    description:
-      "No threat goes unseen. Anduril's open Counter UAS system is built to detect, track and intercept unmanned aircraft and autonomous drone systems.",
   },
 ];
 
