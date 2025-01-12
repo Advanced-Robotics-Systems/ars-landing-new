@@ -1,5 +1,6 @@
 import { ICONS } from "@/utils/icons";
 import { Button } from "@nextui-org/react";
+import Link from "next/link";
 import React from "react";
 
 const Careers = () => {
@@ -14,6 +15,8 @@ const Careers = () => {
           production, we want to hear from you.
         </p>
         <Button
+          as={Link}
+          href="/careers"
           className="bg-white text-ars-cyan font-medium"
           radius="full"
           endContent={ICONS.arrow_right}

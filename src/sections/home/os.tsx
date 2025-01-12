@@ -5,6 +5,7 @@ import OsImage from "@/../../public/home-os.jpeg";
 import { ICONS } from "@/utils/icons";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
+import Link from "next/link";
 
 const OS = () => {
   return (
@@ -35,6 +36,8 @@ const OS = () => {
         <div className="flex gap-4 items-center mt-4 md:mt-8 lg:mt-10">
           <p className="font-medium">Learn About ARS OS</p>
           <Button
+            as={Link}
+            href="/company"
             isIconOnly
             radius="full"
             className="bg-ars-cyan-60 text-xs md:text-sm text-white font-medium "

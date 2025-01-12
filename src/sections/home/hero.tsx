@@ -2,6 +2,7 @@
 
 import heroImage from "@/../../public/home-hero.jpeg";
 import { Button } from "@nextui-org/react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -21,6 +22,8 @@ const Hero = () => {
         </h2>
         <div>
           <Button
+            as={Link}
+            href="/company"
             size="md"
             radius="full"
             className="bg-cyan-blue px-9 md:px-12 py-5 md:py-6 font-medium text-black mt-2"
