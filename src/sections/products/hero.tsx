@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 const ProductsHero = () => {
   return (
-    <section className="bg-gradient-to-tr from-white to-ars-cyan lg:h-screen">
-      <div className="bg-gradient-to-tr from-ice-blue to-[#FFFFFF33] h-full px-5 md:px-10 lg:px-16 xl:px-40 2xl:px-64 3xl:px-96 py-16 md:py-20 lg:py-14 xl:py-20  ">
+    <section className=" lg:h-screen">
+      <div className=" h-full px-5 md:px-10 lg:px-16 xl:px-40 2xl:px-64 3xl:px-96 py-16 md:py-20 lg:py-14 xl:py-20  ">
         <div className="h-full flex flex-col md:flex-row  items-center justify-center rounded-2xl ">
           <div className="md:w-3/5 md:h-[500px] lg:h-3/4 lg:w-2/3 bg-white flex items-center justify-center rounded-t-2xl md:rounded-r-none md:rounded-l-3xl">
             <Image

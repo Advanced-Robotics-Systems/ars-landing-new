@@ -15,7 +15,7 @@ const SwappableModules = () => {
       setModuleData(selectedModule);
     } else {
       console.warn("Module not found, reverting to default.");
-      setModuleData(swappableModulesData[0]); 
+      setModuleData(swappableModulesData[0]);
     }
   };
 
@@ -24,7 +24,7 @@ const SwappableModules = () => {
     filterModuleData(title);
   };
   return (
-    <section className="bg-ice-blue px-5 md:px-10 lg:px-16 xl:px-24 2xl:px-36 3xl:px-44 pt-10 lg:pt-14 xl:pt-20">
+    <section className=" px-5 md:px-10 lg:px-16 xl:px-24 2xl:px-36 3xl:px-44 pt-10 lg:pt-14 xl:pt-20">
       <h2 className="text-deep-blue text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium text-center mb-6 md:mb-8 lg:mb-10">
         Swappable Application <br /> Modules
       </h2>

@@ -4,7 +4,7 @@ import { Image } from "@nextui-org/react";
 
 const Product = () => {
   return (
-    <section className="bg-ice-blue padding-responsive flex flex-col items-center justify-center gap-6 md:gap-8 lg:gap-10">
+    <section className=" padding-responsive flex flex-col items-center justify-center gap-6 md:gap-8 lg:gap-10">
       {productsData.map((product, index) => (
         <div
           key={index}
