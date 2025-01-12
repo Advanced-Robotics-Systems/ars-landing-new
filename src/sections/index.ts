@@ -15,11 +15,11 @@ import ARSIndustry from "./home/ars-industry";
 import Clients from "./home/clients";
 import MobileRobot from "./home/mobile-robot";
 
-// About sections
-import AboutHero from "./about/about-hero";
-import AboutInfo from "./about/about-info";
-import AboutValues from "./about/about-values";
-import AboutBacking from "./about/about-backing";
+// Company sections
+import CompanyHero from "./company/company-hero";
+import CompanyInfo from "./company/company-info";
+import CompanyValues from "./company/company-values";
+import CompanyBacking from "./company/company-backing";
 
 // Career sections
 import CareerHero from "./careers/career-hero";
@@ -51,10 +51,10 @@ export {
   Clients,
   LatestResources,
   MobileRobot,
-  AboutHero,
-  AboutInfo,
-  AboutValues,
-  AboutBacking,
+  CompanyHero,
+  CompanyInfo,
+  CompanyValues,
+  CompanyBacking,
   JoinOurTeam,
   GetInTouch,
   CareerHero,

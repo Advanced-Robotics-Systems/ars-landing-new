@@ -22,7 +22,7 @@ export const navLinks = [
 
   {
     name: "Get in Touch",
-    link: "/get-in-touch",
+    link: "/contact",
   },
 ];
 
@@ -34,8 +34,8 @@ export const footerLinks = {
       link: "/products",
     },
     {
-      name: "About",
-      link: "/about",
+      name: "Company",
+      link: "/company",
     },
     {
       name: "Careers",
