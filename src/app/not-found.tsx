@@ -1,10 +1,12 @@
 "use client";
 
 import { Header } from "@/sections";
-import { Link } from "@nextui-org/react";
+import { Link, CircularProgress } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function NotFound() {
+  const [seconds, setSeconds] = useState(5);
   const router = useRouter();
 
   const handleClick = () => {
@@ -16,6 +18,22 @@ export default function NotFound() {
       router.push("/");
     }
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSeconds((prev) => {
+        if (prev > 0) {
+          return prev - 1;
+        } else {
+          handleClick();
+          clearInterval(interval);
+          return prev;
+        }
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
@@ -33,6 +51,23 @@ export default function NotFound() {
           </Link>{" "}
           to continue browsing
         </h1>
+        <p className="text-white text-xl font-semibold">
+          Redirecting you in...{" "}
+        </p>
+        <CircularProgress
+          aria-label="Countdown"
+          formatOptions={{ style: "decimal" }}
+          size="lg"
+          minValue={0}
+          maxValue={5}
+          value={seconds}
+          showValueLabel
+          classNames={{
+            value: "text-white text-xl font-semibold",
+            indicator: "stroke-ars-cyan",
+            track: "stroke-ars-cyan-60",
+          }}
+        />
       </main>
     </>
   );
