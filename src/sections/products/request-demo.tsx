@@ -1,4 +1,5 @@
 import { Button } from "@nextui-org/react";
+import Link from "next/link";
 import React from "react";
 
 const RequestDemo = () => {
@@ -11,7 +12,12 @@ const RequestDemo = () => {
           </h3>
           <p>Reach out to schedule a personalized demo</p>
         </div>
-        <Button radius="full" className="bg-white text-ars-cyan font-semibold">
+        <Button
+          as={Link}
+          href="/contact"
+          radius="full"
+          className="bg-white text-ars-cyan font-semibold"
+        >
           Request a demo
         </Button>
       </div>
