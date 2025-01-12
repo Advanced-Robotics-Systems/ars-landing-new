@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "@/assets/images/ARS_2_cropped.png";
 import Image from "next/image";
 import { Link } from "@nextui-org/react";
@@ -96,6 +95,7 @@ const Footer = () => {
             <Link
               key={index}
               href={item.link}
+              isExternal
               size="lg"
               className="text-accent"
             >
@@ -104,7 +104,7 @@ const Footer = () => {
           ))}
         </div>
         <div className="text-xs md:text-sm">
-          &copy;2024 ARS. All rights reserved.
+          &copy;2025 ARS. All rights reserved.
         </div>
         <div className="list-none flex gap-4 md:gap-8">
           {footerLinks.policyLinks.map((item, index) => (
