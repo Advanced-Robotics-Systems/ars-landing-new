@@ -1,25 +1,25 @@
 import {
   Header,
-	KeyFeatures,
-	Product,
-	RequestDemo,
-	Series,
-	SwappableModules,
+  KeyFeatures,
+  Product,
+  ProductsHero,
+  RequestDemo,
+  SwappableModules,
 } from "@/sections";
 
 const Products = () => {
-	return (
-		<>
-			<Header />
-			<main>
-				<Series />
-				<KeyFeatures />
-				<Product />
-				<SwappableModules />
-				<RequestDemo />
-			</main>
-		</>
-	);
+  return (
+    <>
+      <Header />
+      <main>
+        <ProductsHero />
+        <KeyFeatures />
+        <Product />
+        <SwappableModules />
+        <RequestDemo />
+      </main>
+    </>
+  );
 };
 
 export default Products;

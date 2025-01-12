@@ -35,6 +35,7 @@ import KeyFeatures from "./products/key-features";
 import Product from "./products/products";
 import SwappableModules from "./products/swappable-modules";
 import RequestDemo from "./products/request-demo";
+import ProductsHero from "./products/hero";
 
 // Blogs sections
 import BlogsHero from "./blogs/blogs-hero";
@@ -64,6 +65,7 @@ export {
   CareerJobs,
   Contacts,
   Careers,
+  ProductsHero,
   Series,
   KeyFeatures,
   Product,
