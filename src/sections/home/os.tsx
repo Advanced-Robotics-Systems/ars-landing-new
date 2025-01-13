@@ -1,6 +1,6 @@
 "use client";
 
-import OsLogo from "@/../../public/os.png";
+import OsLogo from "@/../../public/ars-os.png";
 import OsImage from "@/../../public/home-os.jpeg";
 import { ICONS } from "@/utils/icons";
 import { Button } from "@nextui-org/react";
