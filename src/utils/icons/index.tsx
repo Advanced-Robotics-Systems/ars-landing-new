@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa6";
 import { GiMeditation } from "react-icons/gi";
 import { GoDotFill } from "react-icons/go";
+import { HiOutlineArrowNarrowDown } from "react-icons/hi";
 import { HiOutlineArrowRight, HiOutlineSquare2Stack } from "react-icons/hi2";
 import { LuUsers } from "react-icons/lu";
 import { RiMenu3Fill } from "react-icons/ri";
@@ -31,4 +32,5 @@ export const ICONS = {
   close: <AiOutlineClose />,
   dot: <GoDotFill />,
   arrow_right_big: <HiOutlineArrowRight />,
+  arrow_bottom: <HiOutlineArrowNarrowDown />,
 };

@@ -3,7 +3,7 @@ import { featuresData } from "@/data";
 
 const KeyFeatures = () => {
   return (
-    <section className="bg-ice-blue  padding-responsive">
+    <section id="features" className=" padding-responsive">
       <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium text-midnight-blue mb-5">
         Key Features
       </h2>
