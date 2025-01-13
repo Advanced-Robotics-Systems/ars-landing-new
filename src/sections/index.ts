@@ -35,10 +35,14 @@ import KeyFeatures from "./products/key-features";
 import Product from "./products/products";
 import SwappableModules from "./products/swappable-modules";
 import RequestDemo from "./products/request-demo";
+import ProductsHero from "./products/hero";
 
 // Blogs sections
 import BlogsHero from "./blogs/blogs-hero";
 import Resources from "./blogs/resources";
+
+// prikvacy policy sections
+import PrivacyPolicy from "./about/policy/privacy-policy";
 
 export {
   Footer,
@@ -61,6 +65,7 @@ export {
   CareerJobs,
   Contacts,
   Careers,
+  ProductsHero,
   Series,
   KeyFeatures,
   Product,
@@ -68,4 +73,5 @@ export {
   RequestDemo,
   BlogsHero,
   Resources,
+  PrivacyPolicy,
 };
