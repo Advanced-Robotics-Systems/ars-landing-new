@@ -32,8 +32,8 @@ const OurMission = () => {
           <p className="w-full md:w-2/3 lg:w-1/2 text-xs md:text-sm lg:text-base xl:text-lg mt-2 md:mt-4 lg:mt-5">
             Advanced Robotics System is an Industrial Automation & Robotic
             company focused on the R&D and deployment aspects of Industrial
-            Automation. Using our in-house robotics, we target to streamline the
-            factory floor to IR 4.0 category.
+            Automation. Using our in-house Industrial AMR and automation, we
+            target to streamline the factory floor to IR 4.0 category.
           </p>
           <div className="flex gap-2 items-center mt-4 md:mt-6 lg:mt-8">
             <p className="font-semibold">Learn About Us</p>
