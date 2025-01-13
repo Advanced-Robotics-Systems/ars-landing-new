@@ -15,7 +15,7 @@ const CareerHero = () => {
           "linear-gradient(to bottom, rgba(34, 169, 225, 0.5), rgba(215, 239, 249, 1)), linear-gradient(to right top, rgba(5, 144, 200, 0.02), rgba(13, 36, 38, 1))",
       }}
     >
-      <h1 className="text-4xl xxs:text-5xl sm:text-6xl lg:text-7xl text-white max-sm:text-center font-medium max-sm:mt-8">
+      <h1 className="text-4xl xxs:text-5xl sm:text-6xl lg:text-7xl text-white max-sm:text-center font-medium mt-10 lg:mt-7">
         Work With Us
       </h1>
       <div className="flex flex-col max-sm:gap-y-3 sm:flex-row max-sm:items-center sm:justify-between mt-5">
