@@ -117,7 +117,7 @@ export const solutionsData = [
     icon: ICONS.home,
     title: "Dependability",
     description:
-      "We provide comprehensive maintenance for your robotic systems, ensuring consistent uptime",
+      "Mininum maintenance is required for AMR & Automation systems, ensuring consistent uptime",
   },
   {
     icon: ICONS.user,
@@ -135,7 +135,7 @@ export const solutionsData = [
     icon: ICONS.meditaion,
     title: "Adaptability",
     description:
-      "Our flexible service framework addresses challenges efficiently, offering quick resolutions and tailored support",
+      "Our flexible service framework addresses challenges efficiently, offering quick resolutions and tailored support 24/7",
   },
 ];
 
