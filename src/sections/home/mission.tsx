@@ -8,8 +8,8 @@ const OurMission = () => {
   return (
     <section className="relative w-full flex flex-col justify-center items-center h-[300px] md:h-[500px] lg:h-screen ">
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        src="/videos/home-mission.mp4"
+        className="absolute top-0 left-0 w-full h-full object-cover object-bottom z-0"
+        src="/videos/home-mission-cropped.mp4"
         height={"100%"}
         width={"100%"}
         autoPlay
@@ -32,8 +32,8 @@ const OurMission = () => {
           <p className="w-full md:w-2/3 lg:w-1/2 text-xs md:text-sm lg:text-base xl:text-lg mt-2 md:mt-4 lg:mt-5">
             Advanced Robotics System is an Industrial Automation & Robotic
             company focused on the R&D and deployment aspects of Industrial
-            Automation. Using our in-house robotics and automation system, we
-            target to streamline the factory floor to IR 4.0 category.
+            Automation. Using our in-house robotics, we target to streamline the
+            factory floor to IR 4.0 category.
           </p>
           <div className="flex gap-2 items-center mt-4 md:mt-6 lg:mt-8">
             <p className="font-semibold">Learn About Us</p>
