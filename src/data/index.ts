@@ -117,7 +117,7 @@ export const solutionsData = [
     icon: ICONS.home,
     title: "Dependability",
     description:
-      "Mininum maintenance is required for AMR & Automation systems, ensuring consistent uptime",
+      "Mininum maintenance is required for our AMR & Automation systems, ensuring consistent uptime",
   },
   {
     icon: ICONS.user,
