@@ -25,15 +25,14 @@ const OurMission = () => {
         <div className="h-full bg-gradient-to-tl from-[#FFFFFF00] to-[#000000CC] padding-responsive flex flex-col justify-center gap-1 md:gap-3 lg:gap-7">
           <h5 className="text-sm md:text-xl lg:text-2xl">Our Mission</h5>
           <h2 className="text-lg md:text-3xl lg:text-4xl xl:text-5xl font-medium">
-            Revolutionizing Industries with <br /> Cutting-Edge Robotics for an
-            IR 4.0 <br />
-            Future!
+            Empowering Seamless Transition to Full Automation
           </h2>
           <p className="w-full md:w-2/3 lg:w-1/2 text-xs md:text-sm lg:text-base xl:text-lg mt-2 md:mt-4 lg:mt-5">
-            Advanced Robotics System is an Industrial Automation & Robotic
-            company focused on the R&D and deployment aspects of Industrial
-            Automation. Using our in-house Industrial AMR and automation, we
-            target to streamline the factory floor to IR 4.0 category.
+            We aim to help companies acclimatize with the rapidly changing
+            demands of todays world with our Autonomous Mobile Robots (AMR)
+            accompanied by our no-code automation software to achieve a smooth
+            transition to fully automated facilities. Our solutions are designed
+            to propel you forward ahead of the competition.
           </p>
           <div className="flex gap-2 items-center mt-4 md:mt-6 lg:mt-8">
             <p className="font-semibold">Learn About Us</p>
