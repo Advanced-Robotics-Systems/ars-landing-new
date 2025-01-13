@@ -32,7 +32,7 @@ const Contacts = () => {
             </div>
             <div className="flex gap-6 md:gap-20 xl:gap-32 text-sm md:text-base">
               <h5 className="text-cyan-blue font-medium">General enquiries</h5>
-              <p>+966 50 312 4449</p>
+              <p>inquires@arsystems.org</p>
             </div>
           </div>
           <div className="w-[1px] bg-cyan-blue-50 hidden lg:block"></div>
