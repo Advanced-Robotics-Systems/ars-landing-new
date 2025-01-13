@@ -3,13 +3,13 @@
 import { Header } from "@/sections";
 import { Link, CircularProgress } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 export default function NotFound() {
   const [seconds, setSeconds] = useState(10);
   const router = useRouter();
 
-  const handleClick = () => {
+  const handleClick = useCallback(() => {
     if (document.referrer) {
       window.history.replaceState(null, "", document.referrer);
       router.back();
@@ -17,7 +17,7 @@ export default function NotFound() {
       window.history.replaceState(null, "", "/");
       router.push("/");
     }
-  };
+  }, [router]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -31,7 +31,7 @@ export default function NotFound() {
     if (seconds === 0) {
       handleClick();
     }
-  }, [seconds]);
+  }, [seconds, handleClick]);
 
   return (
     <>

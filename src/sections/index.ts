@@ -42,7 +42,7 @@ import BlogsHero from "./blogs/blogs-hero";
 import Resources from "./blogs/resources";
 
 // prikvacy policy sections
-import PrivacyPolicy from "./about/policy/privacy-policy";
+import PrivacyPolicy from "./policy/privacy-policy";
 
 export {
   Footer,
