@@ -1,10 +1,10 @@
 import Image from "next/image";
-import careerHeroImage1 from "@/../../public/careers/career-hero-1.jpg";
-import careerHeroImage2 from "@/../../public/careers/career-hero-2.jpg";
-import careerHeroImage3 from "@/../../public/careers/career-hero-3.jpg";
-import careerHeroImage4 from "@/../../public/careers/career-hero-4.jpg";
-import careerHeroImage5 from "@/../../public/careers/career-hero-5.jpg";
-import careerHeroImage6 from "@/../../public/careers/career-hero-6.jpg";
+import careerHeroImage1 from "@/../../public/careers/career-hero-1.png";
+import careerHeroImage2 from "@/../../public/careers/career-hero-2.png";
+import careerHeroImage3 from "@/../../public/careers/career-hero-3.png";
+import careerHeroImage4 from "@/../../public/careers/career-hero-4.png";
+import careerHeroImage5 from "@/../../public/careers/career-hero-5.jpeg";
+import careerHeroImage6 from "@/../../public/careers/career-hero-6.jpeg";
 
 const CareerHero = () => {
   return (
@@ -38,7 +38,7 @@ const CareerHero = () => {
         />
         <div className="flex gap-x-2 w-full max-md:justify-center md:w-[49%]">
           <Image
-            className="rounded-lg object-cover w-[49%] h-40 sm:h-60"
+            className="rounded-lg object-cover object-top w-[49%] h-40 sm:h-60"
             src={careerHeroImage2}
             alt="Image"
           />
@@ -61,7 +61,7 @@ const CareerHero = () => {
           />
         </div>
         <Image
-          className="rounded-lg object-cover w-full md:w-[49%] h-40 sm:h-60"
+          className="rounded-lg object-cover object-top w-full md:w-[49%] h-40 sm:h-60"
           src={careerHeroImage6}
           alt="Image"
         />
