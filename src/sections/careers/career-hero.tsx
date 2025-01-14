@@ -20,15 +20,15 @@ const CareerHero = () => {
       </h1>
       <div className="flex flex-col max-sm:gap-y-3 sm:flex-row max-sm:items-center sm:justify-between mt-5">
         <p className="max-sm:text-center sm:basis-1/2 lg:basis-2/5 text-lg sm:text-xl lg:text-2xl text-[#0D2426]">
-          Ready to join an exciting, fast-growing fintech scaleup? We&apos;ve
+          Ready to join an exciting, fast-growing robotics company? We&apos;ve
           been waiting for you.
         </p>
-        <p className="sm:basis-2/5 lg:basis-1/3 text-deep-blue text-xs sm:text-sm lg:text-base text-justify">
+        {/* <p className="sm:basis-2/5 lg:basis-1/3 text-deep-blue text-xs sm:text-sm lg:text-base text-justify">
           We&apos;re an international team working across various business
           areas. Roles with Recharge focus on our Group Business and
           Recharge.com brands. Startselect roles focus on our prepaid gaming
           brand Startselect.
-        </p>
+        </p> */}
       </div>
       <div className="flex flex-col md:flex-wrap md:flex-row gap-2 w-full mt-10">
         <Image
