@@ -1,8 +1,6 @@
-import { CareerJob } from "@/components";
+import { CareerJob, ResumeButton } from "@/components";
 import { careersJobList } from "@/data";
-import { ICONS } from "@/utils/icons";
-import { Button, Card, CardBody } from "@nextui-org/react";
-import Link from "next/link";
+import { Card, CardBody } from "@nextui-org/react";
 
 const CareerJobs = () => {
   return (
@@ -27,16 +25,7 @@ const CareerJobs = () => {
               We&apos;re always on the lookout for passionate talent. Send us
               your resume, and we&apos;ll reach out if there&apos;s a fit.
             </p>
-            <Button
-              as={Link}
-              href="/contact"
-              className="bg-cyan-blue/50 text-xs xxs:text-sm sm:text-base font-medium"
-              isIconOnly
-              size="md"
-              radius="full"
-            >
-              {ICONS.arrow_right_big}
-            </Button>
+            <ResumeButton />
           </div>
         </CardBody>
       </Card>
