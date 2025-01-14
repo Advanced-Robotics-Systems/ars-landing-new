@@ -1,6 +1,7 @@
 import Logo from "@/assets/images/ARS_2_cropped.png";
 import Image from "next/image";
 import { Link } from "@nextui-org/react";
+import NextLink from "next/link";
 import { footerLinks, footerSocials } from "@/data";
 
 const Footer = () => {
@@ -9,7 +10,15 @@ const Footer = () => {
       <div className="w-[100%] flex max-lg:flex-col gap-16 items-center justify-between pb-7 md:pb-10 lg:pb-14 border-b border-gray-900">
         <div className="flex flex-col items-center justify-between lg:items-start lg:justify-start gap-4 w-[80%] lg:w-80">
           <div className="flex items-center justify-center">
-            <Image src={Logo} width={0} height={0} alt="ARS" className="w-40" />
+            <NextLink href="/">
+              <Image
+                src={Logo}
+                width={0}
+                height={0}
+                alt="ARS"
+                className="w-40"
+              />
+            </NextLink>
           </div>
           {/* <div className="flex items-center justify-between w-28 max-md:m-auto">
             {footerSocials.map((item, index) => (
@@ -109,7 +118,7 @@ const Footer = () => {
         <div className="list-none flex gap-4 md:gap-8">
           {footerLinks.policyLinks.map((item, index) => (
             <li key={index}>
-              <Link href={item.link} className="text-xs md:text-sm ">
+              <Link href={item.link} isExternal className="text-xs md:text-sm ">
                 {item.name}
               </Link>
             </li>
