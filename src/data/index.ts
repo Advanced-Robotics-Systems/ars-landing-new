@@ -308,33 +308,18 @@ export const resourcesCategories = ["All", "News", "Blogs", "Case Study"];
 // Career page career joblist data
 export const careersJobList = [
   {
-    title: "Engineering Manager",
-    jobType: "Fulltime Permanent",
+    title: "Junior Robotics Backend Developer",
+    jobType: "Fulltime",
     linkTo: "/",
   },
   {
-    title: "Engineering Manager",
-    jobType: "Fulltime Permanent",
+    title: "Junior UI/Ux Designer",
+    jobType: "Fulltime",
     linkTo: "/",
   },
   {
-    title: "Engineering Manager",
-    jobType: "Fulltime Permanent",
-    linkTo: "/",
-  },
-  {
-    title: "Engineering Manager",
-    jobType: "Fulltime Permanent",
-    linkTo: "/",
-  },
-  {
-    title: "Engineering Manager",
-    jobType: "Fulltime Permanent",
-    linkTo: "/",
-  },
-  {
-    title: "Engineering Manager",
-    jobType: "Fulltime Permanent",
+    title: "Technician (Electrical & Electronics Systems)",
+    jobType: "Fulltime",
     linkTo: "/",
   },
 ];
