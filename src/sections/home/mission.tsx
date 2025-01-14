@@ -27,7 +27,7 @@ const OurMission = () => {
           <h2 className="text-lg md:text-3xl lg:text-4xl xl:text-5xl font-medium">
             Empowering Seamless Transition to Full Automation
           </h2>
-          <p className="w-full md:w-2/3 lg:w-1/2 text-xs md:text-sm lg:text-base xl:text-lg mt-2 md:mt-4 lg:mt-5">
+          <p className="w-full md:w-2/3 lg:w-1/2 text-xs leading-normal md:text-sm md:leading-normal lg:text-base lg:leading-normal xl:text-lg xl:leading-normal mt-2 md:mt-4 lg:mt-5">
             We aim to help companies acclimatize with the rapidly changing
             demands of todays world with our Autonomous Mobile Robots (AMR)
             accompanied by our no-code automation software to achieve a smooth

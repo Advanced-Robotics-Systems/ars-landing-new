@@ -21,7 +21,9 @@ const Solutions = () => {
               {solution.icon}
             </h1>
             <h2 className="text-xl font-bold mt-5">{solution.title}</h2>
-            <p className="text-lg mt-3 ">{solution.description}</p>
+            <p className="text-lg mt-3 leading-normal">
+              {solution.description}
+            </p>
           </article>
         ))}
       </div>
