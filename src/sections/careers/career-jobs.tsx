@@ -20,7 +20,7 @@ const CareerJobs = () => {
       >
         <CardBody>
           <div className="flex flex-col items-center gap-y-3">
-            <p className="text-lg xxs:text-xl sm:text-2xl lg:text-3xl text-center">
+            <p className="text-base xxs:text-lg sm:text-1xl lg:text-2xl text-justify">
               Don&apos;t see a job posting that matches you skills? No problem!
               We&apos;re always on the lookout for passionate talent. Send us
               your resume, and we&apos;ll reach out if there&apos;s a fit.

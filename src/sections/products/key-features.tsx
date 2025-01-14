@@ -7,7 +7,7 @@ const KeyFeatures = () => {
       <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium text-midnight-blue mb-5">
         Key Features
       </h2>
-      <p className="text-sm md:text-base w-full lg:w-2/3 xl:w-1/2">
+      <p className="text-sm leading-normal md:text-base md:leading-normal w-full lg:w-2/3 xl:w-1/2">
         The A-Series is a compact Industrial Mobile Robot. Its compact design
         allows it to navigate through narrow paths and makes it very versatile.
       </p>
