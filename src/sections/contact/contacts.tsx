@@ -14,7 +14,7 @@ const Contacts = () => {
               follow ARS
             </h3>
 
-            <div className="flex gap-24 md:gap-40 xl:gap-52 text-sm md:text-base">
+            <div className="flex gap-12 xxs:gap-24 md:gap-28 xl:gap-48 text-sm md:text-base">
               <h5 className="text-cyan-blue font-medium">Address</h5>
               <p>
                 7012 Al Farazdaq St
@@ -26,13 +26,25 @@ const Contacts = () => {
                 Saudi Arabia
               </p>
             </div>
-            <div className="flex gap-[104px] md:gap-[168px] xl:gap-[216px] text-sm md:text-base">
+            <div className="flex gap-14 xxs:gap-[104px] md:gap-[123px] xl:gap-[200px] text-sm md:text-base">
               <h5 className="text-cyan-blue font-medium">Phone</h5>
               <p>+966 50 312 4449</p>
             </div>
-            <div className="flex gap-6 md:gap-20 xl:gap-32 text-sm md:text-base">
-              <h5 className="text-cyan-blue font-medium">General enquiries</h5>
-              <p>inquires@arsystems.org</p>
+            <div className="flex gap-10 xxs:gap-7 md:gap-9 xl:gap-28 text-sm md:text-base">
+              <h5 className="text-cyan-blue font-medium max-xxs:hidden">
+                General enquiries
+              </h5>
+              <h5 className="text-cyan-blue font-medium xxs:hidden">
+                General
+                <br />
+                enquiries
+              </h5>
+              <p className="hidden xxs:inline">inquires@arsystems.org</p>
+              <p className="inline xxs:hidden">
+                inquires@
+                <br />
+                arsystems.org
+              </p>
             </div>
           </div>
           <div className="w-[1px] bg-cyan-blue-50 hidden lg:block"></div>
