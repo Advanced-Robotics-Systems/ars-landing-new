@@ -2,7 +2,7 @@ import { Image, Link } from "@nextui-org/react";
 import jarisLogo from "@/../../public/about/jaris-logo.svg";
 import inLogo from "@/../../public/about/in-logo.svg";
 
-const AboutBacking = () => {
+const CompanyBacking = () => {
   return (
     <section className="bg-ice-blue padding-responsive py-8 sm:py-16">
       <div className="flex flex-col items-center gap-y-10">
@@ -28,4 +28,4 @@ const AboutBacking = () => {
   );
 };
 
-export default AboutBacking;
+export default CompanyBacking;

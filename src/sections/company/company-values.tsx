@@ -1,8 +1,8 @@
 import aboutValuesImage from "@/../../public/about/about-values.jpg";
-import { AboutValue } from "@/components";
+import { CompanyValue } from "@/components";
 import { solutionsData } from "@/data";
 
-const AboutValues = () => {
+const CompanyValues = () => {
   return (
     <section
       className="flex items-center md:h-screen padding-responsive 2xl:px-[12%] 3xl:px-[20%] 4xl:px-[25%]"
@@ -26,7 +26,7 @@ const AboutValues = () => {
         </div>
         <div className="flex flex-wrap flex-col md:flex-row justify-between gap-y-5 xs:gap-y-10 md:gap-y-20 mt-10 lg:padding-x">
           {solutionsData.map((item, index) => (
-            <AboutValue
+            <CompanyValue
               title={item.title}
               description={item.description}
               icon={item.icon}
@@ -39,4 +39,4 @@ const AboutValues = () => {
   );
 };
 
-export default AboutValues;
+export default CompanyValues;

@@ -1,5 +1,6 @@
 import { ICONS } from "@/utils/icons";
 import { Button, Card, CardBody, CardFooter, Image } from "@nextui-org/react";
+import Link from "next/link";
 import React from "react";
 
 const ResourceCard = ({
@@ -47,6 +48,8 @@ const ResourceCard = ({
         <div className="flex gap-4 items-center">
           <p className="font-medium">Read More</p>
           <Button
+            as={Link}
+            href="/blogs"
             isIconOnly
             radius="full"
             className="bg-ars-cyan-60 text-xs md:text-sm text-white font-medium "

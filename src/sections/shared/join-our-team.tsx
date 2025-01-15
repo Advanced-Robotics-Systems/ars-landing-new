@@ -23,9 +23,9 @@ const JoinOurTeam = ({
       >
         Join Our Team
       </h1>
-      <p className="text-sm sm:text-base lg:text-lg text-center max-w-[500px]">
-        If you&apos;re ready to challenge the conventions of post-production, we
-        want to hear from you.
+      <p className="text-sm sm:text-base lg:text-lg text-center max-w-[425px] sm:max-w-[475px] lg:max-w-[525px]">
+        Join ARS and be part of a culturally diverse team shaping the future of
+        automation with innovation and purpose!
       </p>
       {showButton && (
         <Button

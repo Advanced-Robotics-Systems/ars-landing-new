@@ -1,6 +1,6 @@
 import { JSX } from "react";
 
-const AboutValue = ({
+const CompanyValue = ({
   title,
   description,
   icon,
@@ -26,4 +26,4 @@ const AboutValue = ({
   );
 };
 
-export default AboutValue;
+export default CompanyValue;

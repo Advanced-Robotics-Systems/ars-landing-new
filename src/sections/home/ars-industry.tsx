@@ -20,7 +20,7 @@ const ARSIndustry = () => {
           <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl  ">
             Shaping Smarter <br /> Industries, Together.
           </h2>
-          <p className=" text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl w-full lg:w-[390px] xl:w-[490px] 2xl:w-[600px] mt-1">
+          <p className=" text-sm leading-normal md:text-base md:leading-normal lg:text-lg lg:leading-normal xl:text-xl xl:leading-normal 2xl:text-2xl 2xl:leading-normal w-full lg:w-[390px] xl:w-[490px] 2xl:w-[600px] mt-1">
             ArsOS is designed to enable operational independence, empowering
             robots to function autonomously with minimal human intervention.
             arsOS allows robots to make real-time decisions, adapt to changing

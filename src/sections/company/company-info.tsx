@@ -1,7 +1,7 @@
 import aboutInfoImage3 from "@/../../public/about/about pic 3.jpeg";
 import Image from "next/image";
 
-const AboutInfo = () => {
+const CompanyInfo = () => {
   return (
     <section className="bg-ice-blue w-full padding-responsive 2xl:px-[12%] 3xl:px-[20%] 4xl:px-[25%]">
       <div className="flex flex-col lg:flex-row max-lg:gap-y-6 items-center lg:justify-between">
@@ -74,4 +74,4 @@ const AboutInfo = () => {
   );
 };
 
-export default AboutInfo;
+export default CompanyInfo;

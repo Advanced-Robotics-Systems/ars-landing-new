@@ -16,11 +16,11 @@ import Clients from "./home/clients";
 import MobileRobot from "./home/mobile-robot";
 import WarehouseRef from "./home/warehouse-ref";
 
-// About sections
-import AboutHero from "./about/about-hero";
-import AboutInfo from "./about/about-info";
-import AboutValues from "./about/about-values";
-import AboutBacking from "./about/about-backing";
+// Company sections
+import CompanyHero from "./company/company-hero";
+import CompanyInfo from "./company/company-info";
+import CompanyValues from "./company/company-values";
+import CompanyBacking from "./company/company-backing";
 
 // Career sections
 import CareerHero from "./careers/career-hero";
@@ -36,10 +36,14 @@ import KeyFeatures from "./products/key-features";
 import Product from "./products/products";
 import SwappableModules from "./products/swappable-modules";
 import RequestDemo from "./products/request-demo";
+import ProductsHero from "./products/hero";
 
 // Blogs sections
 import BlogsHero from "./blogs/blogs-hero";
 import Resources from "./blogs/resources";
+
+// prikvacy policy sections
+import PrivacyPolicy from "./policy/privacy-policy";
 
 export {
   Footer,
@@ -53,16 +57,17 @@ export {
   LatestResources,
   MobileRobot,
   WarehouseRef,
-  AboutHero,
-  AboutInfo,
-  AboutValues,
-  AboutBacking,
+  CompanyHero,
+  CompanyInfo,
+  CompanyValues,
+  CompanyBacking,
   JoinOurTeam,
   GetInTouch,
   CareerHero,
   CareerJobs,
   Contacts,
   Careers,
+  ProductsHero,
   Series,
   KeyFeatures,
   Product,
@@ -70,4 +75,5 @@ export {
   RequestDemo,
   BlogsHero,
   Resources,
+  PrivacyPolicy,
 };

@@ -4,7 +4,7 @@ import { Image } from "@nextui-org/react";
 
 const Product = () => {
   return (
-    <section className="bg-ice-blue padding-responsive flex flex-col items-center justify-center gap-6 md:gap-8 lg:gap-10">
+    <section className=" padding-responsive flex flex-col items-center justify-center gap-6 md:gap-8 lg:gap-10">
       {productsData.map((product, index) => (
         <div
           key={index}
@@ -44,8 +44,8 @@ const Product = () => {
               <p className="font-semibold">{product.maxSpeed}</p>
             </div>
             <div className="flex justify-between gap-5">
-              <p className="font-medium">Turning Radius:</p>
-              <p className="font-semibold">{product.turningRadius}</p>
+              <p className="font-medium">Navigation Method:</p>
+              <p className="font-semibold">{product.navigationMethod}</p>
             </div>
             <div className="flex justify-between gap-5">
               <p className="font-medium">Runtime:</p>
@@ -55,10 +55,10 @@ const Product = () => {
               <p className="font-medium">Full Charge Time:</p>
               <p className="font-semibold">{product.fulChargeTime}</p>
             </div>
-            <div className="flex justify-between gap-5">
+            {/* <div className="flex justify-between gap-5">
               <p className="font-medium">Drivers and APIs:</p>
               <p className="font-semibold">{product.driversAndApi}</p>
-            </div>
+            </div> */}
             <div className="text-cyan-blue flex gap-1">
               <p className="text-xl">{ICONS.pdf}</p>
               <p>Download specs sheet</p>
