@@ -477,61 +477,35 @@ export const swappableModulesData = [
 // Blog page blogs resources data
 export const blogsResourcesData = [
   {
-    title: "Testing UX: Best Practices and Strategies",
+    id: "7234cdd427dd852b6468f6faddef665c",
+    title: "The Future of Logistics is Automation",
     img: "/blogs/home-hero.jpeg",
     description:
-      "This article explores the vital role of UX testing in delivering exceptional user experiences in software products. By identifying usability issues and optimizing user interactions, effective UX testing is key to success in today's digital world. We'll cover best practices and strategies used by QA testers, offering real-world examples and actionable insights to help readers improve their UX testing skills and enhance their project's success.",
+      "As demand for quicker, safer, and cost-effective solutions grows, automation steps in to reshape the way we work. With AMRs leading the way, the future of logistics is here!",
     category: "Blogs",
     time: "3 min read",
+    file: "/files/the_future_of_logistics_is_autonomous.pdf",
+    fileName: "the_future_of_logistics_is_autonomous.pdf",
   },
   {
-    title: "Testing UX: Best Practices and Strategies",
+    id: "253f9d400aed1ddfe107f1a85ed99cfb",
+    title: "The Impact of Automation on Labor",
     img: "/blogs/blog-img.jpeg",
     description:
-      "This article explores the vital role of UX testing in delivering exceptional user experiences in software products. By identifying usability issues and optimizing user interactions, effective UX testing is key to success in today's digital world. We'll cover best practices and strategies used by QA testers, offering real-world examples and actionable insights to help readers improve their UX testing skills and enhance their project's success.",
-    category: "Case Study",
-    time: "3 min read",
-  },
-  {
-    title: "Testing UX: Best Practices and Strategies",
-    img: "/blogs/blog-img.jpeg",
-    description:
-      "This article explores the vital role of UX testing in delivering exceptional user experiences in software products. By identifying usability issues and optimizing user interactions, effective UX testing is key to success in today's digital world. We'll cover best practices and strategies used by QA testers, offering real-world examples and actionable insights to help readers improve their UX testing skills and enhance their project's success.",
+      "Automation is set to transform numerous jobs, altering task compositions across various industries. How prepared are we for this shift?",
     category: "Blogs",
     time: "2 min read",
+    file: "/files/the_impact_of_automation_on_labor.pdf",
+    fileName: "the_impact_of_automation_on_labor.pdf",
   },
-  {
-    title: "Testing UX: Best Practices and Strategies",
-    img: "/blogs/home-hero.jpeg",
-    description:
-      "This article explores the vital role of UX testing in delivering exceptional user experiences in software products. By identifying usability issues and optimizing user interactions, effective UX testing is key to success in today's digital world. We'll cover best practices and strategies used by QA testers, offering real-world examples and actionable insights to help readers improve their UX testing skills and enhance their project's success.",
-    category: "News",
-    time: "2 min read",
-  },
-  {
-    title: "Testing UX: Best Practices and Strategies",
-    img: "/blogs/blog-img.jpeg",
-    description:
-      "This article explores the vital role of UX testing in delivering exceptional user experiences in software products. By identifying usability issues and optimizing user interactions, effective UX testing is key to success in today's digital world. We'll cover best practices and strategies used by QA testers, offering real-world examples and actionable insights to help readers improve their UX testing skills and enhance their project's success.",
-    category: "Case Study",
-    time: "3 min read",
-  },
-  {
-    title: "Testing UX: Best Practices and Strategies",
-    img: "/blogs/home-hero.jpeg",
-    description:
-      "This article explores the vital role of UX testing in delivering exceptional user experiences in software products. By identifying usability issues and optimizing user interactions, effective UX testing is key to success in today's digital world. We'll cover best practices and strategies used by QA testers, offering real-world examples and actionable insights to help readers improve their UX testing skills and enhance their project's success.",
-    category: "Case Study",
-    time: "3 min read",
-  },
-  {
-    title: "Testing UX: Best Practices and Strategies",
-    img: "/blogs/blog-img.jpeg",
-    description:
-      "This article explores the vital role of UX testing in delivering exceptional user experiences in software products. By identifying usability issues and optimizing user interactions, effective UX testing is key to success in today's digital world. We'll cover best practices and strategies used by QA testers, offering real-world examples and actionable insights to help readers improve their UX testing skills and enhance their project's success.",
-    category: "News",
-    time: "3 min read",
-  },
+  // {
+  //   title: "Testing UX: Best Practices and Strategies",
+  //   img: "/blogs/blog-img.jpeg",
+  //   description:
+  //     "This article explores the vital role of UX testing in delivering exceptional user experiences in software products. By identifying usability issues and optimizing user interactions, effective UX testing is key to success in today's digital world. We'll cover best practices and strategies used by QA testers, offering real-world examples and actionable insights to help readers improve their UX testing skills and enhance their project's success.",
+  //   category: "News",
+  //   time: "3 min read",
+  // },
 ];
 
 // privacy policy data

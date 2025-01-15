@@ -3,6 +3,7 @@ import { Button, Image } from "@nextui-org/react";
 import { ICONS } from "@/utils/icons";
 import { useState } from "react";
 import { blogsResourcesData } from "@/data";
+import Link from "next/link";
 const BlogsHero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -28,15 +29,10 @@ const BlogsHero = () => {
         </h1>
         <div className="flex flex-col md:flex-row justify-between gap-8 mt-4 md:mt-6 lg:mt-8">
           <h5 className="max-w-xs text-xl font-medium text-[#0D2426]">
-            Ready to join an exciting, fast- growing fintech scaleup? We&pos;ve
-            been waiting for you.
+            A curated knowledge hub designed to empower individuals and
+            businesses with insights into the robotics industry and our
+            cutting-edge Autonomous Mobile Robots (AMR).
           </h5>
-          <p className="max-w-sm text-deep-blue">
-            We&apos;re an international team working across various business
-            areas. Roles with Recharge focus on our Group Business and
-            Recharge.com brands. Startselect roles focus on our prepaid gaming
-            brand Startselect.
-          </p>
         </div>
       </div>
       <div className="flex justify-between items-center lg:gap-5 xl:gap-8 mt-12 ">
@@ -71,6 +67,8 @@ const BlogsHero = () => {
                 <span className="text-[#67829E]">{currentData.time}</span>
               </p>
               <Button
+                as={Link}
+                href={`/blogs/${currentData.id}`}
                 isIconOnly
                 radius="full"
                 className="bg-ars-cyan-60 text-deep-blue font-medium "

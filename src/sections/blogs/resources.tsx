@@ -52,6 +52,7 @@ const Resources = () => {
               category={resource.category}
               description={resource.description}
               time={resource.time}
+              linkTo={`/blogs/${resource.id}`}
             />
           ))}
         </div>
