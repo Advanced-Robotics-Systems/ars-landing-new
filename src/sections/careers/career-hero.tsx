@@ -4,7 +4,7 @@ import careerHeroImage2 from "@/../../public/careers/career-hero-2.png";
 import careerHeroImage3 from "@/../../public/careers/career-hero-3.png";
 import careerHeroImage4 from "@/../../public/careers/career-hero-4.png";
 import careerHeroImage5 from "@/../../public/careers/career-hero-5.jpeg";
-import careerHeroImage6 from "@/../../public/careers/career-hero-6.jpeg";
+import careerHeroImage6 from "@/../../public/careers/career-hero-6.png";
 
 const CareerHero = () => {
   return (
@@ -31,11 +31,18 @@ const CareerHero = () => {
         </p> */}
       </div>
       <div className="flex flex-col md:flex-wrap md:flex-row gap-2 w-full mt-10">
-        <Image
-          className="rounded-lg object-cover w-full md:w-[49%] h-40 sm:h-60"
-          src={careerHeroImage1}
-          alt="Image"
-        />
+        <div className="relative rounded-lg w-full md:w-[49%] h-40 sm:h-60 overflow-hidden">
+          <Image
+            className="absolute inset-0 object-cover w-full h-full blur"
+            src={careerHeroImage1}
+            alt="bg-image"
+          />
+          <Image
+            className="absolute inset-0 object-contain w-full h-full"
+            src={careerHeroImage1}
+            alt="Image"
+          />
+        </div>
         <div className="flex gap-x-2 w-full max-md:justify-center md:w-[49%]">
           <Image
             className="rounded-lg object-cover object-top w-[49%] h-40 sm:h-60"
@@ -61,7 +68,7 @@ const CareerHero = () => {
           />
         </div>
         <Image
-          className="rounded-lg object-cover object-top w-full md:w-[49%] h-40 sm:h-60"
+          className="rounded-lg object-cover w-full md:w-[49%] h-40 sm:h-60"
           src={careerHeroImage6}
           alt="Image"
         />
