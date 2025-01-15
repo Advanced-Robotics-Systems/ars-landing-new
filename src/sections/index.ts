@@ -14,6 +14,7 @@ import OS from "./home/os";
 import ARSIndustry from "./home/ars-industry";
 import Clients from "./home/clients";
 import MobileRobot from "./home/mobile-robot";
+import WarehouseRef from "./home/warehouse-ref";
 
 // About sections
 import AboutHero from "./about/about-hero";
@@ -51,6 +52,7 @@ export {
   Clients,
   LatestResources,
   MobileRobot,
+  WarehouseRef,
   AboutHero,
   AboutInfo,
   AboutValues,

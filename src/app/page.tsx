@@ -8,6 +8,7 @@ import {
 	OS,
 	OurMission,
 	Solutions,
+	WarehouseRef,
 } from "@/sections";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
 				<Solutions />
 				<MobileRobot />
 				<OS />
+				<WarehouseRef />
 				<ARSIndustry />
 				<Clients />
 				<LatestResources />
