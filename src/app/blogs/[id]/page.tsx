@@ -13,7 +13,7 @@ export default async function ReadBlog({
       <BlogReadButton />
       {blogData ? (
         <main
-          className="h-screen padding-responsive"
+          className="h-screen padding-responsive py-2 lg:py-2 xl:py-2"
           style={{
             background:
               "linear-gradient(to bottom, rgba(34, 169, 225, 0.5), rgba(215, 239, 249, 1)), linear-gradient(to right top, rgba(5, 144, 200, 0.02), rgba(13, 36, 38, 1))",
