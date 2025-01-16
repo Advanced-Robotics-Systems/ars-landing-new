@@ -4,6 +4,7 @@ import CareerJob from "./career/career-job";
 import ContactForm from "./contact-form/contact-form";
 import BlogCard from "./blog-card/blog-card";
 import ResumeButton from "./career/resume-button";
+import BlogReadButton from "./blog-card/blog-read-button";
 
 export {
   ResourceCard,
@@ -12,4 +13,5 @@ export {
   CareerJob,
   BlogCard,
   ResumeButton,
+  BlogReadButton,
 };
