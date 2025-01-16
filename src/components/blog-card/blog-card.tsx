@@ -25,7 +25,7 @@ const BlogCard = ({
           src={img}
           alt={title}
           width="100%"
-          className="rounded-3xl h-[250px] xs:h-[280px] sm:h-[300px] md:h-[350px] xl:h-[420px]"
+          className="rounded-3xl h-[250px] xs:h-[280px] sm:h-[300px] md:h-[350px] xl:h-[420px] object-cover"
         />
       </div>
       <div className="w-full lg:w-1/2 flex flex-col justify-between gap-8">

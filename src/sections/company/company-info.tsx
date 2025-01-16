@@ -1,4 +1,4 @@
-import aboutInfoImage3 from "@/../../public/about/group-photo-2.jpg";
+import aboutInfoImage3 from "@/../../public/about/group-photo-bright.png";
 import Image from "next/image";
 
 const CompanyInfo = () => {

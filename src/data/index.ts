@@ -479,7 +479,7 @@ export const blogsResourcesData = [
   {
     id: "7234cdd427dd852b6468f6faddef665c",
     title: "The Future of Logistics is Automation",
-    img: "/blogs/home-hero.jpeg",
+    img: "/blogs/the_future_of_logistics_is_automation.png",
     description:
       "As demand for quicker, safer, and cost-effective solutions grows, automation steps in to reshape the way we work. With AMRs leading the way, the future of logistics is here!",
     category: "Blogs",
@@ -490,7 +490,7 @@ export const blogsResourcesData = [
   {
     id: "253f9d400aed1ddfe107f1a85ed99cfb",
     title: "The Impact of Automation on Labor",
-    img: "/blogs/blog-img.jpeg",
+    img: "/blogs/the_impact_of_automation_on_labor.png",
     description:
       "Automation is set to transform numerous jobs, altering task compositions across various industries. How prepared are we for this shift?",
     category: "Blogs",
