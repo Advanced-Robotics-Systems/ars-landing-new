@@ -1,4 +1,4 @@
-import aboutInfoImage3 from "@/../../public/about/about pic 3.jpeg";
+import aboutInfoImage3 from "@/../../public/about/group-photo-2.jpg";
 import Image from "next/image";
 
 const CompanyInfo = () => {
@@ -6,7 +6,7 @@ const CompanyInfo = () => {
     <section className="bg-ice-blue w-full padding-responsive 2xl:px-[12%] 3xl:px-[20%] 4xl:px-[25%]">
       <div className="flex flex-col lg:flex-row max-lg:gap-y-6 items-center lg:justify-between">
         <Image
-          className="lg:basis-1/2 h-60 lg:h-96 max-xs:w-full xs:max-lg:w-96 rounded-lg object-cover object-top"
+          className="lg:basis-1/2 h-60 lg:h-96 max-xs:w-full xs:max-lg:w-96 rounded-lg object-cover object-[center_40%]"
           src={aboutInfoImage3}
           alt="Robot Image"
         />
@@ -18,14 +18,12 @@ const CompanyInfo = () => {
             <p className="text-justify text-xs leading-normal sm:text-sm sm:leading-normal lg:text-base lg:leading-normal 2xl:text-lg 2xl:leading-normal 4xl:text-xl 4xl:leading-normal">
               Advanced Robotics Systems (ARS) is the up-and-coming provider of
               robotic automation solutions in the GCC, revolutionizing
-              industrial processes with innovative technology. Our autonomous
-              mobile robot (AMR) fleet and automation systems reduce dependency
-              on manual operations, enhancing efficiency and productivity.
-              Designed to meet the rigorous GCC standards, our solutions are
-              engineered to perform reliably even in extreme heat and dusty
-              environments. Our user-friendly, no-code software platform allows
-              operators to seamlessly integrate automation systems without
-              requiring specialized expertise or production downtime.
+              industrial processes with innovative technology. Designed to meet
+              the rigorous GCC standards, our AMRs are engineered to perform
+              reliably even in extreme heat and dusty environments. Our
+              user-friendly, no-code software platform allows operators to
+              seamlessly integrate automation systems without requiring
+              specialized expertise or production downtime.
             </p>
           </div>
           <div>
@@ -35,10 +33,7 @@ const CompanyInfo = () => {
             <p className="text-justify text-xs leading-normal sm:text-sm sm:leading-normal lg:text-base lg:leading-normal 2xl:text-lg 2xl:leading-normal 4xl:text-xl 4xl:leading-normal">
               We at ARS envision a future where you can operate all your
               facilities with fully automated systems that work together
-              seamlessly to produce flawless results. With this vision in mind
-              ARS is dedicated to producing the highest quality Autonomous
-              Mobile Robots (AMR) that you can implement into your facilities
-              with ease using our no-code integration platform.
+              seamlessly with humans to produce flawless results.
             </p>
           </div>
         </div>
