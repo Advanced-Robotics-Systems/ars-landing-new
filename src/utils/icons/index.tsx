@@ -14,6 +14,7 @@ import { HiOutlineArrowRight, HiOutlineSquare2Stack } from "react-icons/hi2";
 import { LuUsers } from "react-icons/lu";
 import { RiMenu3Fill } from "react-icons/ri";
 import { TfiHome } from "react-icons/tfi";
+import { FaChevronDown } from "react-icons/fa6";
 
 export const ICONS = {
   instagram: <FaInstagram />,
@@ -33,4 +34,5 @@ export const ICONS = {
   dot: <GoDotFill />,
   arrow_right_big: <HiOutlineArrowRight />,
   arrow_bottom: <HiOutlineArrowNarrowDown />,
+  chevron: <FaChevronDown />,
 };
