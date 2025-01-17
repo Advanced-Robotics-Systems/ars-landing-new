@@ -1,10 +1,10 @@
 import Image from "next/image";
-import careerHeroImage1 from "@/../../public/careers/career-hero-1.png";
+import careerHeroImage1 from "@/../../public/careers/career-hero-1.jpg";
 import careerHeroImage2 from "@/../../public/careers/career-hero-2.png";
 import careerHeroImage3 from "@/../../public/careers/career-hero-3.png";
 import careerHeroImage4 from "@/../../public/careers/career-hero-4.png";
 import careerHeroImage5 from "@/../../public/careers/career-hero-5.jpeg";
-import careerHeroImage6 from "@/../../public/careers/career-hero-6.jpeg";
+import careerHeroImage6 from "@/../../public/careers/career-hero-6.png";
 
 const CareerHero = () => {
   return (
@@ -32,7 +32,7 @@ const CareerHero = () => {
       </div>
       <div className="flex flex-col md:flex-wrap md:flex-row gap-2 w-full mt-10">
         <Image
-          className="rounded-lg object-cover w-full md:w-[49%] h-40 sm:h-60"
+          className="rounded-lg w-full md:w-[49%] h-40 sm:h-60 object-contain bg-white"
           src={careerHeroImage1}
           alt="Image"
         />
@@ -61,7 +61,7 @@ const CareerHero = () => {
           />
         </div>
         <Image
-          className="rounded-lg object-cover object-top w-full md:w-[49%] h-40 sm:h-60"
+          className="rounded-lg object-cover w-full md:w-[49%] h-40 sm:h-60"
           src={careerHeroImage6}
           alt="Image"
         />

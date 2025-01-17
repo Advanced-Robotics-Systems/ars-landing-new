@@ -1,5 +1,6 @@
 import { ICONS } from "@/utils/icons";
 import { Button, Image } from "@nextui-org/react";
+import Link from "next/link";
 import React from "react";
 
 const BlogCard = ({
@@ -8,12 +9,14 @@ const BlogCard = ({
   category,
   description,
   time,
+  linkTo,
 }: {
   title: string;
   img: string;
   category: string;
   description: string;
   time: string;
+  linkTo: string;
 }) => {
   return (
     <div className="flex flex-col lg:flex-row gap-7 md:gap-10 lg:gap-12 xl:gap-16 py-7 md:py-10 lg:py-12 xl:py-14 border-b border-deep-blue-20">
@@ -22,7 +25,7 @@ const BlogCard = ({
           src={img}
           alt={title}
           width="100%"
-          className="rounded-3xl h-[250px] xs:h-[280px] sm:h-[300px] md:h-[350px] xl:h-[420px]"
+          className="rounded-3xl h-[250px] xs:h-[280px] sm:h-[300px] md:h-[350px] xl:h-[420px] object-cover"
         />
       </div>
       <div className="w-full lg:w-1/2 flex flex-col justify-between gap-8">
@@ -38,6 +41,8 @@ const BlogCard = ({
             <span className="text-[#67829E]">{time}</span>
           </p>
           <Button
+            as={Link}
+            href={linkTo}
             isIconOnly
             radius="full"
             className="bg-ars-cyan-60 text-xs md:text-sm text-deep-blue font-medium "

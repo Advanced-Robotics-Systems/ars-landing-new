@@ -1,22 +1,32 @@
 "use client";
+
 import { ResourceCard } from "@/components";
-import { resourcesData, resourcesCategories } from "@/data";
+import { resourcesCategories, blogsResourcesData } from "@/data";
 import { ICONS } from "@/utils/icons";
 import { Button, ButtonGroup } from "@nextui-org/react";
 import { useState } from "react";
 
 const LatestResources = () => {
-  const [resources, setResources] = useState(resourcesData.slice(0, 4));
+  const [resources, setResources] = useState<typeof blogsResourcesData | null>(
+    blogsResourcesData
+  );
   const [activeTab, setActiveTab] = useState(resourcesCategories[0]);
 
   const filterResources = (category: string) => {
     if (category === "All") {
-      setResources(resourcesData.slice(0, 4));
+      blogsResourcesData.length > 4
+        ? setResources(blogsResourcesData.slice(0, 4))
+        : setResources(blogsResourcesData);
     } else {
-      setResources(
-        resourcesData.filter((resource) => resource.category === category)
+      const filteredData = blogsResourcesData.filter(
+        (data) => data.category === category
       );
+
+      filteredData.length < 4
+        ? setResources(filteredData)
+        : setResources(filteredData.slice(0, 4));
     }
+    console.log(resources);
   };
 
   const handleCategoryClick = (category: string) => {
@@ -77,17 +87,24 @@ const LatestResources = () => {
           </Button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-5 xl:gap-8 2xl:gap-10 3xl:gap-12 4xl:gap-16">
-          {resources.map((resource, idx) => (
-            <ResourceCard
-              key={idx}
-              title={resource.title}
-              img={resource.img}
-              category={resource.category}
-              time={resource.time}
-            />
-          ))}
-        </div>
+        {resources && resources.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-5 xl:gap-8 2xl:gap-10 3xl:gap-12 4xl:gap-16">
+            {resources.map((resource, idx) => (
+              <ResourceCard
+                key={idx}
+                title={resource.title}
+                img={resource.img}
+                category={resource.category}
+                time={resource.time}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="relative flex items-center justify-center h-80 text-midnight-blue rounded-xl w-full">
+            This category is not availbable at the moment.
+            <div className="absolute bottom-0 left-1/2 w-1/2 h-[1px] bg-ars-cyan -translate-x-1/2" />
+          </div>
+        )}
         <div className="hidden md:block">
           <Button
             isDisabled={activeTab === "Case Study"}
