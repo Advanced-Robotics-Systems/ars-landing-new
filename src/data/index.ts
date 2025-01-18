@@ -5,7 +5,7 @@ import { ICONS } from "../utils/icons";
 export const navLinks = [
   {
     name: "Products",
-    link: "/products",
+    link: "",
   },
   {
     name: "Automation",

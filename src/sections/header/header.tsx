@@ -120,6 +120,7 @@ const Header = () => {
 														>
 															<DropdownItem
 																key="a-series"
+																href="/products"
 																className="bg-ars-gray hover:bg-ars-gray/80 text-white py-2 px-4"
 															>
 																A Series
@@ -147,6 +148,7 @@ const Header = () => {
 														>
 															<DropdownItem
 																key="arsfm"
+																href="/products/arsfm"
 																className="bg-ars-gray hover:bg-ars-gray/80 text-white py-2 px-4"
 															>
 																arsFM

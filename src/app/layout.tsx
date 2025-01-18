@@ -3,11 +3,18 @@ import { Montserrat } from "next/font/google";
 import { NextUIProvider } from "@nextui-org/react";
 import "./globals.css";
 import { Footer } from "@/sections";
+import { useRouter } from "next/router";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   fallback: ["Arial", "sans-serif"],
 });
+
+declare module "@react-types/shared" {
+  interface RouterConfig {
+    routerOptions: NonNullable<Parameters<ReturnType<typeof useRouter>["push"]>[1]>;
+  }
+}
 
 export const metadata: Metadata = {
   title: "ARS | Advanced Robotics Systems",
@@ -19,10 +26,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const router = useRouter();
+
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <NextUIProvider>
+        <NextUIProvider navigate={router.push}>
           {children}
           <Footer />
         </NextUIProvider>
