@@ -120,16 +120,15 @@ const Header = () => {
 														>
 															<DropdownItem
 																key="a-series"
-																href="/products"
 																className="bg-ars-gray hover:bg-ars-gray/80 text-white py-2 px-4"
 															>
-																A Series
+																<Link href="/products">A Series</Link>
 															</DropdownItem>
 															<DropdownItem
 																key="b-series"
 																className="bg-ars-gray hover:bg-ars-gray/80 text-white py-2 px-4"
 															>
-																B Series (Coming Soon)
+																<Link href="/products">B Series (Coming Soon)</Link>
 															</DropdownItem>
 															<DropdownItem
 																key="f-series"
@@ -148,10 +147,9 @@ const Header = () => {
 														>
 															<DropdownItem
 																key="arsfm"
-																href="/products/arsfm"
 																className="bg-ars-gray hover:bg-ars-gray/80 text-white py-2 px-4"
 															>
-																arsFM
+																<Link href="/products/arsFM">arsFM</Link>
 															</DropdownItem>
 															<DropdownItem
 																key="arsos"
