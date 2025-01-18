@@ -3,7 +3,7 @@ import React from "react";
 const WarehouseRef = () => {
   return (
     <div
-      className="bg-cover bg-center w-full min-h-screen lg:min-h-[135vh] flex items-start px-6 lg:px-24 py-12 md:py-36 lg:py-48"
+      className="bg-cover bg-center w-full min-h-screen lg:min-h-[135vh] flex items-start px-6 lg:px-24 py-12 md:py-36"
       style={{ backgroundImage: "url('/warehouse-ref.jpg')" }}
     >
       {/* Content Container */}
