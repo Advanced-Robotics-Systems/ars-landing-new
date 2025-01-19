@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+
 import Logo from "@/assets/images/ARS_2_cropped.png";
 
 import {
@@ -20,6 +20,7 @@ import { useEffect, useState } from "react";
 import { navLinks } from "@/data";
 import Image from "next/image";
 import { ICONS } from "@/utils/icons";
+import Link from "next/link";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -100,7 +101,7 @@ const Header = () => {
                           <Link href={item.link}>{item.name}</Link>
                         </Button>
                       ) : item.name === "Products" ? (
-                        <Dropdown>
+                        <Dropdown shouldBlockScroll={false}>
                           <DropdownTrigger endContent={ICONS.chevron}>
                             <Button className="pr-0" variant="bordered">
                               Products
@@ -121,23 +122,33 @@ const Header = () => {
                             >
                               <DropdownItem
                                 key="a-series"
-                                className="bg-ars-gray hover:bg-ars-gray/80 text-white py-2 px-4"
+                                className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4 w-full"
                               >
-                                <Link href="/products">A Series</Link>
+                                <Link href="/products">
+                                  <Button className="w-full py-0 pl-0 flex justify-start">
+                                    A Series
+                                  </Button>
+                                </Link>
                               </DropdownItem>
                               <DropdownItem
                                 key="b-series"
-                                className="bg-ars-gray hover:bg-ars-gray/80 text-white py-2 px-4"
+                                className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4"
                               >
                                 <Link href="/products">
-                                  B Series (Coming Soon)
+                                  <Button className="w-full py-0 pl-0 flex justify-start">
+                                    B Series (Coming Soon)
+                                  </Button>
                                 </Link>
                               </DropdownItem>
                               <DropdownItem
                                 key="f-series"
-                                className="bg-ars-gray hover:bg-ars-gray/80 text-white py-2 px-4"
+                                className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4"
                               >
-                                F Series (Coming Soon)
+                                <Link href="/products">
+                                  <Button className="w-full py-0 pl-0 flex justify-start">
+                                    F Series (Coming Soon)
+                                  </Button>
+                                </Link>
                               </DropdownItem>
                             </DropdownSection>
                             {/* Section 2: No Code Software Platform */}
@@ -150,15 +161,23 @@ const Header = () => {
                             >
                               <DropdownItem
                                 key="arsfm"
-                                className="bg-ars-gray hover:bg-ars-gray/80 text-white py-2 px-4"
+                                className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4"
                               >
-                                <Link href="/products/arsFM">arsFM</Link>
+                                <Link href="/products/arsFM">
+                                  <Button className="w-full py-0 pl-0 flex justify-start">
+                                    arsFM
+                                  </Button>
+                                </Link>
                               </DropdownItem>
                               <DropdownItem
                                 key="arsos"
-                                className="bg-ars-gray hover:bg-ars-gray/80 text-white py-2 px-4"
+                                className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4"
                               >
-                                arsOs (Coming Soon)
+                                <Link href="/products/arsFM">
+                                  <Button className="w-full py-0 pl-0 flex justify-start">
+                                    arsOs (Coming Soon)
+                                  </Button>
+                                </Link>
                               </DropdownItem>
                             </DropdownSection>
                           </DropdownMenu>
@@ -209,7 +228,7 @@ const Header = () => {
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link className="w-full text-white" href={item.link}>
                 {item.name === "Products" ? (
-                  <Dropdown>
+                  <Dropdown shouldBlockScroll={false}>
                     <DropdownTrigger endContent={ICONS.chevron}>
                       <Button className="pl-0" variant="bordered">
                         Products
@@ -230,21 +249,33 @@ const Header = () => {
                       >
                         <DropdownItem
                           key="a-series"
-                          className="bg-ars-gray hover:bg-ars-gray/80 text-white py-2 px-4"
+                          className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4 w-full"
                         >
-                          <Link href="/products">A Series</Link>
+                          <Link href="/products">
+                            <Button className="w-full py-0 pl-0 flex justify-start">
+                              A Series
+                            </Button>
+                          </Link>
                         </DropdownItem>
                         <DropdownItem
                           key="b-series"
-                          className="bg-ars-gray hover:bg-ars-gray/80 text-white py-2 px-4"
+                          className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4"
                         >
-                          <Link href="/products">B Series (Coming Soon)</Link>
+                          <Link href="/products">
+                            <Button className="w-full py-0 pl-0 flex justify-start">
+                              B Series (Coming Soon)
+                            </Button>
+                          </Link>
                         </DropdownItem>
                         <DropdownItem
                           key="f-series"
-                          className="bg-ars-gray hover:bg-ars-gray/80 text-white py-2 px-4"
+                          className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4"
                         >
-                          F Series (Coming Soon)
+                          <Link href="/products">
+                            <Button className="w-full py-0 pl-0 flex justify-start">
+                              F Series (Coming Soon)
+                            </Button>
+                          </Link>
                         </DropdownItem>
                       </DropdownSection>
                       {/* Section 2: No Code Software Platform */}
@@ -257,15 +288,23 @@ const Header = () => {
                       >
                         <DropdownItem
                           key="arsfm"
-                          className="bg-ars-gray hover:bg-ars-gray/80 text-white py-2 px-4"
+                          className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4"
                         >
-                          <Link href="/products/arsFM">arsFM</Link>
+                          <Link href="/products/arsFM">
+                            <Button className="w-full py-0 pl-0 flex justify-start">
+                              arsFM
+                            </Button>
+                          </Link>
                         </DropdownItem>
                         <DropdownItem
                           key="arsos"
-                          className="bg-ars-gray hover:bg-ars-gray/80 text-white py-2 px-4"
+                          className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4"
                         >
-                          arsOs (Coming Soon)
+                          <Link href="/products/arsFM">
+                            <Button className="w-full py-0 pl-0 flex justify-start">
+                              arsOs (Coming Soon)
+                            </Button>
+                          </Link>
                         </DropdownItem>
                       </DropdownSection>
                     </DropdownMenu>
