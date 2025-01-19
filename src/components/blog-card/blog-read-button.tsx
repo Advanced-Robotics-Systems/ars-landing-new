@@ -10,7 +10,7 @@ const BlogReadButton = () => {
     <Button
       isIconOnly
       radius="full"
-      className="fixed top-5 left-5 bg-ars-gray hover:bg-ars-gray/60 text-white"
+      className="fixed top-5 left-5 bg-ars-gray hover:bg-ars-gray/60 text-white z-10"
       onPress={() => router.back()}
     >
       {ICONS.arrow_left}
