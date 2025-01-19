@@ -5,6 +5,7 @@ import ContactForm from "./contact-form/contact-form";
 import BlogCard from "./blog-card/blog-card";
 import ResumeButton from "./career/resume-button";
 import BlogReadButton from "./blog-card/blog-read-button";
+import MobileRobotButton from "./home/mobile-robot-button";
 
 export {
   ResourceCard,
@@ -14,4 +15,5 @@ export {
   BlogCard,
   ResumeButton,
   BlogReadButton,
+  MobileRobotButton,
 };

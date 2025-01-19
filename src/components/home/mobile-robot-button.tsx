@@ -4,28 +4,33 @@ import { ICONS } from "@/utils/icons";
 import { Button, Tooltip } from "@nextui-org/react";
 import Link from "next/link";
 
-const ResumeButton = () => {
+const MobileRobotButton = ({
+  title,
+  link,
+}: {
+  title: string;
+  link: string;
+}) => {
   return (
     <Tooltip
-      content="Send us your Resume"
+      content={`Learn more about the ${title}!`}
       placement="right"
       showArrow
       radius="full"
       classNames={{
-        base: ["before:bg-ars-cyan"],
+        base: ["before:bg-ars-gray"],
         content: [
           "px-4 py-2 shadow-lg",
-          "bg-gradient-to-r from-ars-cyan to-ars-cyan-60 text-sm text-white font-medium",
+          "bg-ars-gray text-sm text-white font-medium",
         ],
       }}
     >
       <Button
         as={Link}
-        href="/contact"
-        className="bg-cyan-blue/50 text-xs xxs:text-sm sm:text-base font-medium"
-        size="md"
-        radius="full"
+        href={link}
         isIconOnly
+        radius="full"
+        className="text-white bg-transparent text-2xl md:text-3xl font-bold -ml-1 hover:bg-ars-cyan-60"
       >
         {ICONS.arrow_right_big}
       </Button>
@@ -33,4 +38,4 @@ const ResumeButton = () => {
   );
 };
 
-export default ResumeButton;
+export default MobileRobotButton;

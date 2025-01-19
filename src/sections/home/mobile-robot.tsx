@@ -1,4 +1,5 @@
 "use client";
+import { MobileRobotButton } from "@/components";
 import { mobileRobotData } from "@/data";
 import { ICONS } from "@/utils/icons";
 import { Button } from "@nextui-org/react";
@@ -49,15 +50,10 @@ const MobileRobot = () => {
                 </div>
               ))}
             </div>
-            <Button
-              as={Link}
-              href={currentData.link}
-              isIconOnly
-              radius="full"
-              className="text-white bg-transparent text-2xl md:text-3xl font-bold -ml-1 hover:bg-ars-cyan-60"
-            >
-              {ICONS.arrow_right_big}
-            </Button>
+            <MobileRobotButton
+              title={currentData.title}
+              link={currentData.link}
+            />
           </div>
         </div>
         <div
