@@ -1,4 +1,4 @@
-import { BlogReadButton } from "@/components";
+import { BlogPdf, BlogReadButton } from "@/components";
 import { blogsResourcesData } from "@/data";
 
 export default async function ReadBlog({
@@ -19,13 +19,14 @@ export default async function ReadBlog({
               "linear-gradient(to bottom, rgba(34, 169, 225, 0.5), rgba(215, 239, 249, 1)), linear-gradient(to right top, rgba(5, 144, 200, 0.02), rgba(13, 36, 38, 1))",
           }}
         >
-          <iframe
+          {/* <iframe
             src={blogData.file}
             width="100%"
             height="100%"
             className="border-none"
             title={blogData.title}
-          />
+          /> */}
+          <BlogPdf file={blogData.file} />
         </main>
       ) : (
         <main>

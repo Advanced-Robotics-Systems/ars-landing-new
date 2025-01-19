@@ -6,6 +6,7 @@ import BlogCard from "./blog-card/blog-card";
 import ResumeButton from "./career/resume-button";
 import BlogReadButton from "./blog-card/blog-read-button";
 import MobileRobotButton from "./home/mobile-robot-button";
+import BlogPdf from "./blog-card/blog-pdf";
 
 export {
   ResourceCard,
@@ -16,4 +17,5 @@ export {
   ResumeButton,
   BlogReadButton,
   MobileRobotButton,
+  BlogPdf,
 };
