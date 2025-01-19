@@ -6,7 +6,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 const MobileRobot = () => {
-  const [activeTab, setActiveTab] = useState("Counter UAS");
+  const [activeTab, setActiveTab] = useState("A Series");
   const [currentData, setCurrentData] = useState(mobileRobotData[0]);
 
   const handleButtonClick = (title: string) => {
@@ -37,9 +37,19 @@ const MobileRobot = () => {
               {currentData.title}
             </h3>
             <hr />
-            <p className="text-[12px] md:text-[16px] leading-4 md:leading-6 lg:leading-7 w-52 md:w-60 lg:w-64">
+            {/* <p className="text-[12px] md:text-[16px] leading-4 md:leading-6 lg:leading-7 w-52 md:w-60 lg:w-64">
               {currentData.description}
-            </p>
+            </p> */}
+            <div className="flex gap-3">
+              {currentData.slots.map((slot, index) => (
+                <div
+                  key={index}
+                  className="bg-ars-cyan rounded-full px-5 py-3 text-white"
+                >
+                  {slot}
+                </div>
+              ))}
+            </div>
             <Link href="#">
               <Button
                 isIconOnly
