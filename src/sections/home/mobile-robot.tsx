@@ -44,7 +44,7 @@ const MobileRobot = () => {
               {currentData.slots.map((slot, index) => (
                 <div
                   key={index}
-                  className="bg-ars-cyan rounded-full px-5 py-3 text-white"
+                  className="bg-ars-cyan rounded-full px-5 py-3 text-white text-sm lg:text-base"
                 >
                   {slot}
                 </div>
@@ -66,13 +66,22 @@ const MobileRobot = () => {
             <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium">
               {currentData.title}
             </h3>
-            <hr />
-            <p className="text-[12px] md:text-[16px] leading-4 md:leading-6 lg:leading-7 w-52 md:w-60 lg:w-64">
+            {/* <p className="text-[12px] md:text-[16px] leading-4 md:leading-6 lg:leading-7 w-52 md:w-60 lg:w-64">
               {currentData.description}
-            </p>
+            </p> */}
+            <div className="flex gap-3 w-fit pt-5 border-t-2 border-white">
+              {currentData.slots.map((slot, index) => (
+                <div
+                  key={index}
+                  className="bg-ars-cyan-60 sm:bg-ars-cyan rounded-full px-5 py-3 text-white text-center text-xs"
+                >
+                  {slot}
+                </div>
+              ))}
+            </div>
             <Button
               as={Link}
-              href="#"
+              href={currentData.link}
               isIconOnly
               radius="full"
               className="text-white bg-transparent text-2xl md:text-3xl font-bold -ml-1 hover:bg-ars-cyan-60"
