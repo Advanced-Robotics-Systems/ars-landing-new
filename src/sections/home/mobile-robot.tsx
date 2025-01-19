@@ -3,7 +3,7 @@ import { mobileRobotData } from "@/data";
 import { ICONS } from "@/utils/icons";
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const MobileRobot = () => {
   const [activeTab, setActiveTab] = useState("A Series");
@@ -36,11 +36,10 @@ const MobileRobot = () => {
             <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium">
               {currentData.title}
             </h3>
-            <hr />
             {/* <p className="text-[12px] md:text-[16px] leading-4 md:leading-6 lg:leading-7 w-52 md:w-60 lg:w-64">
               {currentData.description}
             </p> */}
-            <div className="flex gap-3">
+            <div className="flex gap-3 w-fit pt-5 border-t-2 border-white">
               {currentData.slots.map((slot, index) => (
                 <div
                   key={index}
@@ -50,15 +49,15 @@ const MobileRobot = () => {
                 </div>
               ))}
             </div>
-            <Link href="#">
-              <Button
-                isIconOnly
-                radius="full"
-                className="text-white bg-transparent text-2xl md:text-3xl font-bold -ml-1 hover:bg-ars-cyan-60"
-              >
-                {ICONS.arrow_right_big}
-              </Button>
-            </Link>
+            <Button
+              as={Link}
+              href={currentData.link}
+              isIconOnly
+              radius="full"
+              className="text-white bg-transparent text-2xl md:text-3xl font-bold -ml-1 hover:bg-ars-cyan-60"
+            >
+              {ICONS.arrow_right_big}
+            </Button>
           </div>
         </div>
         <div
@@ -75,15 +74,15 @@ const MobileRobot = () => {
             <p className="text-[12px] md:text-[16px] leading-4 md:leading-6 lg:leading-7 w-52 md:w-60 lg:w-64">
               {currentData.description}
             </p>
-            <Link href="#">
-              <Button
-                isIconOnly
-                radius="full"
-                className="text-white bg-transparent text-2xl md:text-3xl font-bold -ml-1 hover:bg-ars-cyan-60"
-              >
-                {ICONS.arrow_right_big}
-              </Button>
-            </Link>
+            <Button
+              as={Link}
+              href="#"
+              isIconOnly
+              radius="full"
+              className="text-white bg-transparent text-2xl md:text-3xl font-bold -ml-1 hover:bg-ars-cyan-60"
+            >
+              {ICONS.arrow_right_big}
+            </Button>
           </div>
         </div>
         <div className="flex justify-around border-t border-ars-cyan">
