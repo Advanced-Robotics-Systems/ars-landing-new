@@ -74,7 +74,7 @@ const BlogPdf = ({ file }: { file: string }) => {
   }, []);
 
   return (
-    <div className="w-full h-full max-w-4xl mx-auto flex flex-col items-center overflow-auto no-scrollbar">
+    <section className="w-full h-full max-w-4xl mx-auto flex flex-col items-center overflow-auto no-scrollbar">
       <Document file={file} onLoadSuccess={onDocumentLoaded}>
         {Array.from({ length: state.numPages }, (_, index) => (
           <div
@@ -91,7 +91,7 @@ const BlogPdf = ({ file }: { file: string }) => {
           </div>
         ))}
       </Document>
-    </div>
+    </section>
   );
 };
 
