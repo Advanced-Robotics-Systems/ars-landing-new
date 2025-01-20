@@ -1,6 +1,11 @@
 "use client";
 
-import "@/pdfConfig";
+import { pdfjs } from "react-pdf";
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  "pdfjs-dist/build/pdf.worker.min.mjs",
+  import.meta.url
+).toString();
 
 import { useEffect, useReducer } from "react";
 import { Document, Page } from "react-pdf";
@@ -30,13 +35,11 @@ function reducer(state: TState, action: TAction) {
 }
 
 const BlogPdf = ({ file }: { file: string }) => {
-  const initialState: TState = {
+  const [state, dispatch] = useReducer(reducer, {
     numPages: 0,
     containerWidth: 0,
     scale: 0,
-  };
-
-  const [state, dispatch] = useReducer(reducer, initialState);
+  });
 
   function onDocumentLoaded({ numPages }: { numPages: number }) {
     dispatch({ type: "SET_NUM_PAGES", numPages });
@@ -47,7 +50,9 @@ const BlogPdf = ({ file }: { file: string }) => {
       const width = Math.min(800, window.innerWidth - 20);
       dispatch({ type: "SET_CONTAINER_WIDTH", containerWidth: width });
 
-      if (window.innerWidth < 390) {
+      if (window.innerWidth < 350) {
+        dispatch({ type: "SET_SCALE", scale: width / 350 });
+      } else if (window.innerWidth < 390) {
         dispatch({ type: "SET_SCALE", scale: width / 400 });
       } else if (window.innerWidth < 450) {
         dispatch({ type: "SET_SCALE", scale: width / 500 });
@@ -69,12 +74,12 @@ const BlogPdf = ({ file }: { file: string }) => {
   }, []);
 
   return (
-    <div className="w-full h-full max-w-4xl mx-auto flex flex-col items-center overflow-auto">
+    <div className="w-full h-full max-w-4xl mx-auto flex flex-col items-center overflow-auto no-scrollbar">
       <Document file={file} onLoadSuccess={onDocumentLoaded}>
         {Array.from({ length: state.numPages }, (_, index) => (
           <div
             key={`page_${index + 1}`}
-            className="flex justify-center mb-4 max-w-full"
+            className="flex justify-center mb-3 max-w-full border-4 border-ars-gray"
           >
             <Page
               pageNumber={index + 1}
