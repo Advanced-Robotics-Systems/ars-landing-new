@@ -9,20 +9,20 @@ const WarehouseRef = () => {
       {/* Content Container */}
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-96 mx-auto text-white">
         {/* Left Column: Title */}
-        <div className="flex items-center">
+        <div className="flex">
           <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl ">
             Take it to the next level on-site.
           </h1>
         </div>
 
         {/* Right Column: Description */}
-        <div className="flex items-center">
+        <div className="flex ">
           <p className="text-xs leading-normal md:text-sm md:leading-normal lg:text-base lg:leading-normal xl:text-lg xl:leading-normal">
             A robot alone is just a tool, but when fully integrated into your
             operations, it becomes a transformative solution. Imagine seamless
             autonomous material flows powering your efficiency, smart Fleet
-            Master Control software optimizing every move, and end-to-end 24/7
-            support ensuring peak performance around the clock. With our
+            Management Control software optimizing every move, and end-to-end
+            24/7 support ensuring peak performance around the clock. With our
             advanced robotics and intelligent systems, your intralogistics can
             go beyond limits—unlocking new levels of productivity and
             innovation.
