@@ -1,6 +1,12 @@
 import { BlogPdf, BlogReadButton } from "@/components";
 import { blogsResourcesData } from "@/data";
 
+export function generateStaticParams() {
+  return blogsResourcesData.map((blog) => ({
+    id: blog.id,
+  }));
+}
+
 export default async function ReadBlog({
   params,
 }: {
