@@ -103,7 +103,10 @@ const Header = () => {
                       ) : item.name === "Products" ? (
                         <Dropdown shouldBlockScroll={false}>
                           <DropdownTrigger endContent={ICONS.chevron}>
-                            <Button className="pr-0" variant="bordered">
+                            <Button
+                              className="pr-0 bg-transparent lg:px-1 xl:px-2 lg:text-lg font-medium hover:text-gray-300 duration-200 "
+                              variant="bordered"
+                            >
                               Products
                             </Button>
                           </DropdownTrigger>
