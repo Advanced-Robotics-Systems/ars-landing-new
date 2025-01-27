@@ -7,7 +7,7 @@ const WarehouseRef = () => {
       style={{ backgroundImage: "url('/warehouse-ref.jpg')" }}
     >
       {/* Content Container */}
-      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-96 mx-auto text-white">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-8 lg:gap-20 xl:gap-24 2xl:gap-36 3xl:gap-40 mx-auto text-white">
         {/* Left Column: Title */}
         <div className="flex">
           <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl ">
@@ -17,15 +17,13 @@ const WarehouseRef = () => {
 
         {/* Right Column: Description */}
         <div className="flex ">
-          <p className="text-xs leading-normal md:text-sm md:leading-normal lg:text-base lg:leading-normal xl:text-lg xl:leading-normal">
+          <p className="text-sm leading-normal md:text-base md:leading-normal lg:text-lg lg:leading-normal xl:text-xl xl:leading-normal">
             A robot alone is just a tool, but when fully integrated into your
             operations, it becomes a transformative solution. Imagine seamless
             autonomous material flows powering your efficiency, smart Fleet
             Management Control software optimizing every move, and end-to-end
-            24/7 support ensuring peak performance around the clock. With our
-            advanced robotics and intelligent systems, your intralogistics can
-            go beyond limits—unlocking new levels of productivity and
-            innovation.
+            24/7 support ensuring peak performance around the clock. Unlocking
+            new levels of productivity and innovation.
             <br />
             The sky isn&apos;t the limit; it&apos;s just the beginning.
           </p>
