@@ -4,7 +4,7 @@ import { Button, Image } from "@nextui-org/react";
 import React, { useState } from "react";
 
 const SwappableModules = () => {
-  const [activeButton, setActiveButton] = useState("Pallet Lifter");
+  const [activeButton, setActiveButton] = useState("Lifter");
   const [moduleData, setModuleData] = useState(swappableModulesData[0]);
 
   const filterModuleData = (title: string) => {
@@ -50,7 +50,7 @@ const SwappableModules = () => {
             <Image
               src={moduleData.img}
               alt={moduleData.title}
-              className="w-full"
+              className="max-w-[634px] max-h-[334px] rounded-lg w-full object-cover"
             />
           </div>
 

@@ -447,7 +447,7 @@ export const swappableModulesData = [
   // },
   {
     title: "Lifter",
-    img: "/products/pallet-lifter.png",
+    img: "/products/Website_Lifter_v3.jpg",
     maxPayload: [
       "A300 - 300kg",
       "A500 - 500kg",
