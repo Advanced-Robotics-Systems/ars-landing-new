@@ -95,10 +95,12 @@ const Header = () => {
                     <li key={index}>
                       {item.name === "Get in Touch" ? (
                         <Button
+                          as={Link}
+                          href={item.link}
                           radius="full"
                           className="bg-cyan-blue-30 border border-ars-cyan font-medium lg:px-5 xl:px-6 lg:text-lg hover:text-gray-300 duration-200 "
                         >
-                          <Link href={item.link}>{item.name}</Link>
+                          {item.name}
                         </Button>
                       ) : item.name === "Products" ? (
                         <Dropdown shouldBlockScroll={false}>
@@ -127,31 +129,37 @@ const Header = () => {
                                 key="a-series"
                                 className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4 w-full"
                               >
-                                <Link href="/products">
-                                  <Button className="w-full py-0 pl-0 flex justify-start">
-                                    A Series
-                                  </Button>
-                                </Link>
+                                <Button
+                                  as={Link}
+                                  href="/products"
+                                  className="w-full py-0 pl-0 flex justify-start"
+                                >
+                                  A Series
+                                </Button>
                               </DropdownItem>
                               <DropdownItem
                                 key="b-series"
                                 className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4"
                               >
-                                <Link href="/products">
-                                  <Button className="w-full py-0 pl-0 flex justify-start">
-                                    B Series (Coming Soon)
-                                  </Button>
-                                </Link>
+                                <Button
+                                  as={Link}
+                                  href="/products"
+                                  className="w-full py-0 pl-0 flex justify-start"
+                                >
+                                  B Series (Coming Soon)
+                                </Button>
                               </DropdownItem>
                               <DropdownItem
                                 key="f-series"
                                 className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4"
                               >
-                                <Link href="/products">
-                                  <Button className="w-full py-0 pl-0 flex justify-start">
-                                    F Series (Coming Soon)
-                                  </Button>
-                                </Link>
+                                <Button
+                                  as={Link}
+                                  href="/products"
+                                  className="w-full py-0 pl-0 flex justify-start"
+                                >
+                                  F Series (Coming Soon)
+                                </Button>
                               </DropdownItem>
                             </DropdownSection>
                             {/* Section 2: No Code Software Platform */}
@@ -166,28 +174,36 @@ const Header = () => {
                                 key="arsfm"
                                 className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4"
                               >
-                                <Link href="/products/arsFM">
-                                  <Button className="w-full py-0 pl-0 flex justify-start">
-                                    arsFM
-                                  </Button>
-                                </Link>
+                                <Button
+                                  as={Link}
+                                  href="/products/arsFM"
+                                  className="w-full py-0 pl-0 flex justify-start"
+                                >
+                                  arsFM
+                                </Button>
                               </DropdownItem>
                               <DropdownItem
                                 key="arsos"
                                 className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4"
                               >
-                                <Link href="/products/arsFM">
-                                  <Button className="w-full py-0 pl-0 flex justify-start">
-                                    arsOs (Coming Soon)
-                                  </Button>
-                                </Link>
+                                <Button
+                                  as={Link}
+                                  href="/products/arsFM"
+                                  className="w-full py-0 pl-0 flex justify-start"
+                                >
+                                  arsOs (Coming Soon)
+                                </Button>
                               </DropdownItem>
                             </DropdownSection>
                           </DropdownMenu>
                         </Dropdown>
                       ) : (
-                        <Button className="bg-transparent lg:px-1 xl:px-2 lg:text-lg font-medium hover:text-gray-300 duration-200 ">
-                          <Link href={item.link}>{item.name}</Link>
+                        <Button
+                          as={Link}
+                          href={item.link}
+                          className="bg-transparent lg:px-1 xl:px-2 lg:text-lg font-medium hover:text-gray-300 duration-200 "
+                        >
+                          {item.name}
                         </Button>
                       )}
                     </li>
@@ -254,31 +270,37 @@ const Header = () => {
                           key="a-series"
                           className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4 w-full"
                         >
-                          <Link href="/products">
-                            <Button className="w-full py-0 pl-0 flex justify-start">
-                              A Series
-                            </Button>
-                          </Link>
+                          <Button
+                            as={Link}
+                            href="/products"
+                            className="w-full py-0 pl-0 flex justify-start"
+                          >
+                            A Series
+                          </Button>
                         </DropdownItem>
                         <DropdownItem
                           key="b-series"
                           className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4"
                         >
-                          <Link href="/products">
-                            <Button className="w-full py-0 pl-0 flex justify-start">
-                              B Series (Coming Soon)
-                            </Button>
-                          </Link>
+                          <Button
+                            as={Link}
+                            href="/products"
+                            className="w-full py-0 pl-0 flex justify-start"
+                          >
+                            B Series (Coming Soon)
+                          </Button>
                         </DropdownItem>
                         <DropdownItem
                           key="f-series"
                           className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4"
                         >
-                          <Link href="/products">
-                            <Button className="w-full py-0 pl-0 flex justify-start">
-                              F Series (Coming Soon)
-                            </Button>
-                          </Link>
+                          <Button
+                            as={Link}
+                            href="/products"
+                            className="w-full py-0 pl-0 flex justify-start"
+                          >
+                            F Series (Coming Soon)
+                          </Button>
                         </DropdownItem>
                       </DropdownSection>
                       {/* Section 2: No Code Software Platform */}
@@ -293,21 +315,25 @@ const Header = () => {
                           key="arsfm"
                           className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4"
                         >
-                          <Link href="/products/arsFM">
-                            <Button className="w-full py-0 pl-0 flex justify-start">
-                              arsFM
-                            </Button>
-                          </Link>
+                          <Button
+                            as={Link}
+                            href="/products/arsFM"
+                            className="w-full py-0 pl-0 flex justify-start"
+                          >
+                            arsFM
+                          </Button>
                         </DropdownItem>
                         <DropdownItem
                           key="arsos"
                           className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4"
                         >
-                          <Link href="/products/arsFM">
-                            <Button className="w-full py-0 pl-0 flex justify-start">
-                              arsOs (Coming Soon)
-                            </Button>
-                          </Link>
+                          <Button
+                            as={Link}
+                            href="/products/arsFM"
+                            className="w-full py-0 pl-0 flex justify-start"
+                          >
+                            arsOs (Coming Soon)
+                          </Button>
                         </DropdownItem>
                       </DropdownSection>
                     </DropdownMenu>
