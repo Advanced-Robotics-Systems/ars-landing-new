@@ -50,7 +50,7 @@ const LatestResources = () => {
     filterResources(prevCategory);
   };
   return (
-    <section className="px-5 md:px-10 lg:px-16 xl:px-24 2xl:px-36 3xl:px-44 pb-10 lg:pb-14 xl:pb-20 bg-ice-blue  ">
+    <section className="px-5 md:px-10 lg:px-16 xl:px-24 2xl:px-36 3xl:px-44 py-10 lg:py-14 xl:py-20 bg-ice-blue  ">
       <div className="flex flex-col md:flex-row gap-5 items-center justify-between mb-10">
         <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl text-[#272727] font-medium">
           Latest resources
