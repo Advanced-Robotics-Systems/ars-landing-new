@@ -1,10 +1,14 @@
-import React from "react";
-
 const WarehouseRef = () => {
   return (
     <div
-      className="bg-cover bg-center w-full min-h-screen lg:min-h-[135vh] flex items-start padding-responsive"
-      style={{ backgroundImage: "url('/warehouse-ref.jpg')" }}
+      className="w-full min-h-screen lg:min-h-[135vh] flex items-start padding-responsive"
+      style={{
+        backgroundImage: "url('/warehouse-ref.jpg')",
+        backgroundSize: "contain",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundColor: "black",
+      }}
     >
       {/* Content Container */}
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-8 lg:gap-20 xl:gap-24 2xl:gap-36 3xl:gap-40 mx-auto text-white">
