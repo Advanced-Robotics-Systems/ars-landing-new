@@ -448,18 +448,22 @@ export const swappableModulesData = [
   {
     title: "Lifter",
     img: "/products/pallet-lifter.png",
-    maxPayload: "1000 kg",
+    maxPayload: [
+      "A300 - 300kg",
+      "A500 - 500kg",
+      '"The payload is changable, and custom attachments can be designed to suit your specific application."',
+    ],
     useCases: [
-      // "inbound pallet movement from staging toracking",
-      // "outbound pallet movement",
-      // "finished goods movement from end of production line to storage",
-      "Thank you for your patience, we are updating the information soon.",
+      "Goods-to-Person system for eCommerce fulfillment centers",
+      "Material Handling in Warehouses such as shelf picking & cross-docking",
+      "Manufacturing and Assembly Lines tasks such as workpiece transfer, tool loading/unloading, & finished goods transport.",
+      "Limitless applications across various industries.",
     ],
   },
   {
-    title: "Tugger",
+    title: "Tugger (Coming Soon)",
     img: "/products/pallet-lifter.png",
-    maxPayload: "1000 kg",
+    maxPayload: ["1000 kg"],
     useCases: [
       // "Inbound pallet movement from staging toracking",
       // "Outbound pallet movement",
@@ -468,9 +472,9 @@ export const swappableModulesData = [
     ],
   },
   {
-    title: "Carrier",
+    title: "Carrier (Coming Soon)",
     img: "/products/pallet-lifter.png",
-    maxPayload: "1000 kg",
+    maxPayload: ["1000 kg"],
     useCases: [
       // "Inbound pallet movement from staging toracking",
       // "Outbound pallet movement",

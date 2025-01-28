@@ -66,9 +66,14 @@ const SwappableModules = () => {
                 Max Payload
               </h4>
               <hr className="border border-[#2B2B2B]" />
-              <p className="text-sm md:test-base font-medium mt-4 pl-5">
-                Up to {moduleData.maxPayload}
-              </p>
+              {moduleData.maxPayload.map((item, index) => (
+                <p
+                  key={index}
+                  className="text-sm md:test-base font-medium mt-4 pl-5"
+                >
+                  {item}
+                </p>
+              ))}
             </div>
             <div>
               <h4 className="text-base md:text-lg font-medium mb-2">
