@@ -1,5 +1,5 @@
 import {
-  ARSIndustry,
+  // ARSIndustry,
   // Clients,
   Header,
   Hero,
@@ -22,7 +22,7 @@ export default function Home() {
         <MobileRobot />
         <OS />
         <WarehouseRef />
-        <ARSIndustry />
+        {/* <ARSIndustry /> */}
         {/* <Clients /> */}
         <LatestResources />
       </main>
