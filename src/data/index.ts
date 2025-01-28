@@ -451,7 +451,7 @@ export const swappableModulesData = [
     maxPayload: [
       "A300 - 300kg",
       "A500 - 500kg",
-      '"The payload is changable, and custom attachments can be designed to suit your specific application."',
+      "The payload is changable, and custom attachments can be designed to suit your specific application.",
     ],
     useCases: [
       "Goods-to-Person system for eCommerce fulfillment centers",
