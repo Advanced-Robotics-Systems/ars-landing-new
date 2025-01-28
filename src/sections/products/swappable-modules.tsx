@@ -19,10 +19,17 @@ const SwappableModules = () => {
     }
   };
 
+  /* eslint-disable @typescript-eslint/no-unused-vars */
+
   const handleButtonClick = (title: string) => {
-    setActiveButton(title);
-    filterModuleData(title);
+    // setActiveButton(title);
+    // filterModuleData(title);
+    setActiveButton("Lifter");
+    filterModuleData("Lifter");
   };
+
+  /* eslint-enable @typescript-eslint/no-unused-vars */
+
   return (
     <section className=" px-5 md:px-10 lg:px-16 xl:px-24 2xl:px-36 3xl:px-44 pt-10 lg:pt-14 xl:pt-20">
       <h2 className="text-deep-blue text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium text-center mb-6 md:mb-8 lg:mb-10">
@@ -35,11 +42,12 @@ const SwappableModules = () => {
               key={index}
               size="sm"
               onPress={() => handleButtonClick(module.title)}
+              disabled={index > 0}
               className={`w-full text-[10px] xxs:text-[12px] xs:text-sm md:text-base ${
                 activeButton === module.title
                   ? "border-b border-ars-cyan"
                   : "border-b border-gray-500"
-              } `}
+              } disabled:text-gray-500`}
             >
               {module.title}
             </Button>
@@ -50,7 +58,7 @@ const SwappableModules = () => {
             <Image
               src={moduleData.img}
               alt={moduleData.title}
-              className="max-w-[634px] max-h-[334px] rounded-lg w-full object-cover"
+              className="max-w-[634px] max-h-[432px] w-full object-cover object-bottom rounded-lg"
             />
           </div>
 
