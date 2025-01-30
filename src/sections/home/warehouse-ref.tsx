@@ -12,6 +12,7 @@ const WarehouseRef = () => {
       }}
     >
       <Image
+        fill
         src="/warehouse-no-text-no-bg.png"
         alt="Warehouse Picture"
         className="absolute top-0 left-0 w-full h-full object-contain object-[center_90%] xxs:object-[center_80%] xs:object-center -z-10"

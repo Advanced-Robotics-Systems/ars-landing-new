@@ -28,7 +28,7 @@ const MobileRobot = () => {
       </h2>
       <div className=" w-full">
         <div
-          className="hidden md:block md:h-[500px] lg:h-[550px] xl:h-[600px] 2xl:h-[650px] w-full rounded-t-3xl"
+          className="hidden md:block md:h-[65vh] lg:h-[75vh] w-full rounded-t-3xl"
           style={{
             background: `linear-gradient(270deg, rgba(0, 0, 0, 0.00) 40%, #000 100%),url(${currentData.img}) white 100% / contain no-repeat`,
           }}
@@ -73,7 +73,7 @@ const MobileRobot = () => {
               {currentData.slots.map((slot, index) => (
                 <div
                   key={index}
-                  className="bg-ars-cyan-60 sm:bg-ars-cyan rounded-full px-5 py-3 text-white text-center text-xs"
+                  className="bg-ars-cyan-60 sm:bg-ars-cyan rounded-full px-3 py-2 text-white text-center text-xs"
                 >
                   {slot}
                 </div>

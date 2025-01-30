@@ -35,13 +35,13 @@ const OurMission = () => {
             to propel you forward ahead of the competition.
           </p>
           <div className="flex gap-2 items-center mt-4 md:mt-6 lg:mt-8">
-            <p className="font-semibold">Learn About Us</p>
+            <p className="text-sm md:text-base font-semibold">Learn About Us</p>
             <Button
               as={Link}
               href="/company"
               isIconOnly
               radius="full"
-              className="bg-ars-cyan-60 text-xs md:text-sm text-white font-medium "
+              className=" bg-ars-cyan-60 text-xs md:text-sm text-white font-medium "
             >
               {ICONS.arrow_right}
             </Button>

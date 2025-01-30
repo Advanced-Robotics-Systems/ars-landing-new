@@ -71,7 +71,7 @@ const Header = () => {
             <div
               className={`relative ${
                 isExpanded
-                  ? "bg-red-500 lg:w-[760px] xl:w-[840px] h-12  duration-1000"
+                  ? "bg-red-500 lg:w-[750px] xl:w-[860px] h-12  duration-1000"
                   : `${
                       isScrolled
                         ? "bg-red-500 w-20 h-12  duration-1000 "
@@ -81,7 +81,7 @@ const Header = () => {
             >
               <div className="flex lg:gap-2 xl:gap-4 absolute right-0 top-1/2 transform -translate-y-1/2">
                 <ul
-                  className={`flex lg:gap-8 xl:gap-10 ${
+                  className={`flex lg:gap-6 xl:gap-10 ${
                     isExpanded
                       ? "opacity-100 duration-1000"
                       : `${
