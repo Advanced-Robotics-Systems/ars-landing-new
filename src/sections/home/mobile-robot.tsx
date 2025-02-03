@@ -30,11 +30,11 @@ const MobileRobot = () => {
         <div
           className="hidden md:block md:h-[65vh] lg:h-[75vh] w-full rounded-t-3xl"
           style={{
-            background: `linear-gradient(270deg, rgba(0, 0, 0, 0.00) 40%, #000 100%), url(${currentData.img})`,
+            backgroundImage: `linear-gradient(270deg, rgba(0, 0, 0, 0.00) 40%, #000 100%), url(${currentData.img})`,
             backgroundColor: "white",
-            backgroundSize: "contain",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
+            backgroundSize: "100% 100%, contain",
+            backgroundRepeat: "no-repeat, no-repeat",
+            backgroundPosition: "center, center",
           }}
         >
           <div className="h-full rounded-t-3xl text-white flex flex-col justify-end w-56 md:w-80 lg:w-[450px] space-y-2 md:space-y-5 px-5 py-3 md:px-12 md:py-8 lg:px-16 lg:py-10 xl:px-20 xl:py-12">
