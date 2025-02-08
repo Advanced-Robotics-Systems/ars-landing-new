@@ -6,9 +6,9 @@ import Link from "next/link";
 
 const OurMission = () => {
   return (
-    <section className="relative w-full flex flex-col justify-center items-center h-[300px] md:h-[500px] lg:h-screen ">
+    <section className="relative w-full flex flex-col justify-center items-center min-h-[300px] h-screen">
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover object-bottom z-0"
+        className="absolute top-0 left-0 w-full h-full object-cover object-left-bottom z-0"
         src="/videos/home-mission-cropped.mp4"
         height={"100%"}
         width={"100%"}

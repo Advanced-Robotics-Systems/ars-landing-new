@@ -32,9 +32,9 @@ const MobileRobot = () => {
           style={{
             backgroundImage: `linear-gradient(270deg, rgba(0, 0, 0, 0.00) 40%, #000 100%), url(${currentData.img})`,
             backgroundColor: "white",
-            backgroundSize: "100% 100%, contain",
-            backgroundRepeat: "no-repeat, no-repeat",
-            backgroundPosition: "center, center",
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
           }}
         >
           <div className="h-full rounded-t-3xl text-white flex flex-col justify-end w-56 md:w-80 lg:w-[450px] space-y-2 md:space-y-5 px-5 py-3 md:px-12 md:py-8 lg:px-16 lg:py-10 xl:px-20 xl:py-12">
@@ -63,7 +63,11 @@ const MobileRobot = () => {
         <div
           className="h-[250px] xs:h-[270px] sm:h-[350px] md:hidden w-full rounded-t-2xl"
           style={{
-            background: `linear-gradient(270deg, rgba(0, 0, 0, 0.00) 5%, #000 85%),url(${currentData.img}) lightgray 50% / cover no-repeat`,
+            backgroundImage: `linear-gradient(270deg, rgba(0, 0, 0, 0.00) 5%, #000 85%), url(${currentData.img})`,
+            backgroundColor: "white",
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
           }}
         >
           <div className="h-full rounded-t-3xl text-white flex flex-col justify-end w-56 md:w-80 lg:w-[450px] space-y-2 md:space-y-5 px-5 py-3 md:px-12 md:py-8 lg:px-16 lg:py-10 xl:px-20 xl:py-12">

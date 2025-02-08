@@ -1,20 +1,11 @@
 "use client";
 
-import heroImage from "@/../../public/home-hero.jpeg";
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section
-      className="h-[300px] md:h-[450px] lg:h-screen w-full "
-      style={{
-        background: `url(${heroImage.src})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}
-    >
+    <section className="min-h-[300px] h-screen w-full bg-[url('/home-hero.jpeg')] bg-cover bg-[85%_center]">
       <div className="bg-gradient-to-tl from-[#FFFFFF00] to-[#000000B3] h-full padding-responsive flex flex-col justify-center gap-2 md:gap-3 text-ars-primary">
         {/* <p className="text-xs lg:text-sm">An ARS Robot Development</p> */}
         <h2 className="text-xl md:text-4xl lg:text-5xl xl:text-6xl font-medium">
