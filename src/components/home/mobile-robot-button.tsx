@@ -11,9 +11,14 @@ const MobileRobotButton = ({
   title: string;
   link: string;
 }) => {
+  console.log(title);
   return (
     <Tooltip
-      content={`Learn more about the ${title}!`}
+      content={
+        title === "A Series"
+          ? `Learn more about the ${title}!`
+          : `The ${title} is still under development`
+      }
       placement="right"
       showArrow
       radius="full"
@@ -31,6 +36,7 @@ const MobileRobotButton = ({
         isIconOnly
         radius="full"
         className="text-white bg-transparent text-2xl md:text-3xl font-bold -ml-1 hover:bg-ars-cyan-60"
+        disabled={title != "A Series"}
       >
         {ICONS.arrow_right_big}
       </Button>
