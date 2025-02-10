@@ -29,6 +29,7 @@ const MobileRobot = () => {
       <div className=" w-full">
         <div
           className="hidden md:block md:h-[65vh] lg:h-[75vh] w-full rounded-t-3xl"
+          id="mobile-robot-section"
           style={{
             backgroundImage: `linear-gradient(270deg, rgba(0, 0, 0, 0.00) 40%, #000 100%), url(${currentData.img})`,
             backgroundColor: "white",
