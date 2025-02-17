@@ -103,6 +103,9 @@ const Header = () => {
                             href={item.link}
                             radius="full"
                             className="bg-cyan-blue-30 border border-ars-cyan font-medium lg:px-5 xl:px-6 lg:text-lg hover:text-gray-300 duration-200 "
+                            isDisabled={
+                              isScrolled ? (isExpanded ? false : true) : false
+                            }
                           >
                             {item.name}
                           </Button>
@@ -112,6 +115,13 @@ const Header = () => {
                               <Button
                                 className="pr-0 bg-transparent lg:px-1 xl:px-2 lg:text-lg font-medium hover:text-gray-300 duration-200 "
                                 variant="bordered"
+                                isDisabled={
+                                  isScrolled
+                                    ? isExpanded
+                                      ? false
+                                      : true
+                                    : false
+                                }
                               >
                                 Products
                               </Button>
