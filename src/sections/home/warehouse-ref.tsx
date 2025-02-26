@@ -4,7 +4,7 @@ import { WarehouseAccordion } from "@/components";
 const WarehouseRef = () => {
   return (
     <div
-      className="relative isolate w-full min-h-screen lg:min-h-[135vh] flex max-sm:flex-col items-start padding-responsive"
+      className="relative isolate w-full min-h-screen lg:min-h-[135vh] flex max-md:flex-col items-start padding-responsive"
       style={{
         backgroundImage: "url('/warehouse-black-background.jpg')",
         backgroundSize: "cover",
