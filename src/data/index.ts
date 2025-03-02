@@ -715,8 +715,8 @@ export const privacyPolicy: PrivacyPolicyData = {
 // automation page our benefits data
 export const ourBenefitsData = [
   "We offer cutting-edge robotic automation solutions that boost efficiency, reduce costs, and ensure precision in every operation",
-  "Working with Ars means partnering with industry experts dedicated to optimizing your workflow with smart, scalable automation",
-  "From end-of-line operations to advanced robotic systems, we deliver automation tailored to your industry’s needs",
+  "Working with ARS means partnering with industry experts dedicated to optimizing your workflow with smart, scalable automation",
+  "From end-of-line operations to advanced robotic systems, we deliver automation tailored to your industry's needs",
   "With our lifetime support and future-ready robotics, we help businesses stay ahead in an increasingly automated world.",
 ];
 
