@@ -16,10 +16,7 @@ const AutomationHero = () => {
           background: `linear-gradient(180deg, rgba(5, 144, 200, 0.40) 0%, rgba(1, 37, 51, 0.10) 32.5%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%)`,
         }}
       >
-        <h1>
-          <span className="text-cyan-blue">ARS</span>
-          <br /> Automation
-        </h1>
+        <h1>Keep it simple!</h1>
       </div>
     </section>
   );
