@@ -1,9 +1,10 @@
 import Image from "next/image";
+import { WarehouseAccordion } from "@/components";
 
 const WarehouseRef = () => {
   return (
     <div
-      className="relative isolate w-full min-h-screen lg:min-h-[135vh] flex items-start padding-responsive"
+      className="relative isolate w-full min-h-screen lg:min-h-[135vh] flex max-sm:flex-col items-start padding-responsive"
       style={{
         backgroundImage: "url('/warehouse-black-background.jpg')",
         backgroundSize: "cover",
@@ -27,8 +28,11 @@ const WarehouseRef = () => {
         </div>
 
         {/* Right Column: Description */}
-        <div className="flex ">
-          <p className="text-sm leading-normal md:text-base md:leading-normal lg:text-lg lg:leading-normal xl:text-xl xl:leading-normal">
+        <div className="flex">
+          <p
+            className="text-sm md:text-base lg:text-lg xl:text-xl"
+            style={{ lineHeight: 1.5 }}
+          >
             A robot alone is just a tool, but when fully integrated into your
             operations, it becomes a transformative solution. Imagine seamless
             autonomous material flows powering your efficiency, smart Fleet
@@ -40,6 +44,7 @@ const WarehouseRef = () => {
           </p>
         </div>
       </div>
+      <WarehouseAccordion />
     </div>
   );
 };

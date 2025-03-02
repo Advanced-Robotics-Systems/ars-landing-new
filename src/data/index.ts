@@ -801,6 +801,27 @@ export const clientConsultationData = [
   "Quality Control",
 ];
 
+export const homeAccordion = [
+  {
+    title: "Accordion 1",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat pariatur, eum minima, dignissimos ducimus eius laboriosam, vel quibusdam necessitatibus quia soluta sequi inventore architecto minus. Natus accusantium delectus sequi numquam!",
+    image: "/about/about-hero.png",
+  },
+  {
+    title: "Accordion 2",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat pariatur, eum minima, dignissimos ducimus eius laboriosam, vel quibusdam necessitatibus quia soluta sequi inventore architecto minus. Natus accusantium delectus sequi numquam!",
+    image: "/about/about-info.png",
+  },
+  {
+    title: "Accordion 3",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat pariatur, eum minima, dignissimos ducimus eius laboriosam, vel quibusdam necessitatibus quia soluta sequi inventore architecto minus. Natus accusantium delectus sequi numquam!",
+    image: "/about/about-values.jpg",
+  },
+];
+
 // FAQ data
 export const faqContents = [
   {

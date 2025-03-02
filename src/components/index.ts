@@ -8,6 +8,7 @@ import BlogReadButton from "./blog-card/blog-read-button";
 import MobileRobotButton from "./home/mobile-robot-button";
 import BlogPdf from "./blog-card/blog-pdf";
 import SolutionsCarousel from "./solutions-carousel/SolutionsCarousel";
+import WarehouseAccordion from "./warehouse-accordion/warehouse-accordion";
 
 export {
   ResourceCard,
@@ -20,4 +21,5 @@ export {
   MobileRobotButton,
   BlogPdf,
   SolutionsCarousel,
+  WarehouseAccordion,
 };
