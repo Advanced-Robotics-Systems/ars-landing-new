@@ -144,25 +144,18 @@ export const mobileRobotData = [
   {
     title: "A Series",
     img: "/mobile-robot/a300_blink_gif.gif",
-    description:
-      "No threat goes unseen. Anduril's open Counter UAS system is built to detect, track and intercept unmanned aircraft and autonomous drone systems.",
     slots: ["A 300", "A 500"],
     link: "/products",
   },
   {
     title: "B Series",
     img: "/mobile-robot/b1500_render_48.gif",
-
-    description:
-      "No threat goes unseen. Anduril's open Counter UAS system is built to detect, track and intercept unmanned aircraft and autonomous drone systems.",
     slots: ["UNDER DEVELOPMENT"],
     link: "/products/b-series",
   },
   {
     title: "F Series",
     img: "/mobile-robot/f1000_render_2_6.gif",
-    description:
-      "No threat goes unseen. Anduril's open Counter UAS system is built to detect, track and intercept unmanned aircraft and autonomous drone systems.",
     slots: ["UNDER DEVELOPMENT"],
     link: "/products/f-series",
   },
