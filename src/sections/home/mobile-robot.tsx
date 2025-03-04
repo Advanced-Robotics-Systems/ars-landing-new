@@ -93,6 +93,7 @@ const MobileRobot = () => {
               href={currentData.link}
               isIconOnly
               radius="full"
+              isDisabled={currentData.title != "A Series"}
               className="text-white bg-transparent text-2xl md:text-3xl font-bold -ml-1 hover:bg-ars-cyan-60"
             >
               {ICONS.arrow_right_big}
