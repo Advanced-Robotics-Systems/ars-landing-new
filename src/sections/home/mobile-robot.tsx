@@ -61,33 +61,20 @@ const MobileRobot = () => {
             />
           </div>
         </div>
-        <div
-          className="h-[250px] xs:h-[270px] sm:h-[350px] md:hidden w-full rounded-t-2xl"
-          style={{
-            backgroundImage: `linear-gradient(270deg, rgba(0, 0, 0, 0.00) 5%, #000 85%), url(${currentData.img})`,
-            backgroundColor: "white",
-            backgroundSize: "contain",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="h-full rounded-t-3xl text-white flex flex-col justify-end w-56 md:w-80 lg:w-[450px] space-y-2 md:space-y-5 px-5 py-3 md:px-12 md:py-8 lg:px-16 lg:py-10 xl:px-20 xl:py-12">
-            <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium">
-              {currentData.title}
-            </h3>
-            {/* <p className="text-[12px] md:text-[16px] leading-4 md:leading-6 lg:leading-7 w-52 md:w-60 lg:w-64">
-              {currentData.description}
-            </p> */}
-            <div className="flex gap-3 w-fit pt-5 border-t-2 border-white">
-              {currentData.slots.map((slot, index) => (
-                <div
-                  key={index}
-                  className="bg-ars-cyan-60 sm:bg-ars-cyan rounded-full px-3 py-2 text-white text-center text-xs"
-                >
-                  {slot}
-                </div>
-              ))}
-            </div>
+        <div className="flex flex-col">
+          <div
+            className="h-[250px] xs:h-[270px] sm:h-[350px] md:hidden w-full rounded-t-2xl"
+            style={{
+              backgroundImage: `url(${currentData.img})`,
+              backgroundColor: "white",
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+            }}
+          >
+            {/* <div className="h-full rounded-t-3xl flex flex-col justify-end w-56 md:w-80 lg:w-[450px] space-y-2 md:space-y-5 px-5 py-3 md:px-12 md:py-8 lg:px-16 lg:py-10 xl:px-20 xl:py-12"></div> */}
+          </div>
+          <div className="flex items-center justify-between md:hidden px-4 py-2 bg-black text-white border-t border-ars-cyan">
             <Button
               as={Link}
               href={currentData.link}
@@ -98,6 +85,16 @@ const MobileRobot = () => {
             >
               {ICONS.arrow_right_big}
             </Button>
+            <div className="flex gap-3 w-fit">
+              {currentData.slots.map((slot, index) => (
+                <div
+                  key={index}
+                  className="bg-ars-cyan rounded-full px-3 py-2 text-center text-xs"
+                >
+                  {slot}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <div className="flex justify-around border-t border-ars-cyan">
@@ -108,7 +105,7 @@ const MobileRobot = () => {
               className={`${
                 activeTab === data.title ? "bg-ars-cyan" : "bg-black"
               } md:font-medium lg:font-semibold text-xs md:text-sm lg:text-lg text-white hover:bg-deep-blue text-center duration-200 py-3 md:py-5
-                lg:py-6 w-full border-r border-ars-cyan`}
+                lg:py-6 w-full ${index != 2 && "border-r border-ars-cyan"}`}
             >
               {data.title}
             </div>
