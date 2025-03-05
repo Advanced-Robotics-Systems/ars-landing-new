@@ -800,3 +800,39 @@ export const clientConsultationData = [
   "Packaging",
   "Quality Control",
 ];
+
+// FAQ data
+export const faqContents = [
+  {
+    id: 1,
+    question: "How can ARS help scale automation across different facilities?",
+    answer:
+      "ARS is designed with scalability in mind. Through interoperability between automation systems from multiple manufacturers and a no-code interface, we allow businesses to expand automation solutions with minimal effort, seamlessly integrating new machines or tasks without affecting existing workflows.",
+  },
+  {
+    id: 2,
+    question: "What makes ARS unique?",
+    answer:
+      "ARS is an interoperable platform that simplifies automation by enabling seamless integration and data transfer between different robotic systems from multiple vendors. It has a no-code interface, making it user-friendly for operators without advanced technical skills, while maximizing productivity and scalability with drag-and-drop workflow management.",
+  },
+  {
+    id: 3,
+    question:
+      "I don’t want to change existing processes and systems in my factory. How can I work with ARS?",
+    answer:
+      "Our solutions are designed for seamless integration with your current operations, operating alongside your existing workflows without disrupting them.ARS, our vendor-agnostic platform, ensures that any AMR or AGV (not just ARS’s) can integrate smoothly with existing systems, regardless of the manufacturer.",
+  },
+
+  {
+    id: 4,
+    question: "What industries does ARS serve?",
+    answer:
+      "ARS serves multiple industries, including but not limited to automotive, FMCG, manufacturing, and distribution centers. Reach out to us to discover solutions relevant to your industry.",
+  },
+  {
+    id: 5,
+    question: "How can I partner with ARS?",
+    answer:
+      "There are different ways to partner with us. If you are a robotics systems manufacturer, you can join our ARS ecosystem. If you are a systems integrator looking to leverage the capabilities of the ARS Platform, you can explore our various commercial engagement modes.. Check out the Partners section to find out more!",
+  },
+];
