@@ -15,6 +15,8 @@ import { LuUsers } from "react-icons/lu";
 import { RiMenu3Fill } from "react-icons/ri";
 import { TfiHome } from "react-icons/tfi";
 import { FaChevronDown } from "react-icons/fa6";
+import { TbMinusVertical } from "react-icons/tb";
+import { FiPlus } from "react-icons/fi";
 
 export const ICONS = {
   instagram: <FaInstagram />,
@@ -35,4 +37,6 @@ export const ICONS = {
   arrow_right_big: <HiOutlineArrowRight />,
   arrow_bottom: <HiOutlineArrowNarrowDown />,
   chevron: <FaChevronDown />,
+  minus_vertical: <TbMinusVertical />,
+  plus: <FiPlus />,
 };

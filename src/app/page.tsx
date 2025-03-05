@@ -1,4 +1,5 @@
 import {
+  Faq,
   // ARSIndustry,
   // Clients,
   Header,
@@ -24,6 +25,7 @@ export default function Home() {
         <WarehouseRef />
         {/* <ARSIndustry /> */}
         {/* <Clients /> */}
+        <Faq />
         <LatestResources />
       </main>
     </>
