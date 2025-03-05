@@ -9,7 +9,7 @@ const CompanyBacking = () => {
         <h1 className="text-3xl xxs:text-4xl sm:text-5xl lg:text-6xl text-ars-cyan text-center font-medium">
           BACKED UP BY
         </h1>
-        <div className="flex w-full xxs:w-4/5 md:w-3/5 xl:w-2/5 max-w-[600px] justify-between">
+        <div className="flex w-4/5 md:w-3/5 xl:w-2/5 max-w-[600px] justify-between">
           <Link href="https://jawahirschool.com/" isExternal>
             <Image
               src={jarisLogo.src}
