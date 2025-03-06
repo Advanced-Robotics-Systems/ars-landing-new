@@ -5,6 +5,7 @@ import Header from "./header/header";
 import JoinOurTeam from "./shared/join-our-team";
 import GetInTouch from "./shared/get-in-touch";
 import LatestResources from "./shared/resources";
+import Faq from "./shared/faq";
 
 // Home sections
 import Hero from "./home/hero";
@@ -88,4 +89,5 @@ export {
   OurBenefits,
   JoinOurTeamAutomation,
   OurSolutions,
+  Faq,
 };
