@@ -22,6 +22,7 @@ const Faq = () => {
               <AccordionItem
                 className="mb-4 md:mb-6 lg:mb-8 border-2 border-[#152329] pl-4 md:pl-6 lg:pl-8 pr-2 rounded-lg"
                 key={item.id}
+                aria-label={`FAQ Item ${item.id}`}
                 title={
                   <p className=" text-[#272727] text-sm md:text-base lg:text-lg xl:text-xl font-medium">
                     {item?.question}
