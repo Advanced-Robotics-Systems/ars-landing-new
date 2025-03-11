@@ -803,22 +803,22 @@ export const clientConsultationData = [
 
 export const homeAccordion = [
   {
-    title: "Accordion 1",
+    title: "Inbound Handling",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat pariatur, eum minima, dignissimos ducimus eius laboriosam, vel quibusdam necessitatibus quia soluta sequi inventore architecto minus. Natus accusantium delectus sequi numquam!",
-    image: "/about/about-hero.png",
+      "Our AMRs streamline inbound logistics by autonomously transporting goods from docking stations to storage zones, reducing reliance on manual forklifts and enhancing workflow efficiency.",
+    image: "/inbound-handling.jpeg",
   },
   {
-    title: "Accordion 2",
+    title: "Dock-to-Stock",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat pariatur, eum minima, dignissimos ducimus eius laboriosam, vel quibusdam necessitatibus quia soluta sequi inventore architecto minus. Natus accusantium delectus sequi numquam!",
-    image: "/about/about-info.png",
+      "Our AMRs eliminate manual transport inefficiencies by autonomously moving goods from inbound docks to storage zones. This seamless transition reduces delays, enhances inventory accuracy, and speeds up stock availability.",
+    image: "/dock-to-stock.jpeg",
   },
   {
-    title: "Accordion 3",
+    title: "Smart Storage & Retrieval",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat pariatur, eum minima, dignissimos ducimus eius laboriosam, vel quibusdam necessitatibus quia soluta sequi inventore architecto minus. Natus accusantium delectus sequi numquam!",
-    image: "/about/about-values.jpg",
+      "Our AI-powered system ensures optimal space utilization by dynamically placing and retrieving items based on demand, improving accessibility and reducing picking time.",
+    image: "/smart-storage-retrieval.jpeg",
   },
 ];
 
