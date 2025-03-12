@@ -10,5 +10,12 @@
       "soon": "قريباً",
       "sectionTwoHeading": "منصة برمجيات بدون أكواد"
     }
+  },
+  "homepage": {
+    "hero": {
+      "headingTop": "إحداث ثورة في الأتمتة",
+      "headingBottom": "قيادة الابتكار",
+      "buttonText": "عن الشركة"
+    }
   }
 }
