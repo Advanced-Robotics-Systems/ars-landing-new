@@ -33,7 +33,7 @@ const Contacts = () => {
           </div>
           <div className="flex gap-14 xxs:gap-[104px] md:gap-[123px] xl:gap-[200px] text-sm md:text-base">
             <h5 className="text-cyan-blue font-medium">Phone</h5>
-            <p>+966 50 312 4449</p>
+            <p>+966 55 305 3804</p>
           </div>
           <div className="flex gap-10 xxs:gap-7 md:gap-9 xl:gap-28 text-sm md:text-base">
             <h5 className="text-cyan-blue font-medium max-xxs:hidden">
