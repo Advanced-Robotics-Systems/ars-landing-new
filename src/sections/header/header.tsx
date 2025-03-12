@@ -20,7 +20,8 @@ import { useEffect, useRef, useState } from "react";
 import { navLinks } from "@/data";
 import Image from "next/image";
 import { ICONS } from "@/utils/icons";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { useLocale, useTranslations } from "next-intl";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -55,6 +56,9 @@ const Header = () => {
     setIsExpanded(!isExpanded);
   };
 
+  const t = useTranslations("header");
+  const locale = useLocale();
+
   return (
     <>
       <div className=" hidden lg:block">
@@ -85,7 +89,11 @@ const Header = () => {
                     }`
               } `}
             >
-              <div className="flex lg:gap-2 xl:gap-4 absolute right-0 top-1/2 transform -translate-y-1/2">
+              <div
+                className={`flex lg:gap-2 xl:gap-4 absolute ${
+                  locale === "en" ? "right-0" : "left-0"
+                } top-1/2 transform -translate-y-1/2`}
+              >
                 <ul
                   className={`flex lg:gap-6 xl:gap-10 ${
                     isExpanded
@@ -110,7 +118,7 @@ const Header = () => {
                               isScrolled ? (isExpanded ? false : true) : false
                             }
                           >
-                            {item.name}
+                            {t(item.name)}
                           </Button>
                         ) : item.name === "Products" ? (
                           <Dropdown shouldBlockScroll={false}>
@@ -126,7 +134,7 @@ const Header = () => {
                                     : false
                                 }
                               >
-                                Products
+                                {t("Products")}
                               </Button>
                             </DropdownTrigger>
                             <DropdownMenu
@@ -136,7 +144,7 @@ const Header = () => {
                             >
                               {/* Section 1: Industrial Mobile Robot */}
                               <DropdownSection
-                                title="Industrial Mobile Robot"
+                                title={t("productsDropdown.sectionOneHeading")}
                                 className="bg-ars-cyan text-white pt-1"
                                 classNames={{
                                   heading: "py-2 px-4",
@@ -163,7 +171,7 @@ const Header = () => {
                                     href="/products"
                                     className="w-full py-0 pl-0 flex justify-start"
                                   >
-                                    B Series (Coming Soon)
+                                    B Series ({t("productsDropdown.soon")})
                                   </Button>
                                 </DropdownItem>
                                 <DropdownItem
@@ -175,13 +183,13 @@ const Header = () => {
                                     href="/products"
                                     className="w-full py-0 pl-0 flex justify-start"
                                   >
-                                    F Series (Coming Soon)
+                                    F Series ({t("productsDropdown.soon")})
                                   </Button>
                                 </DropdownItem>
                               </DropdownSection>
                               {/* Section 2: No Code Software Platform */}
                               <DropdownSection
-                                title="No Code Software Platform "
+                                title={t("productsDropdown.sectionTwoHeading")}
                                 className="bg-ars-cyan text-white pt-1"
                                 classNames={{
                                   heading: "py-2 px-4",
@@ -208,7 +216,7 @@ const Header = () => {
                                     href="/products/arsFM"
                                     className="w-full py-0 pl-0 flex justify-start"
                                   >
-                                    arsOs (Coming Soon)
+                                    arsOs ({t("productsDropdown.soon")})
                                   </Button>
                                 </DropdownItem>
                               </DropdownSection>
@@ -223,7 +231,7 @@ const Header = () => {
                               isScrolled ? (isExpanded ? false : true) : false
                             }
                           >
-                            {item.name}
+                            {t(item.name)}
                           </Button>
                         )}
                       </li>
@@ -234,7 +242,7 @@ const Header = () => {
                 <Button
                   onClick={toggleMenu}
                   size="sm"
-                  className="bg-transparent my-auto lg:pr-5 xl:pr-7 lg:text-xl hover:text-gray-300 duration-200"
+                  className="bg-transparent my-auto lg:px-5 xl:px-7 lg:text-xl hover:text-gray-300 duration-200"
                   disabled={!allowExpansion.current}
                 >
                   {isExpanded ? ICONS.close : ICONS.menu}

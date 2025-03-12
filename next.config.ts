@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
 
 const basePath = "";
 
@@ -7,14 +8,11 @@ const nextConfig: NextConfig = {
   env: {
     BASE_PATH: basePath,
   },
-};
-
-module.exports = {
-  webpack: (config: any) => {
-    config.resolve.alias.canvas = false;
-
+  webpack: (config) => {
+    config.resolve.alias = { ...(config.resolve.alias || {}), canvas: false };
     return config;
   },
 };
 
-export default nextConfig;
+const withNextIntl = createNextIntlPlugin();
+export default withNextIntl(nextConfig);

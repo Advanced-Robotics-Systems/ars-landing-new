@@ -1,0 +1,19 @@
+{
+  "header": {
+    "Products": "Products",
+    "Automation": "Automation",
+    "Company": "Company",
+    "Careers": "Careers",
+    "Get in Touch": "Get in Touch",
+    "productsDropdown": {
+      "sectionOneHeading": "Industrial Mobile Robot",
+      "soon": "Coming Soon",
+      "sectionTwoHeading": "No Code Software Platform"
+    }
+  },
+  "hero": {
+    "headingTop": "Revolutionising Automation",
+    "headingBottom": "Driving Innovation",
+    "buttonText": "Our Company"
+  }
+}

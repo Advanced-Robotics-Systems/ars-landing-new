@@ -1,0 +1,14 @@
+{
+  "header": {
+    "Products": "المنتجات",
+    "Automation": "الأتمتة",
+    "Company": "عن الشركة",
+    "Careers": "المهن",
+    "Get in Touch": "تواصل معنا",
+    "productsDropdown": {
+      "sectionOneHeading": "روبوت صناعي متنقل",
+      "soon": "قريباً",
+      "sectionTwoHeading": "منصة برمجيات بدون أكواد"
+    }
+  }
+}
