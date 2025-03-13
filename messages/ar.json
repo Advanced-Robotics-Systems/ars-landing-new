@@ -36,6 +36,19 @@
         "Adaptability": "القدرة على التكيف",
         "desc4": "يعمل إطار الخدمة المرن لدينا على معالجة التحديات بكفاءة، وتقديم حلول سريعة ودعم مخصص على مدار الساعة طوال أيام الأسبوع"
       }
+    },
+    "mobileRobot": {
+      "titleTop": "روبوت متحرك مستقل",
+      "titleBottom": "علم المدخلات",
+      "mobileRobotData": {
+        "A 300": "A 300",
+        "A 500": "A 500",
+        "UNDER DEVELOPMENT": "قيد التطوير"
+      },
+      "mobileRobotButton": {
+        "learnTip": "تعرف على المزيد حول {robotTitle}!",
+        "developmentTip": "لا يزال {robotTitle} قيد التطوير"
+      }
     }
   }
 }

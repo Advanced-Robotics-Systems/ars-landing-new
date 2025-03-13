@@ -3,7 +3,7 @@
 import { ICONS } from "@/utils/icons";
 import { Button } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 const OurMission = () => {
   const t = useTranslations("homepage.mission");

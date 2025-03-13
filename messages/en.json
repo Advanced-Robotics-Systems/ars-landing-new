@@ -36,6 +36,19 @@
         "Adaptability": "Adaptability",
         "desc4": "Our flexible service framework addresses challenges efficiently, offering quick resolutions and tailored support 24/7"
       }
+    },
+    "mobileRobot": {
+      "titleTop": "Autonomous Mobile Robot",
+      "titleBottom": "Intralogistics",
+      "mobileRobotData": {
+        "A 300": "A 300",
+        "A 500": "A 500",
+        "UNDER DEVELOPMENT": "UNDER DEVELOPMENT"
+      },
+      "mobileRobotButton": {
+        "learnTip": "Learn more about the {robotTitle}!",
+        "developmentTip": "The {robotTitle} is still under development"
+      }
     }
   }
 }

@@ -3,6 +3,7 @@ import { MobileRobotButton } from "@/components";
 import { mobileRobotData } from "@/data";
 import { ICONS } from "@/utils/icons";
 import { Button } from "@nextui-org/react";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -21,17 +22,24 @@ const MobileRobot = () => {
     }
   };
 
+  const t = useTranslations("homepage.mobileRobot");
+  const locale = useLocale();
+
   return (
     <section className="bg-ice-blue px-5 md:px-10 lg:px-16 xl:px-24 2xl:px-36 3xl:px-44 pt-10 lg:pt-14 xl:pt-20 flex flex-col items-center gap-12 md:gap-16 lg:gap-20">
       <h2 className="text-center text-2xl md:text-4xl lg:text-5xl xl:text-6xl">
-        Autonomous Mobile Robot <br /> Intralogistics
+        {t("titleTop")}
+        <br />
+        {t("titleBottom")}
       </h2>
       <div className=" w-full">
         <div
           className="hidden md:block md:h-[65vh] lg:h-[75vh] w-full rounded-t-3xl"
           id="mobile-robot-section"
           style={{
-            backgroundImage: `linear-gradient(270deg, rgba(0, 0, 0, 0.00) 40%, #000 100%), url(${currentData.img})`,
+            backgroundImage: `linear-gradient(${
+              locale === "en" ? "270deg" : "90deg"
+            }, rgba(0, 0, 0, 0.00) 40%, #000 100%), url(${currentData.img})`,
             backgroundColor: "white",
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
@@ -51,7 +59,7 @@ const MobileRobot = () => {
                   key={index}
                   className="bg-ars-cyan rounded-full px-5 py-3 text-white text-sm lg:text-base"
                 >
-                  {slot}
+                  {t(`mobileRobotData.${slot}`)}
                 </div>
               ))}
             </div>

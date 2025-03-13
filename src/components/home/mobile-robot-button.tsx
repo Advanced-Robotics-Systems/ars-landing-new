@@ -2,7 +2,8 @@
 
 import { ICONS } from "@/utils/icons";
 import { Button, Tooltip } from "@nextui-org/react";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { useLocale, useTranslations } from "next-intl";
 
 const MobileRobotButton = ({
   title,
@@ -11,14 +12,17 @@ const MobileRobotButton = ({
   title: string;
   link: string;
 }) => {
+  const t = useTranslations("homepage.mobileRobot.mobileRobotButton");
+  const locale = useLocale();
+
   return (
     <Tooltip
       content={
         title === "A Series"
-          ? `Learn more about the ${title}!`
-          : `The ${title} is still under development`
+          ? t("learnTip", { robotTitle: title })
+          : t("developmentTip", { robotTitle: title })
       }
-      placement="right"
+      placement={locale === "en" ? "right" : "left"}
       showArrow
       radius="full"
       classNames={{
