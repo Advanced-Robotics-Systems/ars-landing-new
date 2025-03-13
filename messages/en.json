@@ -49,6 +49,11 @@
         "learnTip": "Learn more about the {robotTitle}!",
         "developmentTip": "The {robotTitle} is still under development"
       }
+    },
+    "os": {
+      "title": "A versatile and user-friendly operating system designed to streamline robotic functionalities",
+      "description": "arsOS is designed to enable operational independence, empowering robots to function autonomously with minimal human intervention. arsOS allows robots to make real-time decisions, adapt to changing environments, and perform complex tasks with high precision. Built-in self-monitoring and diagnostic tools ensure that robots can identify and resolve issues proactively, minimizing downtime and maintenance needs.",
+      "buttonText": "Learn About ARS OS"
     }
   }
 }

@@ -4,7 +4,7 @@ import { mobileRobotData } from "@/data";
 import { ICONS } from "@/utils/icons";
 import { Button } from "@nextui-org/react";
 import { useLocale, useTranslations } from "next-intl";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useState } from "react";
 
 const MobileRobot = () => {
@@ -99,7 +99,7 @@ const MobileRobot = () => {
                   key={index}
                   className="bg-ars-cyan rounded-full px-3 py-2 text-center text-xs"
                 >
-                  {slot}
+                  {t(`mobileRobotData.${slot}`)}
                 </div>
               ))}
             </div>
