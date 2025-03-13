@@ -11,10 +11,33 @@
       "sectionTwoHeading": "No Code Software Platform"
     }
   },
+  "shared": {
+    "faq": {
+      "subtitle": {
+        "black": "our automation ",
+        "cyan": "evolves"
+      },
+      "accordion": {
+        "question1": "How can ARS help scale automation across different facilities?",
+        "answer1": "ARS is designed with scalability in mind. Through interoperability between automation systems from multiple manufacturers and a no-code interface, we allow businesses to expand automation solutions with minimal effort, seamlessly integrating new machines or tasks without affecting existing workflows.",
+        "question2": "What makes ARS unique?",
+        "answer2": "ARS is an interoperable platform that simplifies automation by enabling seamless integration and data transfer between different robotic systems from multiple vendors. It has a no-code interface, making it user-friendly for operators without advanced technical skills, while maximizing productivity and scalability with drag-and-drop workflow management.",
+        "question3": "I don't want to change existing processes and systems in my factory. How can I work with ARS?",
+        "answer3": "Our solutions are designed for seamless integration with your current operations, operating alongside your existing workflows without disrupting them. ARS, our vendor-agnostic platform, ensures that any AMR or AGV (not just ARS's) can integrate smoothly with existing systems, regardless of the manufacturer.",
+        "question4": "What industries does ARS serve?",
+        "answer4": "ARS serves multiple industries, including but not limited to automotive, FMCG, manufacturing, and distribution centers. Reach out to us to discover solutions relevant to your industry.",
+        "question5": "How can I partner with ARS?",
+        "answer5": "There are different ways to partner with us. If you are a robotics systems manufacturer, you can join our ARS ecosystem. If you are a systems integrator looking to leverage the capabilities of the ARS platform, you can explore our various commercial engagement modes.. Check out the Partners section to find out more!"
+      },
+      "buttonText": "Contact Us"
+    }
+  },
   "homepage": {
     "hero": {
-      "headingTop": "Revolutionising Automation",
-      "headingBottom": "Driving Innovation",
+      "heading": {
+        "top": "Revolutionising Automation",
+        "bottom": "Driving Innovation"
+      },
       "buttonText": "Our Company"
     },
     "mission": {
@@ -38,8 +61,10 @@
       }
     },
     "mobileRobot": {
-      "titleTop": "Autonomous Mobile Robot",
-      "titleBottom": "Intralogistics",
+      "title": {
+        "top": "Autonomous Mobile Robot",
+        "bottom": "Intralogistics"
+      },
       "mobileRobotData": {
         "A 300": "A 300",
         "A 500": "A 500",
@@ -57,8 +82,10 @@
     },
     "warehouseRef": {
       "title": "Take it to the next level on-site.",
-      "descTop": "A robot alone is just a tool, but when fully integrated into your operations, it becomes a transformative solution. Imagine seamless autonomous material flows powering your efficiency, smart Fleet Management Control software optimizing every move, and end-to-end 24/7 support ensuring peak performance around the clock. Unlocking new levels of productivity and innovation.",
-      "descBottom": "The sky isn't the limit; it's just the beginning."
+      "description": {
+        "top": "A robot alone is just a tool, but when fully integrated into your operations, it becomes a transformative solution. Imagine seamless autonomous material flows powering your efficiency, smart Fleet Management Control software optimizing every move, and end-to-end 24/7 support ensuring peak performance around the clock. Unlocking new levels of productivity and innovation.",
+        "bottom": "The sky isn't the limit; it's just the beginning."
+      }
     }
   }
 }

@@ -36,9 +36,9 @@ const WarehouseRef = async () => {
             className="text-sm md:text-base lg:text-lg xl:text-xl"
             style={{ lineHeight: 1.5 }}
           >
-            {t("descTop")}
+            {t("description.top")}
             <br />
-            {t("descBottom")}
+            {t("description.bottom")}
           </p>
         </div>
       </div>

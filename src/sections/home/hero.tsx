@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="bg-gradient-to-tl from-[#FFFFFF00] to-[#000000B3] h-full padding-responsive flex flex-col justify-center gap-2 md:gap-3 text-ars-primary">
         {/* <p className="text-xs lg:text-sm">An ARS Robot Development</p> */}
         <h2 className="text-xl md:text-4xl lg:text-5xl xl:text-6xl font-medium">
-          {t("headingTop")} <br /> {t("headingBottom")}
+          {t("heading.top")} <br /> {t("heading.bottom")}
         </h2>
         <div>
           <Button
