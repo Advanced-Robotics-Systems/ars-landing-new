@@ -1,7 +1,10 @@
 import Image from "next/image";
 import { WarehouseAccordion } from "@/components";
+import { getTranslations } from "next-intl/server";
 
-const WarehouseRef = () => {
+const WarehouseRef = async () => {
+  const t = await getTranslations("homepage.warehouseRef");
+
   return (
     <div
       className="relative isolate w-full min-h-screen lg:min-h-[135vh] flex max-md:flex-col items-start padding-responsive"
@@ -23,7 +26,7 @@ const WarehouseRef = () => {
         {/* Left Column: Title */}
         <div className="flex">
           <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl ">
-            Take it to the next level on-site.
+            {t("title")}
           </h1>
         </div>
 
@@ -33,14 +36,9 @@ const WarehouseRef = () => {
             className="text-sm md:text-base lg:text-lg xl:text-xl"
             style={{ lineHeight: 1.5 }}
           >
-            A robot alone is just a tool, but when fully integrated into your
-            operations, it becomes a transformative solution. Imagine seamless
-            autonomous material flows powering your efficiency, smart Fleet
-            Management Control software optimizing every move, and end-to-end
-            24/7 support ensuring peak performance around the clock. Unlocking
-            new levels of productivity and innovation.
+            {t("descTop")}
             <br />
-            The sky isn&apos;t the limit; it&apos;s just the beginning.
+            {t("descBottom")}
           </p>
         </div>
       </div>
