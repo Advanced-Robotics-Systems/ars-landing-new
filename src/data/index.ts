@@ -116,26 +116,30 @@ export const solutionsData = [
   {
     icon: ICONS.home,
     title: "Dependability",
-    description:
-      "Mininum maintenance is required for our AMR & Automation systems, ensuring consistent uptime",
+    // description:
+    //   "Mininum maintenance is required for our AMR & Automation systems, ensuring consistent uptime",
+    description: "desc1",
   },
   {
     icon: ICONS.user,
     title: "Expertise",
-    description:
-      "Our skilled technical team specializes in optimizing automation workflows with advanced support solutions",
+    // description:
+    //   "Our skilled technical team specializes in optimizing automation workflows with advanced support solutions",
+    description: "desc2",
   },
   {
     icon: ICONS.square,
     title: "Responsiveness",
-    description:
-      "With streamlined digital processes, we ensure swift responses and minimize downtime for uninterrupted operations.",
+    // description:
+    //   "With streamlined digital processes, we ensure swift responses and minimize downtime for uninterrupted operations.",
+    description: "desc3",
   },
   {
     icon: ICONS.meditaion,
     title: "Adaptability",
-    description:
-      "Our flexible service framework addresses challenges efficiently, offering quick resolutions and tailored support 24/7",
+    // description:
+    //   "Our flexible service framework addresses challenges efficiently, offering quick resolutions and tailored support 24/7",
+    description: "desc4",
   },
 ];
 

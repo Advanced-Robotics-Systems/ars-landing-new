@@ -16,6 +16,26 @@
       "headingTop": "Revolutionising Automation",
       "headingBottom": "Driving Innovation",
       "buttonText": "Our Company"
+    },
+    "mission": {
+      "subtitle": "Our Mission",
+      "title": "Empowering Seamless Transition to Full Automation",
+      "description": "We aim to help companies acclimatize with the rapidly changing demands of todays world with our Autonomous Mobile Robots (AMR) accompanied by our no-code automation software to achieve a smooth transition to fully automated facilities. Our solutions are designed to propel you forward ahead of the competition.",
+      "buttonText": "Learn About Us"
+    },
+    "solutions": {
+      "title": "Dependable Solutions You Can Rely On",
+      "subtitle": "At ARS, we are dedicated to ensuring your industrial automation systems operate seamlessly, delivering optimal performance and reliability.",
+      "cards": {
+        "Dependability": "Dependability",
+        "desc1": "Mininum maintenance is required for our AMR & Automation systems, ensuring consistent uptime",
+        "Expertise": "Expertise",
+        "desc2": "Our skilled technical team specializes in optimizing automation workflows with advanced support solutions",
+        "Responsiveness": "Responsiveness",
+        "desc3": "With streamlined digital processes, we ensure swift responses and minimize downtime for uninterrupted operations.",
+        "Adaptability": "Adaptability",
+        "desc4": "Our flexible service framework addresses challenges efficiently, offering quick resolutions and tailored support 24/7"
+      }
     }
   }
 }
