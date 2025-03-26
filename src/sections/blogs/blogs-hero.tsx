@@ -65,7 +65,7 @@ const BlogsHero = ({ blogs }: BlogsProps) => {
             width="100%"
             height={500}
             alt="hero image"
-            className="rounded-3xl border-t-4 border-ars-cyan h-[200px] md:h-[350px] lg:h-[450px] xl:h-[500px] w-full"
+            className="rounded-3xl border-t-4 border-ars-cyan h-[200px] md:h-[350px] lg:h-[450px] xl:h-[500px] w-full object-cover"
           />
           <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl text-deep-blue mt-5 md:mt-6 mb-3 md:mb-4">
             {currentData.title}
