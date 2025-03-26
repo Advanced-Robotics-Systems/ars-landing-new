@@ -42,6 +42,7 @@ import ProductsHero from "./products/hero";
 // Blogs sections
 import BlogsHero from "./blogs/blogs-hero";
 import Resources from "./blogs/resources";
+import BlogDetails from "./blogs/blog-details";
 
 // prikvacy policy sections
 import PrivacyPolicy from "./policy/privacy-policy";
@@ -84,6 +85,7 @@ export {
   BlogsHero,
   Resources,
   PrivacyPolicy,
+  BlogDetails,
   AutomationHero,
   ClientConsultation,
   OurBenefits,

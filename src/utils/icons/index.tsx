@@ -1,5 +1,9 @@
 import { AiOutlineClose, AiOutlineFilePdf } from "react-icons/ai";
-import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
+import {
+  FaAngleLeft,
+  FaLongArrowAltLeft,
+  FaLongArrowAltRight,
+} from "react-icons/fa";
 import {
   FaFacebookF,
   FaInstagram,
@@ -17,6 +21,11 @@ import { TfiHome } from "react-icons/tfi";
 import { FaChevronDown } from "react-icons/fa6";
 import { TbMinusVertical } from "react-icons/tb";
 import { FiPlus } from "react-icons/fi";
+import {
+  IoArrowDownCircleOutline,
+  IoArrowForwardCircleOutline,
+} from "react-icons/io5";
+import { MdOutlineCircle } from "react-icons/md";
 
 export const ICONS = {
   instagram: <FaInstagram />,
@@ -39,4 +48,8 @@ export const ICONS = {
   chevron: <FaChevronDown />,
   minus_vertical: <TbMinusVertical />,
   plus: <FiPlus />,
+  angle_left: <FaAngleLeft />,
+  arrow_down_circular: <IoArrowDownCircleOutline />,
+  arrow_right_circular: <IoArrowForwardCircleOutline />,
+  circle: <MdOutlineCircle />,
 };

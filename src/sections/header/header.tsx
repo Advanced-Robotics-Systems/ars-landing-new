@@ -57,7 +57,7 @@ const Header = () => {
 
   return (
     <>
-      <div className=" hidden lg:block">
+      <div className=" hidden xl:block">
         <div className="fixed flex top-3 items-center h-16 text-white font-medium z-50 w-full lg:px-16 xl:px-24 2xl:px-36 3xl:px-44">
           <div className="flex justify-between w-full items-center ">
             <div
@@ -77,7 +77,7 @@ const Header = () => {
             <div
               className={`relative ${
                 isExpanded
-                  ? "bg-red-500 lg:w-[750px] xl:w-[860px] h-12  duration-1000"
+                  ? "bg-red-500 xl:w-[985px] h-12  duration-1000"
                   : `${
                       isScrolled
                         ? "bg-red-500 w-20 h-12  duration-1000 "
@@ -249,7 +249,7 @@ const Header = () => {
         shouldHideOnScroll
         height="2rem"
         onMenuOpenChange={setIsMenuOpen}
-        className="lg:hidden fixed py-2"
+        className="xl:hidden fixed py-2"
       >
         <NavbarContent justify="start">
           <NavbarBrand>

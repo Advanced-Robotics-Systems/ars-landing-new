@@ -1,47 +1,63 @@
-import { BlogPdf, BlogReadButton } from "@/components";
-import { blogsResourcesData } from "@/data";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { BlogDetails, Header } from "@/sections";
+import { client } from "@/utils/contentful/contentful";
 
-export function generateStaticParams() {
-  return blogsResourcesData.map((blog) => ({
-    id: blog.id,
+export async function generateStaticParams() {
+  const result = await client.getEntries({
+    content_type: "blog",
+  });
+
+  return result.items.map((blog) => ({
+    id: blog.fields.slug,
   }));
 }
 
-export default async function ReadBlog({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}) {
+const fetchBlogBySlug = async (slug: string) => {
+  const result = await client.getEntries({
+    content_type: "blog",
+    "fields.slug": slug,
+  });
+
+  if (!result.items.length) {
+    throw new Error(`No blog found for slug: ${slug}`);
+  }
+
+  return result.items[0];
+};
+
+const fetchBlogs = async () => {
+  const result = await client.getEntries({
+    content_type: "blog", // Replace with your actual content type ID
+  });
+  return result.items || []; // Ensure an array is returned
+};
+
+const ReadBlog = async ({ params }: { params: Promise<{ id: string }> }) => {
   const id = (await params).id;
-  const blogData = blogsResourcesData.find((blog) => blog.id === id);
+
+  // fetch blog by slug
+  const blog = await fetchBlogBySlug(id);
+
+  // fetch all blogs
+  const Blogs = await fetchBlogs();
+
   return (
     <>
-      <BlogReadButton />
-      {blogData ? (
-        <main
-          className="h-screen padding-responsive py-2 lg:py-2 xl:py-2"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(34, 169, 225, 0.5), rgba(215, 239, 249, 1)), linear-gradient(to right top, rgba(5, 144, 200, 0.02), rgba(13, 36, 38, 1))",
-          }}
-        >
-          {/* <iframe
-            src={blogData.file}
-            width="100%"
-            height="100%"
-            className="border-none"
-            title={blogData.title}
-          /> */}
-          <BlogPdf file={blogData.file} />
-        </main>
-      ) : (
-        <main>
-          <div className="flex flex-col h-screen items-center justify-center bg-midnight-blue text-ars-primary padding-responsive">
-            <h1 className="text-4xl font-semibold">No Blog Found</h1>
-            <p className="text-xl font-medium text-ars-cyan">Wrong blog link</p>
-          </div>
-        </main>
-      )}
+      <Header />
+      <main
+        className="bg-fixed min-h-screen pt-32"
+        style={{
+          background: `
+        linear-gradient(-30deg, rgba(5, 144, 200, 0.02) 51.31%, #0D242673 114.45%), 
+        linear-gradient(-30deg, #D7EFF9 51.31%, #0590C8B3 114.45%)`,
+        }}
+      >
+        <div className=" h-full">
+          <BlogDetails blog={blog} blogs={Blogs} />
+        </div>
+      </main>
     </>
   );
-}
+};
+
+export default ReadBlog;

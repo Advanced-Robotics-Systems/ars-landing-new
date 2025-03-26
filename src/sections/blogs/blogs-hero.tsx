@@ -2,9 +2,16 @@
 import { Button, Image } from "@nextui-org/react";
 import { ICONS } from "@/utils/icons";
 import { useState } from "react";
-import { blogsResourcesData } from "@/data";
 import Link from "next/link";
-const BlogsHero = () => {
+
+import { Blog } from "@/utils/dataTypes/types";
+
+interface BlogsProps {
+  blogs: Blog[];
+}
+
+const BlogsHero = ({ blogs }: BlogsProps) => {
+  const blogsResourcesData = blogs;
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleLeftClick = () => {
@@ -23,19 +30,24 @@ const BlogsHero = () => {
 
   return (
     <section className="padding-responsive">
-      <div className="mt-5">
+      <div className="mt-8 md:mt-10 lg:mt-12">
         <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-medium">
           Resources
         </h1>
-        <div className="flex flex-col md:flex-row justify-between gap-8 mt-4 md:mt-6 lg:mt-8">
-          <h5 className="max-w-xs text-xl font-medium text-[#0D2426]">
-            A curated knowledge hub designed to empower individuals and
-            businesses with insights into the robotics industry and our
-            cutting-edge Autonomous Mobile Robots (AMR).
+        <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-5 lg:gap-8 mt-2 md:mt-6 lg:mt-7">
+          <h5 className="max-w-xs text-[18px] md:text-[20px] lg:text-[24px] font-medium text-[#0D2426]">
+            Ready to join an exciting, fast- growing fintech scaleup? We&apos;ve
+            been waiting for you.
           </h5>
+          <p className="max-w-xs lg:max-w-sm text-sm lg:text-base text-deep-blue">
+            We&apos;re an international team working across various business
+            areas. Roles with Recharge focus on our Group Business and
+            Recharge.com brands. Startselect roles focus on our prepaid gaming
+            brand Startselect.
+          </p>
         </div>
       </div>
-      <div className="flex justify-between items-center lg:gap-5 xl:gap-8 mt-12 ">
+      <div className="flex justify-between items-center lg:gap-5 xl:gap-8 mt-8 md:mt-10 lg:mt-12">
         <div className="hidden lg:block">
           <Button
             isIconOnly
@@ -47,10 +59,11 @@ const BlogsHero = () => {
           </Button>
         </div>
 
-        <div className="bg-[#FFFFFF33] p-4 md:p-6 lg:p-8 rounded-3xl ">
+        <div className="bg-[#FFFFFF33] p-4 md:p-6 lg:p-8 rounded-3xl w-full ">
           <Image
             src={currentData.img}
             width="100%"
+            height={500}
             alt="hero image"
             className="rounded-3xl border-t-4 border-ars-cyan h-[200px] md:h-[350px] lg:h-[450px] xl:h-[500px] w-full"
           />
@@ -62,13 +75,15 @@ const BlogsHero = () => {
               {currentData.description}
             </p>
             <div className="flex gap-10 items-center justify-between w-full lg:w-1/4">
-              <p className="text-deep-blue font-medium">
+              <p className="text-deep-blue font-medium uppercase">
                 {currentData.category} <br />
-                <span className="text-[#67829E]">{currentData.time}</span>
+                <span className="text-[#67829E] lowercase">
+                  {currentData.time}
+                </span>
               </p>
               <Button
                 as={Link}
-                href={`/blogs/${currentData.id}`}
+                href={currentData.link}
                 isIconOnly
                 radius="full"
                 className="bg-ars-cyan-60 text-deep-blue font-medium "

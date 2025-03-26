@@ -1,3 +1,4 @@
+import { blogsResourcesData } from "@/data";
 import {
   Faq,
   // ARSIndustry,
@@ -11,8 +12,19 @@ import {
   Solutions,
   WarehouseRef,
 } from "@/sections";
+// import { client } from "@/utils/contentful/contentful";
 
-export default function Home() {
+// const fetchBlogs = async () => {
+//   const result = await client.getEntries({
+//     content_type: "blog", // Replace with your actual content type ID
+//   });
+//   return result.items || []; // Ensure an array is returned
+// };
+
+export default async function Home() {
+  // const Blogs = await fetchBlogs();
+  const Blogs = blogsResourcesData;
+
   return (
     <>
       <Header />
@@ -26,7 +38,7 @@ export default function Home() {
         {/* <ARSIndustry /> */}
         {/* <Clients /> */}
         <Faq />
-        <LatestResources />
+        <LatestResources blogs={Blogs} />
       </main>
     </>
   );

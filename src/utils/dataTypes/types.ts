@@ -19,3 +19,44 @@ export interface PrivacyPolicyData {
   title: string;
   sections: PrivacyPolicySection[];
 }
+
+// export interface Blog {
+//   fields: {
+//     title: string;
+//     slug: string;
+//     category: string;
+//     readTime: number;
+//     featuredImage: {
+//       fields: {
+//         file: {
+//           url: string;
+//           details: {
+//             image: {
+//               width: number;
+//             };
+//           };
+//         };
+//       };
+//     };
+//     thumbnail: {
+//       fields: {
+//         file: {
+//           url: string;
+//         };
+//       };
+//     };
+//     content: {
+//       content: unknown[];
+//     };
+//   };
+// }
+
+export interface Blog {
+  id: string;
+  title: string;
+  description: string;
+  category: string;
+  time: string;
+  img: string;
+  link: string;
+}
