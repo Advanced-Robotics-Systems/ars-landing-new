@@ -10,7 +10,7 @@ import { blogsResourcesData } from "@/data";
 // };
 const Blogs = async () => {
   // const Blogs = await fetchBlogs();
-  // console.log(Blogs);
+
   const Blogs = blogsResourcesData;
   return (
     <>

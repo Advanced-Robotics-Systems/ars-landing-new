@@ -30,7 +30,6 @@ const LatestResources = ({ blogs }: BlogsProps) => {
         ? setResources(filteredData)
         : setResources(filteredData.slice(0, 4));
     }
-    console.log(resources);
   };
 
   const handleCategoryClick = (category: { name: string; value: string }) => {

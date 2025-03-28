@@ -27,8 +27,6 @@ const Resources = ({ blogs }: BlogsProps) => {
     filterResources(category);
   };
 
-  console.log(blogs);
-
   return (
     <section className="px-5 md:px-10 lg:px-16 xl:px-24 2xl:px-36 3xl:px-44 pt-10 lg:pt-14 xl:pt-20">
       <div className="bg-[#FFFFFFD9] px-3 py-7 md:px-7 md:py-10 lg:px-8 lg:py-12 xl:px-10 xl:py-14 rounded-t-3xl ">
