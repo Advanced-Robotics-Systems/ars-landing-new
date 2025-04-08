@@ -19,3 +19,26 @@ export interface PrivacyPolicyData {
   title: string;
   sections: PrivacyPolicySection[];
 }
+
+export interface TermsandConditionsList {
+  title: string;
+  listItem: string[];
+}
+
+export interface TermsandConditionsSubSection {
+  title: string;
+  subtitle?: string;
+  content: string[];
+}
+export interface TermsandConditionsSection {
+  title: string;
+  list?: TermsandConditionsList;
+  introduction?: string[];
+  subSections?: TermsandConditionsSubSection[];
+}
+
+export interface TermsandConditionsData {
+  title: string;
+  sections: TermsandConditionsSection[];
+  
+}

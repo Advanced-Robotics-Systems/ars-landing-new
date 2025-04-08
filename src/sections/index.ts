@@ -46,6 +46,11 @@ import Resources from "./blogs/resources";
 // prikvacy policy sections
 import PrivacyPolicy from "./policy/privacy-policy";
 
+//terms and conditions 
+import Terms from "./termsandcon/terms-and-condtions"
+
+
+
 // automation sections
 import AutomationHero from "./automation/automation-hero";
 import ClientConsultation from "./automation/client-consultation";
@@ -90,4 +95,5 @@ export {
   JoinOurTeamAutomation,
   OurSolutions,
   Faq,
+  Terms,
 };
