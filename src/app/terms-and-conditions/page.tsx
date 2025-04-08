@@ -1,5 +1,4 @@
-import { Header, } from "@/sections";
-import Terms from "@/sections/termsandcon/terms-and-condtions";
+import { Header, Terms } from "@/sections";
 import React from "react";
 
 export default function TermsPage() {

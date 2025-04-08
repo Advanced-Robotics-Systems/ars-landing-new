@@ -717,7 +717,7 @@ export const termsandConditions: TermsandConditionsData = {
       introduction: ["Last Visited: 21st January, 2025"],
       subSections: [ 
         {
-          title: "Welcome to ARS(www.ars.com)",
+          title: "Welcome to ARS(www.arsystems.org)",
           subtitle: "",
           content: [
             "This website is provided as a service to our visitors and users. By accessing and using this site, you agree to comply with the following Terms and Conditions. Please read them carefully.",
@@ -737,7 +737,7 @@ export const termsandConditions: TermsandConditionsData = {
         },
         {
           title: "THIRD-PARTY LINKS",
-          content: ["General Enquiries:", "inquiries@arssystems.org", "By using www.ars.com, you acknowledge and agree to these Terms and Conditions. Thank you for visiting ARS!"],
+          content: ["General Enquiries:", " inquiries@arsystems.org", "By using www.arsystems.org, you acknowledge and agree to these Terms and Conditions. Thank you for visiting ARS!"],
         },
       ],
     },

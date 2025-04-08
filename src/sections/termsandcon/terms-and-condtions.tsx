@@ -6,7 +6,7 @@ const Terms = () => {
   
     
     return (
-      <div className=" bg-sky-100 bg-opacity-75 flex items-center justify-center p-4 pt-6">
+      <div className=" bg-sky-100 bg-opacity-75 flex items-center justify-center p-4 pt-24">
         <div className="bg-white rounded-lg shadow-lg w-full max-w-6xl relative p-6 md:p-10">
           {/* Header */}
           <h1 className="text-sky-500 text-2xl font-medium mb-2">{term.title}</h1>
