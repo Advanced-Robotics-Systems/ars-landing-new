@@ -1,5 +1,7 @@
 import { PrivacyPolicyData } from "@/utils/dataTypes/types";
 import { ICONS } from "../utils/icons";
+import { TermsandConditionsData } from "@/utils/dataTypes/types";
+
 
 // Navbar Links
 export const navLinks = [
@@ -700,6 +702,43 @@ export const privacyPolicy: PrivacyPolicyData = {
       introduction: [
         "Our site uses functions of the network LinkedIn. Provider is the LinkedIn Corporation 2029 Stierlin Court, Mountain View, CA 94043, USA.",
         "Every time you visit a page containing functions of LinkedIn, a connection to servers of LinkedIn is established. LinkedIn is informed that you have visited our website with your IP address. If you click the 'Recommend' button of LinkedIn and are logged into your account with LinkedIn, then it is possible for LinkedIn to assign your visit to our website to your LinkedIn user account. We point out that we as providers of the sites have no knowledge of the content of the transmitted data and their use by LinkedIn. More information can be found in the Privacy Policy LinkedIn at 'https://www.linkedin.com/legal/privacy-policy'",
+      ],
+    },
+  ],
+};
+
+// terms and conditions
+export const termsandConditions: TermsandConditionsData = {
+  title: "Terms and Conditions",
+
+  sections: [
+    {
+      title: "Your Agreement",
+      introduction: ["Last Visited: 21st January, 2025"],
+      subSections: [ 
+        {
+          title: "Welcome to ARS(www.ars.com)",
+          subtitle: "",
+          content: [
+            "This website is provided as a service to our visitors and users. By accessing and using this site, you agree to comply with the following Terms and Conditions. Please read them carefully.",
+          ],
+        },
+        {
+          title: "AGREEMENT TO TERMS",
+          content: [
+            "By using this website, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree, please refrain from using this site. We reserve the right to update, modify, or change these Terms and Conditions at any time. Continued use of the site after updates indicates your acceptance of the revised terms.",
+          ],
+        },
+        {
+          title: "PRIVACY POLICY",
+          content: [
+            "Your use of this site is also governed by our Privacy Policy, which outlines how we collect, use, and protect your information. Please review it carefully.",
+          ],
+        },
+        {
+          title: "THIRD-PARTY LINKS",
+          content: ["General Enquiries:", "inquiries@arssystems.org", "By using www.ars.com, you acknowledge and agree to these Terms and Conditions. Thank you for visiting ARS!"],
+        },
       ],
     },
   ],
