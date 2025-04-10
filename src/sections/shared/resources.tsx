@@ -1,37 +1,38 @@
 "use client";
 
 import { ResourceCard } from "@/components";
-import { resourcesCategories, blogsResourcesData } from "@/data";
+import { resourcesCategories } from "@/data";
 import { ICONS } from "@/utils/icons";
 import { Button, ButtonGroup } from "@nextui-org/react";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
+import { Blog } from "@/utils/dataTypes/types";
+import Link from "next/link";
 
-const LatestResources = () => {
-  const [resources, setResources] = useState<typeof blogsResourcesData | null>(
-    blogsResourcesData
-  );
+interface BlogsProps {
+  blogs: Blog[];
+}
+
+const LatestResources = ({ blogs }: BlogsProps) => {
+  const [resources, setResources] = useState<typeof blogs | null>(blogs);
   const [activeTab, setActiveTab] = useState(resourcesCategories[0]);
 
-  const filterResources = (category: string) => {
-    if (category === "All") {
-      blogsResourcesData.length > 4
-        ? setResources(blogsResourcesData.slice(0, 4))
-        : setResources(blogsResourcesData);
+  const filterResources = (category: { name: string; value: string }) => {
+    if (category.value === "all") {
+      blogs.length > 4 ? setResources(blogs.slice(0, 4)) : setResources(blogs);
     } else {
-      const filteredData = blogsResourcesData.filter(
-        (data) => data.category === category
+      const filteredData = blogs.filter(
+        (data) => data.category === category.value
       );
 
       filteredData.length < 4
         ? setResources(filteredData)
         : setResources(filteredData.slice(0, 4));
     }
-    console.log(resources);
   };
 
-  const handleCategoryClick = (category: string) => {
+  const handleCategoryClick = (category: { name: string; value: string }) => {
     setActiveTab(category);
     filterResources(category);
   };
@@ -68,13 +69,13 @@ const LatestResources = () => {
         >
           {resourcesCategories.map((category) => (
             <Button
-              key={category}
+              key={category.value}
               className={`${
                 activeTab === category && "bg-cyan-blue-30"
               } border-l border-deep-blue-20`}
               onPress={() => handleCategoryClick(category)}
             >
-              {category}
+              {category.name}
             </Button>
           ))}
         </ButtonGroup>
@@ -84,7 +85,7 @@ const LatestResources = () => {
       <div className="hidden md:block h-[355px]">
         <div className="flex items-center md:gap-10 lg:gap-5 xl:gap-10 justify-center h-full">
           <Button
-            isDisabled={activeTab === "All"}
+            isDisabled={activeTab.value === "all"}
             isIconOnly={true}
             className=" disabled:bg-deep-blue-5 bg-white text-cyan-blue-50 hover:text-white font-medium rounded-l-lg border-r-2 border-cyan-blue hover:bg-cyan-blue-30 duration-300"
             onPress={handleLeftButton}
@@ -95,13 +96,15 @@ const LatestResources = () => {
           {resources && resources.length > 0 ? (
             <div className="grid md:grid-cols-2 lg:grid-cols-4 md:gap-12 lg:gap-5 xl:gap-8 2xl:gap-10 3xl:gap-12 4xl:gap-16">
               {resources.map((resource, idx) => (
-                <ResourceCard
-                  key={idx}
-                  title={resource.title}
-                  img={resource.img}
-                  category={resource.category}
-                  time={resource.time}
-                />
+                <Link href={resource.link} key={idx}>
+                  <ResourceCard
+                    title={resource.title}
+                    img={resource.img}
+                    category={resource.category}
+                    time={resource.time}
+                    linkTo={resource.link}
+                  />
+                </Link>
               ))}
             </div>
           ) : (
@@ -112,7 +115,7 @@ const LatestResources = () => {
           )}
 
           <Button
-            isDisabled={activeTab === "Case Study"}
+            isDisabled={activeTab.value === "case-study"}
             isIconOnly
             className=" disabled:bg-deep-blue-5 bg-white text-cyan-blue-50 hover:text-white font-medium rounded-r-lg border-l-2 border-cyan-blue hover:bg-cyan-blue-30 duration-300"
             onPress={handleRightButton}
@@ -139,13 +142,14 @@ const LatestResources = () => {
             speed={1000}
             className="mySwiper h-full"
           >
-            {resources.map((resource, idx) => (
-              <SwiperSlide key={idx}>
+            {resources.map((resource) => (
+              <SwiperSlide key={resource.id}>
                 <ResourceCard
                   title={resource.title}
                   img={resource.img}
                   category={resource.category}
                   time={resource.time}
+                  linkTo={resource.link}
                 />
               </SwiperSlide>
             ))}

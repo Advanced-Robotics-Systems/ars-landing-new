@@ -8,17 +8,19 @@ const ResourceCard = ({
   img,
   category,
   time,
+  linkTo,
 }: {
   title: string;
   img: string;
   category: string;
   time: string;
+  linkTo: string;
 }) => {
   return (
     <Card
       radius="sm"
       shadow="sm"
-      className="md:hover:scale-105 h-full duration-200 border-b border-ars-cyan pb-10 max-w-96"
+      className="md:hover:scale-105 h-full duration-200 border-b border-ars-cyan pb-10 max-w-80"
     >
       <Image
         radius="lg"
@@ -49,7 +51,7 @@ const ResourceCard = ({
           <p className="font-medium">Read More</p>
           <Button
             as={Link}
-            href="/blogs"
+            href={linkTo}
             size="sm"
             isIconOnly
             radius="full"

@@ -1,3 +1,4 @@
+import { blogsResourcesData } from "@/data";
 import {
   AutomationHero,
   ClientConsultation,
@@ -10,6 +11,7 @@ import {
 } from "@/sections";
 
 const Automation = () => {
+  const Blogs = blogsResourcesData;
   return (
     <>
       <Header />
@@ -29,7 +31,7 @@ const Automation = () => {
             <OurSolutions />
           </div>
           <JoinOurTeamAutomation />
-          <LatestResources />
+          <LatestResources blogs={Blogs} />
           <GetInTouch />
         </div>
       </main>

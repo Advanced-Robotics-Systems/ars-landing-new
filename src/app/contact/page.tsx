@@ -1,6 +1,8 @@
+import { blogsResourcesData } from "@/data";
 import { Careers, Contacts, Faq, Header, LatestResources } from "@/sections";
 
 const Contact = () => {
+  const Blogs = blogsResourcesData;
   return (
     <>
       <Header />
@@ -8,7 +10,7 @@ const Contact = () => {
         <Contacts />
         <Careers />
         <Faq />
-        <LatestResources />
+        <LatestResources blogs={Blogs} />
       </main>
     </>
   );

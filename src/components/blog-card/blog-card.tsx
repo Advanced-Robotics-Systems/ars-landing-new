@@ -1,7 +1,6 @@
 import { ICONS } from "@/utils/icons";
 import { Button, Image } from "@nextui-org/react";
 import Link from "next/link";
-import React from "react";
 
 const BlogCard = ({
   title,
@@ -36,9 +35,9 @@ const BlogCard = ({
           <p>{description}</p>
         </div>
         <div className="flex justify-between items-center">
-          <p className="text-ars-cyan font-medium">
+          <p className="text-ars-cyan font-medium uppercase">
             {category} <br />
-            <span className="text-[#67829E]">{time}</span>
+            <span className="text-[#67829E] lowercase">{time} </span>
           </p>
           <Button
             as={Link}

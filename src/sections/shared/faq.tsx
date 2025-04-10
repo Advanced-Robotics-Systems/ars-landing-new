@@ -32,11 +32,11 @@ const Faq = () => {
                 indicator={({ isOpen }) =>
                   isOpen ? (
                     <div className="text-lg md:text-2xl lg:text-3xl xl:text-4xl p-2 lg:p-3 bg-cyan-blue rounded-b-md text-[#272727]">
-                      {ICONS.minus_vertical}
+                      {ICONS.arrow_right_circular}
                     </div>
                   ) : (
                     <div className="text-lg md:text-2xl lg:text-3xl xl:text-4xl p-2 lg:p-3 bg-deep-blue-35 rounded-r-md text-[#272727]">
-                      {ICONS.plus}
+                      {ICONS.arrow_down_circular}
                     </div>
                   )
                 }

@@ -8,12 +8,13 @@ const BlogReadButton = () => {
   const router = useRouter();
   return (
     <Button
-      isIconOnly
+      size="sm"
       radius="full"
-      className="fixed top-5 left-5 bg-ars-gray hover:bg-ars-gray/60 text-white z-10"
+      startContent={ICONS.angle_left}
+      className="bg-transparent hover:bg-ars-gray/60 text-midnight-blue hover:text-midnight-blue/60"
       onPress={() => router.back()}
     >
-      {ICONS.arrow_left}
+      Back
     </Button>
   );
 };
