@@ -1,4 +1,5 @@
 import { PrivacyPolicyData } from "@/utils/dataTypes/types";
+import { TermsandConditionsData } from "@/utils/dataTypes/types";
 import { ICONS } from "../utils/icons";
 
 // Navbar Links
@@ -715,6 +716,43 @@ export const privacyPolicy: PrivacyPolicyData = {
   ],
 };
 
+
+// terms and conditions
+export const termsandConditions: TermsandConditionsData = {
+  title: "Terms and Conditions",
+
+  sections: [
+    {
+      title: "Your Agreement",
+      introduction: ["Last Visited: 21st January, 2025"],
+      subSections: [ 
+        {
+          title: "Welcome to ARS (www.arsystems.org)",
+          subtitle: "",
+          content: [
+            "This website is provided as a service to our visitors and users. By accessing and using this site, you agree to comply with the following Terms and Conditions. Please read them carefully.",
+          ],
+        },
+        {
+          title: "AGREEMENT TO TERMS",
+          content: [
+            "By using this website, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree, please refrain from using this site. We reserve the right to update, modify, or change these Terms and Conditions at any time. Continued use of the site after updates indicates your acceptance of the revised terms.",
+          ],
+        },
+        {
+          title: "PRIVACY POLICY",
+          content: [
+            "Your use of this site is also governed by our Privacy Policy, which outlines how we collect, use, and protect your information. Please review it carefully.",
+          ],
+        },
+        {
+          title: "THIRD-PARTY LINKS",
+          content: ["General Enquiries:", " inquiries@arsystems.org", "By using www.arsystems.org, you acknowledge and agree to these Terms and Conditions. Thank you for visiting ARS!"],
+        },
+      ],
+    },
+  ],
+};
 // automation page our benefits data
 export const ourBenefitsData = [
   "We offer cutting-edge robotic automation solutions that boost efficiency, reduce costs, and ensure precision in every operation",
