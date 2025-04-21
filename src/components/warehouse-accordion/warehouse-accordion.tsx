@@ -14,7 +14,7 @@ const WarehouseAccordion = () => {
   };
 
   return (
-    <div className="text-white w-full md:hidden mt-4 mb-32 xxs:mb-40 xs:mb-56 sm:mb-72">
+    <div className="text-white w-full md:hidden mt-4 mb-10 ">
       <Accordion
         variant="splitted"
         selectedKeys={openKey}
