@@ -9,6 +9,7 @@ import MobileRobotButton from "./home/mobile-robot-button";
 import BlogPdf from "./blog-card/blog-pdf";
 import SolutionsCarousel from "./solutions-carousel/SolutionsCarousel";
 import WarehouseAccordion from "./warehouse-accordion/warehouse-accordion";
+import TermsModal from "./modalwrapper/terms-modal";
 
 export {
   ResourceCard,
@@ -22,4 +23,5 @@ export {
   BlogPdf,
   SolutionsCarousel,
   WarehouseAccordion,
+  TermsModal,
 };
