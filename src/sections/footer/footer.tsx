@@ -107,11 +107,7 @@ const Footer = () => {
                   extraStyles="text-xs md:text-sm cursor-pointer"
                 />
               ) : (
-                <Link
-                  href={item.link}
-                  isExternal
-                  className="text-xs md:text-sm"
-                >
+                <Link href={item.link} className="text-xs md:text-sm">
                   {item.name}
                 </Link>
               )}
