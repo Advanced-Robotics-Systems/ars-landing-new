@@ -1,7 +1,17 @@
 "use client";
 import { Button, Input, Textarea } from "@nextui-org/react";
+import { ChangeEvent, useState } from "react";
 
 const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    subject: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {};
+
   return (
     <form className="w-full text-white ">
       <div className="flex gap-6 items-center justify-between w-full border-y border-cyan-blue-50 py-2 text-sm md:text-base">
