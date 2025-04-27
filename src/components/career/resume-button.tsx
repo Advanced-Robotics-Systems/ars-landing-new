@@ -4,7 +4,7 @@ import { ICONS } from "@/utils/icons";
 import { Button, Tooltip } from "@nextui-org/react";
 import Link from "next/link";
 
-const ResumeButton = () => {
+const ResumeButton = ({ link }: { link: string }) => {
   return (
     <Tooltip
       content="Send us your Resume"
@@ -21,7 +21,7 @@ const ResumeButton = () => {
     >
       <Button
         as={Link}
-        href="/contact"
+        href={link}
         className="bg-cyan-blue/50 text-xs xxs:text-sm sm:text-base font-medium"
         size="md"
         radius="full"

@@ -1,5 +1,5 @@
-import { Button, Card, CardBody } from "@nextui-org/react";
-import Link from "next/link";
+import { Card, CardBody } from "@nextui-org/react";
+import { ResumeButton } from "@/components";
 
 const CareerJob = ({
   title,
@@ -26,16 +26,8 @@ const CareerJob = ({
               | {jobType}
             </p>
           </div>
-          <Button
-            as={Link}
-            href={linkTo}
-            className="bg-cyan-blue/50 text-xs xxs:text-sm sm:text-base font-medium"
-            size="md"
-            radius="full"
-          >
-            View Role
-          </Button>
         </div>
+        <ResumeButton link={linkTo} />
       </CardBody>
     </Card>
   );

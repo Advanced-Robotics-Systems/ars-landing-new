@@ -330,17 +330,17 @@ export const careersJobList = [
   {
     title: "Junior Robotics Backend Developer",
     jobType: "Fulltime",
-    linkTo: "/",
+    linkTo: "mailto:inquiries@arsystems.org",
   },
   {
     title: "Junior UI/Ux Designer",
     jobType: "Fulltime",
-    linkTo: "/",
+    linkTo: "mailto:inquiries@arsystems.org",
   },
   {
     title: "Technician (Electrical & Electronics Systems)",
     jobType: "Fulltime",
-    linkTo: "/",
+    linkTo: "mailto:inquiries@arsystems.org",
   },
 ];
 
@@ -716,7 +716,6 @@ export const privacyPolicy: PrivacyPolicyData = {
   ],
 };
 
-
 // terms and conditions
 export const termsandConditions: TermsandConditionsData = {
   title: "Terms and Conditions",
@@ -725,7 +724,7 @@ export const termsandConditions: TermsandConditionsData = {
     {
       title: "Your Agreement",
       introduction: ["Last Visited: 21st January, 2025"],
-      subSections: [ 
+      subSections: [
         {
           title: "Welcome to ARS (www.arsystems.org)",
           subtitle: "",
@@ -747,7 +746,11 @@ export const termsandConditions: TermsandConditionsData = {
         },
         {
           title: "THIRD-PARTY LINKS",
-          content: ["General Enquiries:", " inquiries@arsystems.org", "By using www.arsystems.org, you acknowledge and agree to these Terms and Conditions. Thank you for visiting ARS!"],
+          content: [
+            "General Enquiries:",
+            " inquiries@arsystems.org",
+            "By using www.arsystems.org, you acknowledge and agree to these Terms and Conditions. Thank you for visiting ARS!",
+          ],
         },
       ],
     },
