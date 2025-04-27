@@ -133,6 +133,7 @@ const Header = () => {
                               aria-label="Product Categories"
                               variant="solid"
                               className="!rounded-xl shadow-lg"
+                              disabledKeys={["b-series", "f-series"]}
                             >
                               {/* Section 1: Industrial Mobile Robot */}
                               <DropdownSection
@@ -156,7 +157,7 @@ const Header = () => {
                                 </DropdownItem>
                                 <DropdownItem
                                   key="b-series"
-                                  className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4"
+                                  className="bg-ars-gray hover:bg-ars-gray/80 text-gray-400 py-0 px-4"
                                 >
                                   <Button
                                     as={Link}
@@ -168,7 +169,7 @@ const Header = () => {
                                 </DropdownItem>
                                 <DropdownItem
                                   key="f-series"
-                                  className="bg-ars-gray hover:bg-ars-gray/80 text-white py-0 px-4"
+                                  className="bg-ars-gray hover:bg-ars-gray/80 text-gray-400 py-0 px-4"
                                 >
                                   <Button
                                     as={Link}
@@ -196,7 +197,7 @@ const Header = () => {
                                     href="/products/arsFM"
                                     className="w-full py-0 pl-0 flex justify-start"
                                   >
-                                    arsFM
+                                    arsFM (Coming Soon)
                                   </Button>
                                 </DropdownItem>
                                 <DropdownItem
@@ -205,10 +206,10 @@ const Header = () => {
                                 >
                                   <Button
                                     as={Link}
-                                    href="/products/arsFM"
+                                    href="/products/arsOS"
                                     className="w-full py-0 pl-0 flex justify-start"
                                   >
-                                    arsOs (Coming Soon)
+                                    arsOS
                                   </Button>
                                 </DropdownItem>
                               </DropdownSection>
@@ -342,7 +343,7 @@ const Header = () => {
                             href="/products/arsFM"
                             className="w-full py-0 pl-0 flex justify-start"
                           >
-                            arsFM
+                            arsFM (Coming Soon)
                           </Button>
                         </DropdownItem>
                         <DropdownItem
@@ -354,7 +355,7 @@ const Header = () => {
                             href="/products/arsFM"
                             className="w-full py-0 pl-0 flex justify-start"
                           >
-                            arsOs (Coming Soon)
+                            arsOS
                           </Button>
                         </DropdownItem>
                       </DropdownSection>
