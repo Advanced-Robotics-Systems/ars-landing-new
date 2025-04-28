@@ -17,7 +17,7 @@ const CareerJob = ({
       shadow="sm"
     >
       <CardBody>
-        <div className="flex flex-col xs:flex-row xs:justify-between items-center max-xs:gap-y-3">
+        <div className="flex xs:justify-between items-center max-xs:gap-y-3">
           <div className="flex flex-col gap-y-1 xs:gap-y-3">
             <h1 className="text-lg xxs:text-xl sm:text-2xl lg:text-3xl max-xs:text-center text-[#0D2426]">
               {title}
@@ -26,8 +26,8 @@ const CareerJob = ({
               | {jobType}
             </p>
           </div>
+          <ResumeButton link={linkTo} />
         </div>
-        <ResumeButton link={linkTo} />
       </CardBody>
     </Card>
   );

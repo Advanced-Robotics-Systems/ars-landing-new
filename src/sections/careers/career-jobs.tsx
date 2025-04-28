@@ -25,7 +25,7 @@ const CareerJobs = () => {
               We&apos;re always on the lookout for passionate talent. Send us
               your resume, and we&apos;ll reach out if there&apos;s a fit.
             </p>
-            <ResumeButton link="/contact" />
+            <ResumeButton link="mailto:inquiries@arsystems.org" />
           </div>
         </CardBody>
       </Card>
