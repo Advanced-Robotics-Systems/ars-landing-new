@@ -58,3 +58,8 @@
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+/* To prevent the text color change during autofill */
+input:-webkit-autofill {
+  -webkit-text-fill-color: white;
+}

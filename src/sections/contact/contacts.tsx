@@ -57,7 +57,7 @@ const Contacts = () => {
 
         <div className="w-full lg:w-1/2">
           <h3 className="text-xl md:text-2xl xl:text-3xl text-white mb-8">
-            Enquiries
+            Inquiries
           </h3>
           <ContactForm />
         </div>
