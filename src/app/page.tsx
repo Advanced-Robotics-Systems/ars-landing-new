@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 		siteName: "Advanced Robotics Systems",
 		images: [
 			{
-				url: "/banner.png",
+				url: "https://www.arsystems.org/banner.png",
 				width: 1200,
 				height: 630,
 				alt: "Advanced Robotics Systems - Robotics & Automation Experts",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
 		title: "Advanced Robotics Systems | Leading the Future of Automation",
 		description:
 			"ARS is revolutionizing industries with cutting-edge robotics and AI-powered automation solutions tailored for operational excellence.",
-		images: ["/banner.png"],
+		images: ["https://www.arsystems.org/banner.png"],
 	},
 	robots: {
 		index: true,
