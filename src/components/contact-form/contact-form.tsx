@@ -4,10 +4,10 @@ import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    Name: "",
-    Subject: "",
-    Email: "",
-    Message: "",
+    name: "",
+    subject: "",
+    email: "",
+    message: "",
   });
   const [status, setStatus] = useState("");
 
@@ -31,7 +31,7 @@ const ContactForm = () => {
 
     if (res.ok) {
       setStatus("Submitted Successfully!");
-      setFormData({ Name: "", Subject: "", Email: "", Message: "" });
+      setFormData({ name: "", subject: "", email: "", message: "" });
     } else {
       setStatus("Error During Submission. Please Retry.");
     }
@@ -53,12 +53,12 @@ const ContactForm = () => {
         <p className="text-cyan-blue font-medium">Name</p>
         <Input
           radius="md"
-          name="Name"
+          name="name"
           size="lg"
           placeholder="Your full name"
           className="input-autofill-fix font-medium rounded-xl md:max-w-md lg:max-w-xs xl:max-w-sm 2xl:max-w-md bg-[#FFFFFF33]"
           classNames={{ errorMessage: "text-xs text-red-400" }}
-          value={formData.Name}
+          value={formData.name}
           onChange={handleChange}
           required
         />
@@ -67,12 +67,12 @@ const ContactForm = () => {
         <p className="text-cyan-blue font-medium">Subject</p>
         <Input
           radius="md"
-          name="Subject"
+          name="subject"
           size="lg"
           placeholder="Subject of message"
           className=" font-medium rounded-xl md:max-w-md lg:max-w-xs xl:max-w-sm 2xl:max-w-md bg-[#FFFFFF33]"
           classNames={{ errorMessage: "text-xs text-red-400" }}
-          value={formData.Subject}
+          value={formData.subject}
           onChange={handleChange}
           required
         />
@@ -81,13 +81,13 @@ const ContactForm = () => {
         <p className="text-cyan-blue font-medium">Email</p>
         <Input
           radius="md"
-          name="Email"
+          name="email"
           size="lg"
           type="email"
           placeholder="email@company.com"
           className=" font-medium rounded-xl md:max-w-md lg:max-w-xs xl:max-w-sm 2xl:max-w-md bg-[#FFFFFF33]"
           classNames={{ errorMessage: "text-xs text-red-400" }}
-          value={formData.Email}
+          value={formData.email}
           onChange={handleChange}
           required
         />
@@ -100,8 +100,8 @@ const ContactForm = () => {
           maxRows={5}
           className="bg-[#FFFFFF33] rounded-xl "
           classNames={{ errorMessage: "text-xs text-red-400" }}
-          name="Message"
-          value={formData.Message}
+          name="message"
+          value={formData.message}
           onChange={handleChange}
           required
         />
@@ -120,8 +120,8 @@ const ContactForm = () => {
           status === "Submitted Successfully!"
             ? "text-green-400"
             : status === "Error During Submission. Please Retry."
-            ? "text-red-400"
-            : "text-white"
+              ? "text-red-400"
+              : "text-white"
         } mt-2 absolute left-2 z-10`}
       >
         {status}
