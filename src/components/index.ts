@@ -10,6 +10,7 @@ import BlogPdf from "./blog-card/blog-pdf";
 import SolutionsCarousel from "./solutions-carousel/SolutionsCarousel";
 import WarehouseAccordion from "./warehouse-accordion/warehouse-accordion";
 import TermsModal from "./modalwrapper/terms-modal";
+import { EmailTemplate } from "./email-template/email-template";
 
 export {
   ResourceCard,
@@ -24,4 +25,5 @@ export {
   SolutionsCarousel,
   WarehouseAccordion,
   TermsModal,
+  EmailTemplate,
 };
