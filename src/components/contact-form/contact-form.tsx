@@ -60,6 +60,7 @@ const ContactForm = () => {
           classNames={{ errorMessage: "text-xs text-red-400" }}
           value={formData.name}
           onChange={handleChange}
+          maxLength={100}
           required
         />
       </div>
@@ -74,6 +75,7 @@ const ContactForm = () => {
           classNames={{ errorMessage: "text-xs text-red-400" }}
           value={formData.subject}
           onChange={handleChange}
+          maxLength={150}
           required
         />
       </div>
@@ -89,6 +91,7 @@ const ContactForm = () => {
           classNames={{ errorMessage: "text-xs text-red-400" }}
           value={formData.email}
           onChange={handleChange}
+          maxLength={254}
           required
         />
       </div>
@@ -103,6 +106,7 @@ const ContactForm = () => {
           name="message"
           value={formData.message}
           onChange={handleChange}
+          maxLength={400}
           required
         />
       </div>
